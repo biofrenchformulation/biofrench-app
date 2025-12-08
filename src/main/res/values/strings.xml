@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BioFrench Catalog</string>
+    <string name="medicine_catalog">Medicine Catalog</string>
+    <string name="search_medicines">Search medicines...</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="edit_medicine">Edit Medicine</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="generic_name">Generic Name</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="description">Description</string>
+    <string name="dosage">Dosage</string>
+    <string name="price">Price</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="total_medicines">Total Medicines</string>
+    <string name="active_medicines">Active Medicines</string>
+    <string name="inactive_medicines">Inactive Medicines</string>
+    <string name="logout">Logout</string>
+    <string name="medicine_details">Medicine Details</string>
+    <string name="features">Features</string>
+    <string name="side_effects">Side Effects</string>
+    <string name="contraindications">Contraindications</string>
+    <string name="interactions">Drug Interactions</string>
+    <string name="prescription_type">Prescription Type</string>
+    <string name="otc">Over-the-counter</string>
+    <string name="prescription">Prescription</string>
+    <string name="back">Back</string>
+</resources>
