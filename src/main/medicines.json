@@ -1,0 +1,217 @@
+[
+  {
+    "id": "biodac",
+    "activeIngredient": "Nandrolone decanoate",
+    "brandName": "BIODAC 50MG",
+    "category": "Cardiovascular",
+    "dosage": "50mg injection",
+    "type": "Prescription only",
+    "price": "₹185",
+    "description": "Potent anabolic steroid that promotes bone mineral density, improves appetite, and enhances muscle function in chronic illness.",
+    "keyFeatures": [
+      "Promotes bone mineral density",
+      "Increases haemoglobin and red cell mass",
+      "Improves appetite and well-being",
+      "Positive effect on lung and muscle function"
+    ],
+    "isActive": true,
+    "commonSideEffects": [
+      "Fatigue",
+      "Dizziness",
+      "Cold hands"
+    ],
+    "indicatedIn": [
+      "Chronic illness (supportive therapy)",
+      "Anaemia",
+      "Osteoporosis",
+      "Renal failure (supportive therapy)",
+      "Chronic Obstructive Pulmonary Disease (COPD)"
+    ],
+    "drugInteractions": [
+      "Calcium channel blockers",
+      "Insulin",
+      "NSAIDs"
+    ],
+    "source": "Biofrench"
+  },
+  {
+    "id": "bical",
+    "activeIngredient": "Calcium Carbonate + Vitamin D3",
+    "brandName": "BICAL D3",
+    "category": "Vitamins & Supplements",
+    "dosage": "Calcium Carbonate 1250mg + Vitamin D3 250IU",
+    "type": "Over-the-counter",
+    "price": "₹125",
+    "description": "Calcium and Vitamin D3 supplement for strong and dense bones, ensuring maximum calcium absorption and bone mineralization.",
+    "keyFeatures": [
+      "Ensures maximum calcium absorption",
+      "Decreases bone resorption",
+      "Promotes bone mineralization",
+      "Maintains calcium homeostasis",
+      "Helps in formation of bone mass",
+      "Reduces chances of pregnancy complications, lactation issues, osteoporosis, hypocalcemia, and bone fracture"
+    ],
+    "isActive": true,
+    "commonSideEffects": [
+      "Constipation",
+      "Stomach upset",
+      "Gas"
+    ],
+    "indicatedIn": [
+      "Osteoporosis",
+      "Hypocalcemia",
+      "Bone fracture (risk reduction)",
+      "Pregnancy (calcium/vitamin D support)",
+      "Lactation (calcium/vitamin D support)"
+    ],
+    "drugInteractions": [
+      "Tetracyclines",
+      "Iron supplements",
+      "Thiazide diuretics"
+    ],
+    "source": "Biofrench"
+  },
+  {
+    "id": "rabcid",
+    "activeIngredient": "Rabeprazole + Domperidone",
+    "brandName": "RABCID DSR",
+    "category": "Gastrointestinal",
+    "dosage": "Rabeprazole 20mg + Domperidone 30mg (Sustained Release)",
+    "type": "Prescription only",
+    "price": "₹285",
+    "description": "GERD therapy with sustained release formulation providing significant improvement in symptoms and quality of life.",
+    "keyFeatures": [
+      "Significant and remarkable improvement in GERD symptoms",
+      "94% patients rate excellent or good relief",
+      "Improves quality of life",
+      "Very well tolerated by patients"
+    ],
+    "isActive": true,
+    "commonSideEffects": [
+      "Headache",
+      "Dizziness",
+      "Dry mouth"
+    ],
+    "indicatedIn": [
+      "GERD",
+      "Acid reflux",
+      "Dyspepsia"
+    ],
+    "drugInteractions": [
+      "Warfarin",
+      "Atazanavir",
+      "Iron supplements"
+    ],
+    "source": "Biofrench"
+  },
+  {
+    "id": "biomin",
+    "activeIngredient": "Multivitamin + Multimineral + Iron + Lysine",
+    "brandName": "BIOMIN",
+    "category": "Vitamins & Supplements",
+    "dosage": "Tablet: Daily tablet; Syrup: 10ml twice daily",
+    "type": "Over-the-counter",
+    "price": "Tablet: ₹195, Syrup: ₹165",
+    "description": "Antioxidant-enriched B-complex vitamin formula supporting cell regulation and delaying degenerative disorders.",
+    "keyFeatures": [
+      "Antioxidant enriched B-complex formula",
+      "Extends support of inositol as regulator and integrator of cell mechanisms",
+      "Provides built-in haemonutrients, osteonutrients, and neurotients",
+      "Useful in delaying progress of degenerative disorders"
+    ],
+    "isActive": true,
+    "commonSideEffects": [
+      "Mild nausea",
+      "Metallic taste",
+      "Stomach upset",
+      "Teeth staining",
+      "Constipation"
+    ],
+    "indicatedIn": [
+      "Diabetes mellitus",
+      "Hypercholesterolaemia",
+      "Premature wrinkling of the skin",
+      "Premature greying of hair",
+      "Peripheral neuropathy",
+      "Osteoarthrosis",
+      "Cataract and glaucoma",
+      "Hypertension",
+      "Senile dementia",
+      "Parkinsonism"
+    ],
+    "drugInteractions": [
+      "Antibiotics",
+      "Thyroid medications",
+      "Blood thinners",
+      "Tetracyclines",
+      "Antacids",
+      "Coffee/tea"
+    ],
+    "source": "Biofrench"
+  },
+  {
+    "id": "bioasp",
+    "activeIngredient": "Aceclofenac + Serratiopeptidase + Paracetamol",
+    "brandName": "BIO ASP",
+    "category": "Analgesics",
+    "dosage": "Aceclofenac 100mg + Serratiopeptidase 15mg + Paracetamol 325mg",
+    "type": "Over-the-counter",
+    "price": "₹45",
+    "description": "Combination therapy for painful inflammatory conditions, providing total relief from pain and swelling.",
+    "keyFeatures": [
+      "Stimulates cartilage matrix synthesis",
+      "Superior to Diclofenac in arthritis pain",
+      "Analgesic and anti-inflammatory effects",
+      "Rapid absorption from GI tract",
+      "Reduces swelling and improves mobility",
+      "Effective in post-surgical pain, dental pain, post-partum hematoma, and soft tissue injury"
+    ],
+    "isActive": true,
+    "commonSideEffects": [
+      "Stomach irritation",
+      "Bleeding risk",
+      "Nausea"
+    ],
+    "indicatedIn": [
+      "Post-surgical orthopaedic pain",
+      "Dental pain due to infection",
+      "Post-partum hematoma",
+      "Soft tissue injury",
+      "Painful inflammatory conditions"
+    ],
+    "drugInteractions": [
+      "Warfarin",
+      "Methotrexate",
+      "ACE inhibitors"
+    ],
+    "source": "Biofrench"
+  },
+  {
+    "id": "avilac",
+    "activeIngredient": "Bacillus Mesentericus (15 million spores) + Clostridium Butyricum (15 million spores) + Fructooligosaccharides (100mg) + Lactobacillus Acidophilus (15 million spores) + Streptococcus Thermophilus (15 million spores)",
+    "brandName": "Avilac Capsule",
+    "category": "Probiotics & Prebiotics",
+    "dosage": "10 capsules",
+    "type": "Over-the-counter",
+    "price": "₹98",
+    "description": "Avilac Capsule includes probiotics and prebiotics that aid in re-establishing good bacteria in your gut. It is suitable for the digestive system and helps strengthen the gut. It supports the digestive system and helps relieve diarrhoea and constipation.",
+    "keyFeatures": [
+      "L-glutamine",
+      "Probiotics",
+      "Prebiotics",
+      "It is a probiotic-friendly bacterium that helps promote digestive health",
+      "It helps in balancing the good bacteria in your gut",
+      "It can help relieve constipation and loose motions"
+    ],
+    "isActive": true,
+    "commonSideEffects": [],
+    "indicatedIn": [
+      "Digestive health",
+      "Constipation",
+      "Diarrhoea",
+      "Gut flora balance"
+    ],
+    "drugInteractions": [],
+    "source": "Avis Lifecare Pvt Ltd"
+  }
+]
