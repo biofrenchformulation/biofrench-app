@@ -73,9 +73,9 @@ fun MedicineCard(
                             .crossfade(true)
                             .build(),
                         imageLoader = imageLoader,
-                        contentDescription = null,
+                        contentDescription = medicine.activeIngredient,
                         modifier = Modifier.fillMaxSize(),
-                        contentScale = androidx.compose.ui.layout.ContentScale.Crop
+                        contentScale = androidx.compose.ui.layout.ContentScale.Fit
                     )
                 } else {
                     android.util.Log.d("MedicineCard", "No asset found for ${medicine.id}-1, showing fallback icon")

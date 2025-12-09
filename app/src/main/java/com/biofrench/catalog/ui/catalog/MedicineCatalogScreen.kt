@@ -47,7 +47,7 @@ fun MedicineCatalogScreen(
     var searchText by remember { mutableStateOf("") }
     var selectedSource by remember { mutableStateOf("Biofrench") }
     var showFullScreenImage by remember { mutableStateOf(false) }
-    var selectedMedicineId by remember { mutableStateOf<String?>(null) }
+    var selectedIndex by remember { mutableStateOf<Int?>(null) }
     var showOtherTab by remember { mutableStateOf(false) }
     val medicines by viewModel.medicines.collectAsState()
     val filteredMedicines = remember(searchText, medicines, selectedSource) {
@@ -202,8 +202,11 @@ fun MedicineCatalogScreen(
                         MedicineCard(
                             medicine = medicine,
                             onClick = {
-                                selectedMedicineId = medicine.id
-                                showFullScreenImage = true
+                                val index = filteredMedicines.indexOf(medicine)
+                                if (index >= 0) {
+                                    selectedIndex = index
+                                    showFullScreenImage = true
+                                }
                             },
                             aspectRatio = cardAspectRatio,
                             fixedHeight = 140.dp
@@ -237,12 +240,13 @@ fun MedicineCatalogScreen(
     }
 
     // Full screen image dialog
-    if (showFullScreenImage && selectedMedicineId != null) {
+    if (showFullScreenImage && selectedIndex != null) {
         FullScreenImageDialog(
-            medicineId = selectedMedicineId!!,
+            medicines = filteredMedicines,
+            initialIndex = selectedIndex!!,
             onDismiss = {
                 showFullScreenImage = false
-                selectedMedicineId = null
+                selectedIndex = null
             }
         )
     }

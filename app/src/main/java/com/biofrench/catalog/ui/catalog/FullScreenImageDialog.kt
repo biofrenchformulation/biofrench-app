@@ -1,8 +1,11 @@
 package com.biofrench.catalog.ui.catalog
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.*
@@ -22,13 +25,15 @@ import coil.decode.SvgDecoder
 import coil.request.ImageRequest
 import com.biofrench.catalog.R
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 fun FullScreenImageDialog(
-    medicineId: String,
+    medicines: List<Medicine>,
+    initialIndex: Int,
     onDismiss: () -> Unit
 ) {
     val context = LocalContext.current
+    val pagerState = rememberPagerState(pageCount = { medicines.size }, initialPage = initialIndex)
 
     Dialog(
         onDismissRequest = onDismiss,
@@ -57,53 +62,61 @@ fun FullScreenImageDialog(
                 )
             }
 
-            // Full screen image - use same logic as MedicineCard
-            val supportedExts = listOf("svg", "png", "jpg", "jpeg")
-            val foundAsset = supportedExts.firstNotNullOfOrNull { ext ->
-                val assetName = "${medicineId}-1.$ext"
-                try {
-                    context.assets.open("images/$assetName").close()
-                    assetName
-                } catch (_: Exception) {
-                    null
-                }
-            }
+            // Horizontal Pager for swiping between images
+            HorizontalPager(
+                state = pagerState,
+                modifier = Modifier.fillMaxSize()
+            ) { page ->
+                val medicine = medicines[page]
 
-            if (foundAsset != null) {
-                android.util.Log.d("FullScreenImageDialog", "Loading asset: file:///android_asset/images/$foundAsset")
-                val imageLoader = ImageLoader.Builder(context)
-                    .apply {
-                        if (foundAsset.endsWith(".svg", ignoreCase = true)) {
-                            components { add(SvgDecoder.Factory()) }
-                        }
+                // Full screen image - use same logic as MedicineCard
+                val supportedExts = listOf("svg", "png", "jpg", "jpeg")
+                val foundAsset = supportedExts.firstNotNullOfOrNull { ext ->
+                    val assetName = "${medicine.id}-1.$ext"
+                    try {
+                        context.assets.open("images/$assetName").close()
+                        assetName
+                    } catch (_: Exception) {
+                        null
                     }
-                    .build()
+                }
 
-                AsyncImage(
-                    model = ImageRequest.Builder(context)
-                        .data("file:///android_asset/images/$foundAsset")
-                        .crossfade(true)
-                        .build(),
-                    contentDescription = "Medicine Image",
-                    imageLoader = imageLoader,
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .clickable(onClick = onDismiss),
-                    contentScale = ContentScale.Fit
-                )
-            } else {
-                // Fallback if image not found
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .clickable(onClick = onDismiss),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text(
-                        text = "Image not available",
-                        color = Color.White,
-                        style = MaterialTheme.typography.headlineMedium
+                if (foundAsset != null) {
+                    android.util.Log.d("FullScreenImageDialog", "Loading asset: file:///android_asset/images/$foundAsset")
+                    val imageLoader = ImageLoader.Builder(context)
+                        .apply {
+                            if (foundAsset.endsWith(".svg", ignoreCase = true)) {
+                                components { add(SvgDecoder.Factory()) }
+                            }
+                        }
+                        .build()
+
+                    AsyncImage(
+                        model = ImageRequest.Builder(context)
+                            .data("file:///android_asset/images/$foundAsset")
+                            .crossfade(true)
+                            .build(),
+                        contentDescription = "Medicine Image",
+                        imageLoader = imageLoader,
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .clickable(onClick = onDismiss),
+                        contentScale = ContentScale.Fit
                     )
+                } else {
+                    // Fallback if image not found
+                    Box(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .clickable(onClick = onDismiss),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "Image not available",
+                            color = Color.White,
+                            style = MaterialTheme.typography.headlineMedium
+                        )
+                    }
                 }
             }
         }
