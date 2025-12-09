@@ -62,9 +62,7 @@ fun MedicineCatalogScreen(
             }
             .filter { med ->
                 searchText.isBlank() ||
-                med.activeIngredient.contains(searchText, ignoreCase = true) ||
-                med.brandName.contains(searchText, ignoreCase = true) ||
-                med.category.contains(searchText, ignoreCase = true)
+                med.brandName.contains(searchText, ignoreCase = true)
             }
             .map { it.toMedicine() }
     }
@@ -173,7 +171,7 @@ fun MedicineCatalogScreen(
             singleLine = true
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         // Medicine List
         if (filteredMedicines.isEmpty()) {
@@ -190,14 +188,14 @@ fun MedicineCatalogScreen(
             LazyVerticalGrid(
                 columns = GridCells.Fixed(columns),
                 modifier = Modifier.fillMaxSize(),
-                contentPadding = PaddingValues(8.dp),
-                verticalArrangement = Arrangement.spacedBy(8.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                contentPadding = PaddingValues(4.dp),
+                verticalArrangement = Arrangement.spacedBy(2.dp),
+                horizontalArrangement = Arrangement.spacedBy(4.dp)
             ) {
                 items(filteredMedicines) { medicine ->
                     Column(
                         horizontalAlignment = Alignment.CenterHorizontally,
-                        modifier = Modifier.padding(4.dp)
+                        modifier = Modifier.padding(2.dp)
                     ) {
                         MedicineCard(
                             medicine = medicine,
@@ -210,15 +208,6 @@ fun MedicineCatalogScreen(
                             },
                             aspectRatio = cardAspectRatio,
                             fixedHeight = 140.dp
-                        )
-                        Spacer(modifier = Modifier.height(4.dp))
-                        Text(
-                            text = medicine.brandName,
-                            style = MaterialTheme.typography.bodySmall,
-                            fontWeight = FontWeight.Medium,
-                            color = MaterialTheme.colorScheme.onSurface,
-                            maxLines = 2,
-                            modifier = Modifier.padding(horizontal = 4.dp)
                         )
                     }
                 }

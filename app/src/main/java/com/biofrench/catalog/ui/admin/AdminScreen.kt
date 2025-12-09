@@ -44,8 +44,6 @@ fun AdminScreen(
     val filteredMedicines = remember(searchText, medicines) {
         if (searchText.isBlank()) medicines else medicines.filter { med ->
             med.brandName.contains(searchText, ignoreCase = true) ||
-            med.activeIngredient.contains(searchText, ignoreCase = true) ||
-            med.category.contains(searchText, ignoreCase = true) ||
             med.stringId.contains(searchText, ignoreCase = true)
         }
     }
@@ -250,17 +248,6 @@ fun AdminScreen(
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         var brandName by remember { mutableStateOf(editingMedicine?.brandName ?: "") }
-                        var activeIngredient by remember { mutableStateOf(editingMedicine?.activeIngredient ?: "") }
-                        var category by remember { mutableStateOf(editingMedicine?.category ?: "") }
-                        var dosage by remember { mutableStateOf(editingMedicine?.dosage ?: "") }
-                        var type by remember { mutableStateOf(editingMedicine?.type ?: "") }
-                        var price by remember { mutableStateOf(editingMedicine?.price ?: "") }
-                        // imageName fields removed
-                        var description by remember { mutableStateOf(editingMedicine?.description ?: "") }
-                        var keyFeatures by remember { mutableStateOf(editingMedicine?.keyFeatures?.joinToString("\n") ?: "") }
-                        var commonSideEffects by remember { mutableStateOf(editingMedicine?.commonSideEffects?.joinToString("\n") ?: "") }
-                        var indicatedIn by remember { mutableStateOf(editingMedicine?.indicatedIn?.joinToString("\n") ?: "") }
-                        var drugInteractions by remember { mutableStateOf(editingMedicine?.drugInteractions?.joinToString("\n") ?: "") }
                         var source by remember { mutableStateOf(editingMedicine?.source ?: "Biofrench") }
                         var stringId by remember { mutableStateOf(editingMedicine?.stringId ?: "") }
                         var showSuccess by remember { mutableStateOf(false) }
@@ -287,99 +274,13 @@ fun AdminScreen(
                             label = { Text("Source*") },
                             modifier = Modifier.fillMaxWidth()
                         )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = activeIngredient,
-                            onValueChange = { activeIngredient = it },
-                            label = { Text("Active Ingredient*") },
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = category,
-                            onValueChange = { category = it },
-                            label = { Text("Category*") },
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = dosage,
-                            onValueChange = { dosage = it },
-                            label = { Text("Dosage*") },
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = type,
-                            onValueChange = { type = it },
-                            label = { Text("Type") },
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = price,
-                            onValueChange = { price = it },
-                            label = { Text("Price") },
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        // imageName fields removed
-                        OutlinedTextField(
-                            value = description,
-                            onValueChange = { description = it },
-                            label = { Text("Description") },
-                            modifier = Modifier.fillMaxWidth(),
-                            minLines = 3
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = keyFeatures,
-                            onValueChange = { keyFeatures = it },
-                            label = { Text("Key Features (one per line)") },
-                            modifier = Modifier.fillMaxWidth(),
-                            minLines = 3
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = commonSideEffects,
-                            onValueChange = { commonSideEffects = it },
-                            label = { Text("Common Side Effects (one per line)") },
-                            modifier = Modifier.fillMaxWidth(),
-                            minLines = 3
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = indicatedIn,
-                            onValueChange = { indicatedIn = it },
-                            label = { Text("Indicated In (one per line)") },
-                            modifier = Modifier.fillMaxWidth(),
-                            minLines = 3
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = drugInteractions,
-                            onValueChange = { drugInteractions = it },
-                            label = { Text("Drug Interactions (one per line)") },
-                            modifier = Modifier.fillMaxWidth(),
-                            minLines = 3
-                        )
                         Button(
                             onClick = {
                                 val medicine = MedicineEntity(
                                     id = editingMedicine?.id ?: 0,
                                     stringId = stringId,
                                     brandName = brandName,
-                                    activeIngredient = activeIngredient,
-                                    category = category,
-                                    dosage = dosage,
-                                    type = type,
-                                    price = price,
-                                    description = description,
-                                    keyFeatures = keyFeatures.split("\n").filter { it.isNotBlank() },
                                     isActive = editingMedicine?.isActive ?: true,
-                                    commonSideEffects = commonSideEffects.split("\n").filter { it.isNotBlank() },
-                                    indicatedIn = indicatedIn.split("\n").filter { it.isNotBlank() },
-                                    drugInteractions = drugInteractions.split("\n").filter { it.isNotBlank() },
                                     source = source
                                 )
                                 if (editingMedicine == null) {
@@ -390,7 +291,7 @@ fun AdminScreen(
                                 showSuccess = true
                                 showDialog = false
                             },
-                            enabled = stringId.isNotBlank() && brandName.isNotBlank() && activeIngredient.isNotBlank() && category.isNotBlank() && dosage.isNotBlank(),
+                            enabled = stringId.isNotBlank() && brandName.isNotBlank(),
                             modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp)
                         ) {
                             Text(if (editingMedicine == null) "Add Medicine" else "Save Changes")

@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-@Database(entities = [MedicineEntity::class], version = 1, exportSchema = false)
+@Database(entities = [MedicineEntity::class], version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun medicineDao(): MedicineDao
 
@@ -26,6 +26,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "biofrench-db"
                 )
+                .fallbackToDestructiveMigration()
                 .addCallback(object : RoomDatabase.Callback() {
                     override fun onCreate(db: SupportSQLiteDatabase) {
                         super.onCreate(db)

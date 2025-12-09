@@ -40,7 +40,8 @@ fun MedicineCard(
             disabledContainerColor = Color.Transparent,
             disabledContentColor = MaterialTheme.colorScheme.onSurface
         ),
-        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp) // No shadow
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), // No shadow
+        contentPadding = PaddingValues(0.dp)
     ) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -73,7 +74,7 @@ fun MedicineCard(
                             .crossfade(true)
                             .build(),
                         imageLoader = imageLoader,
-                        contentDescription = medicine.activeIngredient,
+                        contentDescription = medicine.brandName,
                         modifier = Modifier.fillMaxSize(),
                         contentScale = androidx.compose.ui.layout.ContentScale.Fit
                     )

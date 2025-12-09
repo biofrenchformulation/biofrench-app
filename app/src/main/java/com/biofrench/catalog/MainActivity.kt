@@ -15,7 +15,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.biofrench.catalog.ui.catalog.MedicineCatalogScreen
-import com.biofrench.catalog.ui.details.MedicineDetailScreen
 import com.biofrench.catalog.ui.theme.BioFrenchTheme
 import com.biofrench.catalog.ui.admin.AdminScreen
 import androidx.compose.runtime.remember
@@ -102,17 +101,6 @@ fun BioFrenchNavHost(
             com.biofrench.catalog.ui.admin.AdminScreen(
                 viewModel = adminViewModel,
                 onBackClick = { navController.popBackStack() }
-            )
-        }
-
-        // Medicine detail screen
-        composable("detail/{medicineId}") { backStackEntry ->
-            val medicineId = backStackEntry.arguments?.getString("medicineId") ?: ""
-            com.biofrench.catalog.ui.details.MedicineDetailScreen(
-                medicineId = medicineId,
-                onBackClick = {
-                    navController.popBackStack()
-                }
             )
         }
 
