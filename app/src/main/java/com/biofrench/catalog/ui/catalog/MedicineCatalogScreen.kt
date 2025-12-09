@@ -10,6 +10,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -115,7 +116,7 @@ fun MedicineCatalogScreen(
                     onClick = onThankYou,
                 ) {
                     Icon(
-                        painter = painterResource(id = R.drawable.ic_thank_you),
+                        Icons.Filled.Favorite,
                         contentDescription = "Thank You"
                     )
                 }
@@ -188,9 +189,9 @@ fun MedicineCatalogScreen(
             LazyVerticalGrid(
                 columns = GridCells.Fixed(columns),
                 modifier = Modifier.fillMaxSize(),
-                contentPadding = PaddingValues(4.dp),
-                verticalArrangement = Arrangement.spacedBy(2.dp),
-                horizontalArrangement = Arrangement.spacedBy(4.dp)
+                contentPadding = PaddingValues(0.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+                horizontalArrangement = Arrangement.spacedBy(2.dp)
             ) {
                 items(filteredMedicines) { medicine ->
                     Column(
@@ -207,7 +208,7 @@ fun MedicineCatalogScreen(
                                 }
                             },
                             aspectRatio = cardAspectRatio,
-                            fixedHeight = 140.dp
+                            fixedHeight = 50.dp
                         )
                     }
                 }
@@ -222,7 +223,7 @@ fun MedicineCatalogScreen(
             modifier = Modifier.align(Alignment.CenterHorizontally)
         ) {
             Icon(
-                painter = painterResource(id = R.drawable.ic_thank_you),
+                Icons.Filled.Favorite,
                 contentDescription = "Thank You"
             )
         }

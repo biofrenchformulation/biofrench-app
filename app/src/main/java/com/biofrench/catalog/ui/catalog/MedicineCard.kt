@@ -27,21 +27,14 @@ fun MedicineCard(
     aspectRatio: Float = 0.9f,
     fixedHeight: Dp = 140.dp
 ) {
-    Card(
+    Surface(
         modifier = modifier
             .fillMaxWidth()
             .aspectRatio(aspectRatio)
             .height(fixedHeight)
             .clickable { onClick() },
-        shape = RoundedCornerShape(20.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = Color.Transparent, // No white background
-            contentColor = MaterialTheme.colorScheme.onSurface,
-            disabledContainerColor = Color.Transparent,
-            disabledContentColor = MaterialTheme.colorScheme.onSurface
-        ),
-        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp), // No shadow
-        contentPadding = PaddingValues(0.dp)
+        color = Color.Transparent,
+        shadowElevation = 0.dp
     ) {
         Box(
             modifier = Modifier.fillMaxSize(),
