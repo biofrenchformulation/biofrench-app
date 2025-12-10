@@ -17,6 +17,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.painterResource
 import com.biofrench.catalog.R
+
+/**
+ * Main catalog screen displaying medicines in a grid layout.
+ * 
+ * Features:
+ * - Search functionality
+ * - Source filtering (Biofrench/Affiliate/Other tabs)
+ * - Grid-based medicine display
+ * - Full-screen image viewer
+ * 
+ * @param viewModel ViewModel managing medicine data
+ * @param onAdminClick Callback when admin settings button is clicked
+ * @param onThankYou Callback when thank you button is clicked
+ * @param columns Number of columns in the grid (default: 3)
+ * @param cardAspectRatio Aspect ratio for medicine cards (default: 0.9)
+ */
 @Composable
 fun MedicineCatalogScreen(
     viewModel: MedicineCatalogViewModel,
@@ -25,14 +41,21 @@ fun MedicineCatalogScreen(
     columns: Int = 3,
     cardAspectRatio: Float = 0.9f
 ) {
+    // UI state variables
     var searchText by remember { mutableStateOf("") }
     var selectedSource by remember { mutableStateOf("Biofrench") }
     var showFullScreenImage by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableStateOf<Int?>(null) }
     var showOtherTab by remember { mutableStateOf(false) }
+    
+    // Observe medicines from ViewModel
     val medicines by viewModel.medicines.collectAsState()
+    
+    // Filter medicines based on source and search text
+    // Recalculated whenever searchText, medicines, or selectedSource changes
     val filteredMedicines = remember(searchText, medicines, selectedSource) {
         medicines
+            // Filter by source tab
             .filter { med ->
                 when (selectedSource) {
                     "Biofrench" -> med.source.equals("Biofrench", ignoreCase = true)
@@ -41,10 +64,12 @@ fun MedicineCatalogScreen(
                     else -> true
                 }
             }
+            // Filter by search text
             .filter { med ->
                 searchText.isBlank() ||
                 med.brandName.contains(searchText, ignoreCase = true)
             }
+            // Convert to UI model
             .map { it.toMedicine() }
     }
 
@@ -53,7 +78,7 @@ fun MedicineCatalogScreen(
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // Header with logo, title, and Admin button
+        // Header with logo, title, and action buttons
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
