@@ -25,13 +25,13 @@ import com.biofrench.catalog.R
  * - Search functionality
  * - Source filtering (Biofrench/Affiliate/Other tabs)
  * - Grid-based medicine display
- * - Full-screen image viewer
+ * - Full-screen image viewer with swipe support
  * 
  * @param viewModel ViewModel managing medicine data
  * @param onAdminClick Callback when admin settings button is clicked
  * @param onThankYou Callback when thank you button is clicked
  * @param columns Number of columns in the grid (default: 3)
- * @param cardAspectRatio Aspect ratio for medicine cards (default: 0.9)
+ * @param cardAspectRatio Aspect ratio for medicine cards (default: 1.55 for rectangular cards)
  */
 @Composable
 fun MedicineCatalogScreen(
@@ -39,7 +39,7 @@ fun MedicineCatalogScreen(
     onAdminClick: () -> Unit,
     onThankYou: () -> Unit,
     columns: Int = 3,
-    cardAspectRatio: Float = 0.9f
+    cardAspectRatio: Float = 1.55f
 ) {
     // UI state variables
     var searchText by remember { mutableStateOf("") }
@@ -195,8 +195,8 @@ fun MedicineCatalogScreen(
                 columns = GridCells.Fixed(columns),
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = PaddingValues(0.dp),
-                verticalArrangement = Arrangement.spacedBy(20.dp),
-                horizontalArrangement = Arrangement.spacedBy(0.8.dp)
+                verticalArrangement = Arrangement.spacedBy(8.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 items(filteredMedicines) { medicine ->
                     Column(

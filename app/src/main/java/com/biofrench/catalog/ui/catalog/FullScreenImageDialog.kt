@@ -3,6 +3,8 @@ package com.biofrench.catalog.ui.catalog
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.ArrowBack
@@ -23,6 +25,7 @@ import coil.ImageLoader
 import coil.decode.SvgDecoder
 import coil.request.ImageRequest
 import com.biofrench.catalog.R
+import kotlinx.coroutines.launch
 
 @Composable
 fun FullScreenImageDialog(
@@ -31,8 +34,11 @@ fun FullScreenImageDialog(
     onDismiss: () -> Unit
 ) {
     val context = LocalContext.current
-    var currentIndex by remember { mutableStateOf(initialIndex) }
-    val currentMedicine = medicines.getOrNull(currentIndex)
+    val pagerState = rememberPagerState(
+        initialPage = initialIndex,
+        pageCount = { medicines.size }
+    )
+    val scope = rememberCoroutineScope()
 
     Dialog(
         onDismissRequest = onDismiss,
@@ -61,8 +67,12 @@ fun FullScreenImageDialog(
                 )
             }
 
-            // Current image display
-            currentMedicine?.let { medicine ->
+            // HorizontalPager for swipeable images
+            HorizontalPager(
+                state = pagerState,
+                modifier = Modifier.fillMaxSize()
+            ) { page ->
+                val medicine = medicines[page]
                 val foundAsset = findMedicineImageAsset(context, medicine.id)
 
                 if (foundAsset != null) {
@@ -104,7 +114,7 @@ fun FullScreenImageDialog(
                 }
             }
 
-            // Navigation buttons
+            // Navigation buttons and page indicator
             if (medicines.size > 1) {
                 Row(
                     modifier = Modifier
@@ -114,33 +124,41 @@ fun FullScreenImageDialog(
                 ) {
                     IconButton(
                         onClick = { 
-                            if (currentIndex > 0) currentIndex-- 
+                            scope.launch {
+                                if (pagerState.currentPage > 0) {
+                                    pagerState.animateScrollToPage(pagerState.currentPage - 1)
+                                }
+                            }
                         },
-                        enabled = currentIndex > 0
+                        enabled = pagerState.currentPage > 0
                     ) {
                         Icon(
                             imageVector = Icons.Default.ArrowBack,
                             contentDescription = "Previous",
-                            tint = if (currentIndex > 0) Color.White else Color.Gray
+                            tint = if (pagerState.currentPage > 0) Color.White else Color.Gray
                         )
                     }
                     
                     Text(
-                        text = "${currentIndex + 1} / ${medicines.size}",
+                        text = "${pagerState.currentPage + 1} / ${medicines.size}",
                         color = Color.White,
                         modifier = Modifier.align(Alignment.CenterVertically)
                     )
                     
                     IconButton(
                         onClick = { 
-                            if (currentIndex < medicines.size - 1) currentIndex++ 
+                            scope.launch {
+                                if (pagerState.currentPage < medicines.size - 1) {
+                                    pagerState.animateScrollToPage(pagerState.currentPage + 1)
+                                }
+                            }
                         },
-                        enabled = currentIndex < medicines.size - 1
+                        enabled = pagerState.currentPage < medicines.size - 1
                     ) {
                         Icon(
                             imageVector = Icons.Default.ArrowForward,
                             contentDescription = "Next",
-                            tint = if (currentIndex < medicines.size - 1) Color.White else Color.Gray
+                            tint = if (pagerState.currentPage < medicines.size - 1) Color.White else Color.Gray
                         )
                     }
                 }
