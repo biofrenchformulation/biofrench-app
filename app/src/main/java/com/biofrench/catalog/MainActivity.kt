@@ -17,6 +17,8 @@ import androidx.navigation.compose.rememberNavController
 import com.biofrench.catalog.ui.catalog.MedicineCatalogScreen
 import com.biofrench.catalog.ui.theme.BioFrenchTheme
 import com.biofrench.catalog.ui.admin.AdminScreen
+import com.biofrench.catalog.ui.screens.WelcomeScreen
+import com.biofrench.catalog.ui.screens.ThankYouScreen
 import androidx.compose.runtime.remember
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
@@ -105,14 +107,14 @@ fun BioFrenchNavHost(
     ) {
         // Welcome screen - shown on app launch
         composable("welcome") {
-            com.biofrench.catalog.ui.welcome.WelcomeScreen(
+            WelcomeScreen(
                 onContinue = { navController.navigate("catalog") }
             )
         }
 
         // Main catalog screen - browse and search medicines
         composable("catalog") {
-            com.biofrench.catalog.ui.catalog.MedicineCatalogScreen(
+            MedicineCatalogScreen(
                 viewModel = catalogViewModel,
                 onAdminClick = { navController.navigate("admin") },
                 onThankYou = { navController.navigate("thankyou") }
@@ -121,7 +123,7 @@ fun BioFrenchNavHost(
 
         // Admin screen - manage medicine database
         composable("admin") {
-            com.biofrench.catalog.ui.admin.AdminScreen(
+            AdminScreen(
                 viewModel = adminViewModel,
                 onBackClick = { navController.popBackStack() }
             )
@@ -129,7 +131,7 @@ fun BioFrenchNavHost(
 
         // Thank you screen
         composable("thankyou") {
-            com.biofrench.catalog.ui.catalog.ThankYouScreen()
+            ThankYouScreen()
         }
     }
 }

@@ -21,6 +21,7 @@ BioFrench pharmaceutical catalog Android application built with modern Android d
 app/src/main/java/com/biofrench/catalog/
 ├── MainActivity.kt                 # Single activity with navigation setup
 ├── BioFrenchApplication.kt        # Application class for initialization
+├── AppConfig.kt                    # Centralized configuration
 ├── data/
 │   ├── model/
 │   │   └── MedicineEntity.kt      # Database entity for medicines
@@ -42,10 +43,10 @@ app/src/main/java/com/biofrench/catalog/
     │   ├── Medicine.kt                 # UI model
     │   ├── MedicineMapper.kt           # Entity to UI model conversion
     │   ├── ImageUtils.kt               # Image loading utilities
-    │   ├── FullScreenImageDialog.kt    # Image viewer
-    │   └── ThankYouScreen.kt           # Thank you page
-    ├── welcome/
-    │   └── WelcomeScreen.kt       # Initial welcome screen
+    │   └── FullScreenImageDialog.kt    # Image viewer
+    ├── screens/
+    │   ├── WelcomeScreen.kt       # Welcome/splash screen
+    │   └── ThankYouScreen.kt      # Thank you page
     └── theme/
         ├── Theme.kt               # Material 3 theme configuration
         ├── Color.kt               # Color palette

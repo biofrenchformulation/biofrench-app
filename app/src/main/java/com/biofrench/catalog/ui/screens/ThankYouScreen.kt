@@ -1,4 +1,4 @@
-package com.biofrench.catalog.ui.catalog
+package com.biofrench.catalog.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
