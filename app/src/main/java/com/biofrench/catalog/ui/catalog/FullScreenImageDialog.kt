@@ -63,17 +63,7 @@ fun FullScreenImageDialog(
 
             // Current image display
             currentMedicine?.let { medicine ->
-                // Full screen image - use same logic as MedicineCard
-                val supportedExts = listOf("svg", "png", "jpg", "jpeg")
-                val foundAsset = supportedExts.firstNotNullOfOrNull { ext ->
-                    val assetName = "${medicine.id}-1.$ext"
-                    try {
-                        context.assets.open("images/$assetName").close()
-                        assetName
-                    } catch (_: Exception) {
-                        null
-                    }
-                }
+                val foundAsset = findMedicineImageAsset(context, medicine.id)
 
                 if (foundAsset != null) {
                     android.util.Log.d("FullScreenImageDialog", "Loading asset: file:///android_asset/images/$foundAsset")
