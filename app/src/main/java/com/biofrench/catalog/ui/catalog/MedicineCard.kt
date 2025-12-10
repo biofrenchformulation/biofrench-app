@@ -40,18 +40,9 @@ fun MedicineCard(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
-                // Use id-based image logic: try id-1 with supported extensions
                 val context = androidx.compose.ui.platform.LocalContext.current
-                val supportedExts = listOf("svg", "png", "jpg", "jpeg")
-                val foundAsset = supportedExts.firstNotNullOfOrNull { ext ->
-                    val assetName = "${medicine.id}-1.$ext"
-                    try {
-                        context.assets.open("images/$assetName").close()
-                        assetName
-                    } catch (_: Exception) {
-                        null
-                    }
-                }
+                val foundAsset = findMedicineImageAsset(context, medicine.id)
+                
                 if (foundAsset != null) {
                     android.util.Log.d("MedicineCard", "Loading asset: file:///android_asset/images/$foundAsset")
                     val imageLoader = coil.ImageLoader.Builder(context)

@@ -17,10 +17,16 @@ import androidx.navigation.compose.rememberNavController
 import com.biofrench.catalog.ui.catalog.MedicineCatalogScreen
 import com.biofrench.catalog.ui.theme.BioFrenchTheme
 import com.biofrench.catalog.ui.admin.AdminScreen
+import com.biofrench.catalog.ui.screens.WelcomeScreen
+import com.biofrench.catalog.ui.screens.ThankYouScreen
 import androidx.compose.runtime.remember
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 
+/**
+ * Main Activity for the BioFrench Catalog application.
+ * This is the single activity that hosts all screens using Jetpack Compose navigation.
+ */
 class MainActivity : ComponentActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,14 +44,22 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+/**
+ * Root composable for the BioFrench application.
+ * Sets up database, repository, ViewModels, and navigation.
+ */
 @Composable
 fun BioFrenchApp() {
     val navController = rememberNavController()
     val context = androidx.compose.ui.platform.LocalContext.current
+    
+    // Initialize database and repository - done once and remembered
     val db = remember {
         com.biofrench.catalog.data.database.AppDatabase.getDatabase(context.applicationContext)
     }
     val repository = remember { com.biofrench.catalog.data.repository.MedicineRepository(db.medicineDao()) }
+    
+    // Create ViewModels with repository dependency
     val catalogViewModel = androidx.lifecycle.viewmodel.compose.viewModel<
         com.biofrench.catalog.ui.catalog.MedicineCatalogViewModel>(
         factory = androidx.lifecycle.viewmodel.viewModelFactory {
@@ -58,6 +72,7 @@ fun BioFrenchApp() {
             initializer { com.biofrench.catalog.ui.admin.AdminViewModel(repository) }
         }
     )
+    
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         BioFrenchNavHost(
             navController = navController,
@@ -68,6 +83,16 @@ fun BioFrenchApp() {
     }
 }
 
+/**
+ * Navigation host for the BioFrench application.
+ * Defines all navigation routes and screen destinations.
+ * 
+ * Navigation Routes:
+ * - "welcome" - Initial welcome/splash screen
+ * - "catalog" - Main medicine catalog screen (default after welcome)
+ * - "admin" - Admin panel for medicine management
+ * - "thankyou" - Thank you screen
+ */
 @Composable
 fun BioFrenchNavHost(
     navController: NavHostController,
@@ -80,25 +105,25 @@ fun BioFrenchNavHost(
         startDestination = "welcome",
         modifier = modifier
     ) {
-        // Welcome screen
+        // Welcome screen - shown on app launch
         composable("welcome") {
-            com.biofrench.catalog.ui.welcome.WelcomeScreen(
+            WelcomeScreen(
                 onContinue = { navController.navigate("catalog") }
             )
         }
 
-        // Main catalog screen
+        // Main catalog screen - browse and search medicines
         composable("catalog") {
-            com.biofrench.catalog.ui.catalog.MedicineCatalogScreen(
+            MedicineCatalogScreen(
                 viewModel = catalogViewModel,
                 onAdminClick = { navController.navigate("admin") },
                 onThankYou = { navController.navigate("thankyou") }
             )
         }
 
-        // Admin screen
+        // Admin screen - manage medicine database
         composable("admin") {
-            com.biofrench.catalog.ui.admin.AdminScreen(
+            AdminScreen(
                 viewModel = adminViewModel,
                 onBackClick = { navController.popBackStack() }
             )
@@ -106,7 +131,7 @@ fun BioFrenchNavHost(
 
         // Thank you screen
         composable("thankyou") {
-            com.biofrench.catalog.ui.catalog.ThankYouScreen()
+            ThankYouScreen()
         }
     }
 }

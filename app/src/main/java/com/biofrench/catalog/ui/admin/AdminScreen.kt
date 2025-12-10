@@ -19,7 +19,6 @@ import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.foundation.clickable
 import androidx.compose.ui.window.Dialog
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -296,14 +295,6 @@ fun AdminScreen(
                         ) {
                             Text(if (editingMedicine == null) "Add Medicine" else "Save Changes")
                         }
-                        Spacer(modifier = Modifier.height(8.dp))
-                        OutlinedTextField(
-                            value = stringId,
-                            onValueChange = { stringId = it },
-                            label = { Text("Unique ID (for image)") },
-                            modifier = Modifier.fillMaxWidth(),
-                            singleLine = true
-                        )
                         if (showSuccess) {
                             Spacer(modifier = Modifier.height(16.dp))
                             Text("Medicine ${if (editingMedicine != null) "updated" else "added"} successfully!", color = MaterialTheme.colorScheme.primary)
