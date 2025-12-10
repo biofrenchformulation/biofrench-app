@@ -195,8 +195,8 @@ fun MedicineCatalogScreen(
                 columns = GridCells.Fixed(columns),
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = PaddingValues(0.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp),
-                horizontalArrangement = Arrangement.spacedBy(2.dp)
+                verticalArrangement = Arrangement.spacedBy(20.dp),
+                horizontalArrangement = Arrangement.spacedBy(0.8.dp)
             ) {
                 items(filteredMedicines) { medicine ->
                     Column(
