@@ -1,7 +1,6 @@
 package com.biofrench.catalog.ui.catalog
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -15,28 +14,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import com.biofrench.catalog.ui.catalog.FullScreenImageDialog
-import com.biofrench.catalog.ui.theme.BioFrenchTheme
 import com.biofrench.catalog.R
-import com.biofrench.catalog.ui.theme.primaryButtonColors
-import com.biofrench.catalog.ui.catalog.Medicine
-import com.biofrench.catalog.ui.catalog.MedicineCard
-import com.biofrench.catalog.ui.catalog.toMedicine
-import com.biofrench.catalog.ui.catalog.FullScreenImageDialog
-import com.biofrench.catalog.data.database.AppDatabase
-import com.biofrench.catalog.data.repository.MedicineRepository
-import com.biofrench.catalog.ui.catalog.MedicineCatalogViewModel
-import androidx.lifecycle.viewmodel.viewModelFactory
-import androidx.lifecycle.viewmodel.initializer
-import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.room.Room
-
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MedicineCatalogScreen(
     viewModel: MedicineCatalogViewModel,
