@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme for dark mode -->
-    <style name="Theme.BioFrenchCatalog" parent="Theme.Material3.DynamicColors.Dark">
+    <style name="Theme.BioFrenchCatalog" parent="Theme.Material3.Dark">
         <!-- Primary brand color -->
         <item name="colorPrimary">@color/md_theme_dark_primary</item>
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
