@@ -87,15 +87,12 @@ echo Changes committed and pushed successfully.
 goto :eof
 
 :create_release
-setlocal enabledelayedexpansion
 echo    ===============   Creating GitHub Release    =================
-REM Fetch the latest release tag and details
-for /f "tokens=*" %%i in ('gh release list --limit 1 --json tagName --jq ".[0].tagName" 2^>nul') do set LATEST_TAG=%%i
-if not "!LATEST_TAG!"=="" (
-	echo Latest release tag: !LATEST_TAG!
-	
-) else (
-	echo No previous releases found
+
+REM Display last release information
+echo Fetching last release information...
+for /f "tokens=*" %%i in ('gh release list --limit 1 2^>nul') do (
+	echo Last release: %%i
 )
 
 set /p RELEASE_VERSION=Enter RELEASE_VERSION (e.g., v1.0):
@@ -121,20 +118,9 @@ git fetch --tags
 REM Get current commit hash and last release tag for comparison
 for /f %%i in ('git rev-parse HEAD') do set TMP_GIT_NEW=%%i
 
-REM Try to get the last tag using Windows-compatible commands
+REM Try to get the last tag, handle case where no tags exist
 set TMP_GIT_OLD_TAG=
-for /f "tokens=*" %%i in ('git tag --sort^-version:refname') do (
-    if not "%%i"=="%TAG%" (
-        set TMP_GIT_OLD_TAG=%%i
-        goto :found_last_tag
-    )
-)
-:found_last_tag
-
-REM If still no tag found, try git describe as fallback
-if "%TMP_GIT_OLD_TAG%"=="" (
-    for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD_TAG=%%i
-)
+for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD_TAG=%%i
 
 REM If no previous tag exists, use first commit
 if "%TMP_GIT_OLD_TAG%"=="" (
