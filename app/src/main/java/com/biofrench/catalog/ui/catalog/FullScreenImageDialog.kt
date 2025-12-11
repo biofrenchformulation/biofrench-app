@@ -1,7 +1,6 @@
 package com.biofrench.catalog.ui.catalog
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -16,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -92,17 +90,13 @@ fun FullScreenImageDialog(
                             .build(),
                         contentDescription = "Medicine Image",
                         imageLoader = imageLoader,
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .clickable(onClick = onDismiss),
+                        modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Fit
                     )
                 } else {
                     // Fallback if image not found
                     Box(
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .clickable(onClick = onDismiss),
+                        modifier = Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
