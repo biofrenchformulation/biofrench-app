@@ -106,9 +106,14 @@ if "x%RELEASE_VERSION%"=="x" (
 
 set TAG=%RELEASE_VERSION%
 
-REM Get current commit hash for comparison
+REM Get current commit hash and last release tag for comparison
 for /f %%i in ('git rev-parse HEAD') do set TMP_GIT_NEW=%%i
-for /f %%i in ('git rev-parse HEAD~1') do set TMP_GIT_OLD=%%i
+for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD=%%i
+
+REM If no previous tag exists, use first commit
+if "%TMP_GIT_OLD%"=="" (
+    for /f %%i in ('git rev-list --max-parents=0 HEAD') do set TMP_GIT_OLD=%%i
+)
 
 echo Creating git tag %TAG%...
 git tag -a %TAG% -m "Release %TAG%"
@@ -120,6 +125,7 @@ set /p RELEASE_NOTES=Enter RELEASE_NOTES:
 echo Uploading files to GitHub release:
 echo - APK: %APK_OUTPUT_DIR%\release\biofrench-android-app.apk
 echo - Medicine Data: %APP_DIR%\app\src\main\assets\medicines.json
+echo - Comparing changes from %TMP_GIT_OLD% to %TMP_GIT_NEW%
 
 REM === Create GitHub Release with comparison URL ===
 gh release create %TAG% ^
