@@ -112,11 +112,17 @@ git fetch --tags
 
 REM Get current commit hash and last release tag for comparison
 for /f %%i in ('git rev-parse HEAD') do set TMP_GIT_NEW=%%i
-for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD=%%i
+
+REM Try to get the last tag, handle case where no tags exist
+set TMP_GIT_OLD_TAG=
+for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD_TAG=%%i
 
 REM If no previous tag exists, use first commit
-if "%TMP_GIT_OLD%"=="" (
+if "%TMP_GIT_OLD_TAG%"=="" (
     for /f %%i in ('git rev-list --max-parents=0 HEAD') do set TMP_GIT_OLD=%%i
+    set TMP_GIT_OLD_TAG=initial-commit
+) else (
+    set TMP_GIT_OLD=%TMP_GIT_OLD_TAG%
 )
 
 echo Creating git tag %TAG%...
@@ -129,13 +135,13 @@ set /p RELEASE_NOTES=Enter RELEASE_NOTES:
 echo Uploading files to GitHub release:
 echo - APK: %APK_OUTPUT_DIR%\release\biofrench-android-app.apk
 echo - Medicine Data: %APP_DIR%\app\src\main\assets\medicines.json
-echo - Comparing changes from %TMP_GIT_OLD% to %TMP_GIT_NEW%
+echo - Comparing changes from %TMP_GIT_OLD_TAG% to %TAG%
 
 REM === Create GitHub Release with comparison URL ===
 gh release create %TAG% ^
   --title "%TAG%" ^
   --target "%TO_BRANCH%" ^
-  --notes "Changes from %TMP_GIT_OLD% to %TMP_GIT_NEW%: %RELEASE_NOTES%" ^
+  --notes "Changes from %TMP_GIT_OLD_TAG% to %TAG%: %RELEASE_NOTES%" ^
   "%APK_OUTPUT_DIR%\release\biofrench-android-app.apk" ^
   "%APP_DIR%\app\src\main\assets\medicines.json"
 
