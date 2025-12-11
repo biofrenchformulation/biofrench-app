@@ -46,6 +46,14 @@ jobs:
             exit 1
           fi
       
+      - name: Verify medicines.json exists
+        run: |
+          if [ ! -f "app/src/main/assets/medicines.json" ]; then
+            echo "Error: medicines.json file not found!"
+            exit 1
+          fi
+          echo "medicines.json file exists and is ready for upload"
+      
       - name: Check if tag exists
         id: check_tag
         run: |
