@@ -37,6 +37,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    // Custom APK naming
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def apkName = "biofrench-android-app"
+            if (variant.buildType.name == "release") {
+                apkName += ".apk"
+            } else {
+                apkName += "-debug.apk"
+            }
+            outputFileName = apkName
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11

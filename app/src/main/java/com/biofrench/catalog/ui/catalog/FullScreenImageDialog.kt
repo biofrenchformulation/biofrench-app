@@ -17,7 +17,8 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -52,20 +53,6 @@ fun FullScreenImageDialog(
                 .fillMaxSize()
                 .background(Color.Black)
         ) {
-            // Close button
-            IconButton(
-                onClick = onDismiss,
-                modifier = Modifier
-                    .align(Alignment.TopEnd)
-                    .padding(16.dp)
-            ) {
-                Icon(
-                    imageVector = Icons.Default.Close,
-                    contentDescription = "Close",
-                    tint = Color.White
-                )
-            }
-
             // Swipeable image display
             val medicine = medicines[currentPage]
             val foundAsset = findMedicineImageAsset(context, medicine.id)
@@ -84,6 +71,9 @@ fun FullScreenImageDialog(
                             }
                         }
                     }
+                    .clickable(onClick = onDismiss)
+                    .semantics { testTag = "fullScreenDialog" },
+                contentAlignment = Alignment.Center
             ) {
                 if (foundAsset != null) {
                     android.util.Log.d("FullScreenImageDialog", "Loading asset: file:///android_asset/images/$foundAsset")
@@ -118,6 +108,20 @@ fun FullScreenImageDialog(
                         )
                     }
                 }
+            }
+
+            // Close button (drawn on top)
+            IconButton(
+                onClick = onDismiss,
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .padding(16.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Close,
+                    contentDescription = "Close",
+                    tint = Color.White
+                )
             }
 
             // Navigation buttons and page indicator
