@@ -109,6 +109,6 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
-    // Compose Foundation
-    implementation 'androidx.compose.foundation:foundation:1.5.0'
+    // Compose Foundation with Pager for swipeable full-screen images
+    implementation 'androidx.compose.foundation:foundation:1.6.0'
 }

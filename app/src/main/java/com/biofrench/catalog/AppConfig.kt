@@ -13,8 +13,9 @@ object AppConfig {
         /** Number of columns in the medicine grid (increase for more columns, decrease for fewer) */
         const val CATALOG_GRID_COLUMNS = 3
         
-        /** Aspect ratio for medicine cards (1.0 = square, < 1.0 = portrait, > 1.0 = landscape) */
-        const val MEDICINE_CARD_ASPECT_RATIO = 0.9f
+        /** Aspect ratio for medicine cards (1.0 = square, < 1.0 = portrait, > 1.0 = landscape) 
+         *  1.55 matches the image dimensions (1224x792) for rectangular cards */
+        const val MEDICINE_CARD_ASPECT_RATIO = 1.55f
         
         /** Fixed height for medicine cards in dp */
         const val MEDICINE_CARD_HEIGHT_DP = 50
