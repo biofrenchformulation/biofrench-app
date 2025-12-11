@@ -1,0 +1,85 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (e.g., v1.0.0)'
+        required: true
+        type: string
+      release_notes:
+        description: 'Release notes describing the changes'
+        required: true
+        type: string
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for git operations
+      
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'gradle'
+      
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      
+      - name: Run tests
+        run: ./gradlew testDebugUnitTest
+      
+      - name: Build release APK
+        run: ./gradlew assembleRelease
+      
+      - name: Verify APK exists
+        run: |
+          ls -lh app/build/outputs/apk/release/
+          if [ ! -f "app/build/outputs/apk/release/biofrench-android-app.apk" ]; then
+            echo "Error: APK file not found!"
+            exit 1
+          fi
+      
+      - name: Create and push tag
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git tag -a "${{ inputs.version }}" -m "Release ${{ inputs.version }}"
+          git push origin "${{ inputs.version }}"
+      
+      - name: Get commit information
+        id: commit_info
+        run: |
+          CURRENT_COMMIT=$(git rev-parse HEAD)
+          PREVIOUS_COMMIT=$(git rev-parse HEAD~1)
+          echo "current_commit=$CURRENT_COMMIT" >> $GITHUB_OUTPUT
+          echo "previous_commit=$PREVIOUS_COMMIT" >> $GITHUB_OUTPUT
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ inputs.version }}
+          name: ${{ inputs.version }}
+          body: |
+            ## Release Notes
+            ${{ inputs.release_notes }}
+            
+            ## Changes
+            Changes from ${{ steps.commit_info.outputs.previous_commit }} to ${{ steps.commit_info.outputs.current_commit }}
+            
+            ## Assets
+            - `biofrench-android-app.apk` - Release APK (signed)
+            - `medicines.json` - Medicine data catalog
+          files: |
+            app/build/outputs/apk/release/biofrench-android-app.apk
+            app/src/main/assets/medicines.json
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
