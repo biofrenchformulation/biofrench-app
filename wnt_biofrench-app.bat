@@ -87,7 +87,17 @@ echo Changes committed and pushed successfully.
 goto :eof
 
 :create_release
+setlocal enabledelayedexpansion
 echo    ===============   Creating GitHub Release    =================
+REM Fetch the latest release tag and details
+for /f "tokens=*" %%i in ('gh release list --limit 1 --json tagName --jq ".[0].tagName" 2^>nul') do set LATEST_TAG=%%i
+if not "!LATEST_TAG!"=="" (
+	echo Latest release tag: !LATEST_TAG!
+	
+) else (
+	echo No previous releases found
+)
+
 set /p RELEASE_VERSION=Enter RELEASE_VERSION (e.g., v1.0):
 if "x%RELEASE_VERSION%"=="x" (
 	echo No release version provided.
@@ -111,7 +121,9 @@ REM === Create GitHub Release with comparison URL ===
 gh release create %TAG% ^
   --title "%TAG%" ^
   --target "%TO_BRANCH%" ^
-  --notes "Changes from %TMP_GIT_OLD% to %TMP_GIT_NEW%: %RELEASE_NOTES%"
+  --notes "Changes from %TMP_GIT_OLD% to %TMP_GIT_NEW%: %RELEASE_NOTES%" ^
+  "%APK_OUTPUT_DIR%\release\biofrench-android-app.apk" ^
+  "%APP_DIR%\app\src\main\assets\medicines.json"
 
 echo GitHub release created successfully!
 goto :eof
