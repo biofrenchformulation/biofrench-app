@@ -118,9 +118,21 @@ git fetch --tags
 REM Get current commit hash and last release tag for comparison
 for /f %%i in ('git rev-parse HEAD') do set TMP_GIT_NEW=%%i
 
-REM Try to get the last tag, handle case where no tags exist
+REM Try to get the last semantic version tag (v1.0, v2.0, etc.)
 set TMP_GIT_OLD_TAG=
-for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD_TAG=%%i
+for /f "delims=" %%i in ('git tag --list 2^>nul ^| findstr "^v[0-9]" ^| sort /r') do (
+    set TMP_GIT_OLD_TAG=%%i
+    goto found_version_tag
+)
+:found_version_tag
+
+REM If no semantic version tags exist, use initial commit
+if "%TMP_GIT_OLD_TAG%"=="" (
+    for /f %%i in ('git rev-list --max-parents=0 HEAD') do set TMP_GIT_OLD=%%i
+    set TMP_GIT_OLD_TAG=initial-commit
+) else (
+    set TMP_GIT_OLD=%TMP_GIT_OLD_TAG%
+)
 
 REM If no previous tag exists, use first commit
 if "%TMP_GIT_OLD_TAG%"=="" (
