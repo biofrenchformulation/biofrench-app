@@ -117,6 +117,10 @@ git push origin %TAG%
 pause
 set /p RELEASE_NOTES=Enter RELEASE_NOTES:
 
+echo Uploading files to GitHub release:
+echo - APK: %APK_OUTPUT_DIR%\release\biofrench-android-app.apk
+echo - Medicine Data: %APP_DIR%\app\src\main\assets\medicines.json
+
 REM === Create GitHub Release with comparison URL ===
 gh release create %TAG% ^
   --title "%TAG%" ^
