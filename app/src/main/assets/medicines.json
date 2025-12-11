@@ -21,13 +21,6 @@
         "preferredAffiliate": true
     },
     {
-        "id": "ALSIFEN-180",
-        "brandName": "ALSIFEN 180",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
         "id": "ALSIFEN-M",
         "brandName": "ALSIFEN M",
         "isActive": true,
@@ -224,25 +217,11 @@
         "preferredAffiliate": true
     },
     {
-        "id": "ASVICEF-PS",
-        "brandName": "ASVICEF-PS",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
         "id": "ASVICEF-S 1.5",
         "brandName": "ASVICEF-S 1.5",
         "isActive": true,
         "source": "Avis Lifecare Pvt Ltd",
         "preferredAffiliate": true
-    },
-    {
-        "id": "ASVICEF-S 1.5",
-        "brandName": "ASVICEF-S 1.5",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
     },
     {
         "id": "ASVICEF-S-375",
@@ -273,20 +252,6 @@
         "preferredAffiliate": false
     },
     {
-        "id": "ASVICROCI-MR",
-        "brandName": "ASVICROCI-MR",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
-        "id": "ASVICROCI-P",
-        "brandName": "ASVICROCI-P",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
         "id": "ASVICROCI-P",
         "brandName": "ASVICROCI-P",
         "isActive": true,
@@ -301,29 +266,8 @@
         "preferredAffiliate": false
     },
     {
-        "id": "ASVICROCI-P-650",
-        "brandName": "ASVICROCI-P-650",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
         "id": "ASVICROCI-SP",
         "brandName": "ASVICROCI-SP",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
-        "id": "ASVICROCI-SP",
-        "brandName": "ASVICROCI-SP",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
-        "id": "ASVICROCI-TH-4",
-        "brandName": "ASVICROCI-TH-4",
         "isActive": true,
         "source": "Avis Lifecare Pvt Ltd",
         "preferredAffiliate": false
@@ -448,13 +392,6 @@
         "preferredAffiliate": true
     },
     {
-        "id": "ASVILEVO-M",
-        "brandName": "ASVILEVO-M",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
         "id": "ASVILEVO-OZ",
         "brandName": "ASVILEVO-OZ",
         "isActive": true,
@@ -518,13 +455,6 @@
         "preferredAffiliate": true
     },
     {
-        "id": "ASVIMOX-CV-625",
-        "brandName": "ASVIMOX-CV-625",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
-    },
-    {
         "id": "ASVIMOX-KT",
         "brandName": "ASVIMOX-KT",
         "isActive": true,
@@ -572,13 +502,6 @@
         "isActive": true,
         "source": "Avis Lifecare Pvt Ltd",
         "preferredAffiliate": true
-    },
-    {
-        "id": "ASVINEURO-D3",
-        "brandName": "ASVINEURO-D3",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
     },
     {
         "id": "ASVINEURO-FORTE",
@@ -915,13 +838,6 @@
         "isActive": true,
         "source": "Avis Lifecare Pvt Ltd",
         "preferredAffiliate": true
-    },
-    {
-        "id": "ASVITUS-DM Syrup",
-        "brandName": "ASVITUS-DM SYRUP",
-        "isActive": true,
-        "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
     },
     {
         "id": "ASVITUS-LC",
