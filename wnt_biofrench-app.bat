@@ -106,6 +106,10 @@ if "x%RELEASE_VERSION%"=="x" (
 
 set TAG=%RELEASE_VERSION%
 
+REM Fetch latest tags from remote to ensure we have all release tags
+echo Fetching latest tags from remote repository...
+git fetch --tags
+
 REM Get current commit hash and last release tag for comparison
 for /f %%i in ('git rev-parse HEAD') do set TMP_GIT_NEW=%%i
 for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD=%%i
