@@ -87,12 +87,15 @@ echo Changes committed and pushed successfully.
 goto :eof
 
 :create_release
+setlocal enabledelayedexpansion
 echo    ===============   Creating GitHub Release    =================
-
-REM Display last release information
-echo Fetching last release information...
-for /f "tokens=*" %%i in ('gh release list --limit 1 2^>nul') do (
-	echo Last release: %%i
+REM Fetch the latest release tag and details
+for /f "tokens=*" %%i in ('gh release list --limit 1 --json tagName --jq ".[0].tagName" 2^>nul') do set LATEST_TAG=%%i
+if not "!LATEST_TAG!"=="" (
+	echo Latest release tag: !LATEST_TAG!
+	
+) else (
+	echo No previous releases found
 )
 
 set /p RELEASE_VERSION=Enter RELEASE_VERSION (e.g., v1.0):
@@ -101,46 +104,11 @@ if "x%RELEASE_VERSION%"=="x" (
 	goto :eof
 )
 
-REM Check if tag already exists
-git tag --list | findstr "^%RELEASE_VERSION%$">nul
-if %errorlevel%==0 (
-	echo Error: Tag %RELEASE_VERSION% already exists!
-	echo Please choose a different version number.
-	goto :eof
-)
-
 set TAG=%RELEASE_VERSION%
 
-REM Fetch latest tags from remote to ensure we have all release tags
-echo Fetching latest tags from remote repository...
-git fetch --tags
-
-REM Get current commit hash and last release tag for comparison
+REM Get current commit hash for comparison
 for /f %%i in ('git rev-parse HEAD') do set TMP_GIT_NEW=%%i
-
-REM Try to get the last semantic version tag (v1.0, v2.0, etc.)
-set TMP_GIT_OLD_TAG=
-for /f "delims=" %%i in ('git tag --list 2^>nul ^| findstr "^v[0-9]" ^| sort /r') do (
-    set TMP_GIT_OLD_TAG=%%i
-    goto found_version_tag
-)
-:found_version_tag
-
-REM If no semantic version tags exist, use initial commit
-if "%TMP_GIT_OLD_TAG%"=="" (
-    for /f %%i in ('git rev-list --max-parents=0 HEAD') do set TMP_GIT_OLD=%%i
-    set TMP_GIT_OLD_TAG=initial-commit
-) else (
-    set TMP_GIT_OLD=%TMP_GIT_OLD_TAG%
-)
-
-REM If no previous tag exists, use first commit
-if "%TMP_GIT_OLD_TAG%"=="" (
-    for /f %%i in ('git rev-list --max-parents=0 HEAD') do set TMP_GIT_OLD=%%i
-    set TMP_GIT_OLD_TAG=initial-commit
-) else (
-    set TMP_GIT_OLD=%TMP_GIT_OLD_TAG%
-)
+for /f %%i in ('git rev-parse HEAD~1') do set TMP_GIT_OLD=%%i
 
 echo Creating git tag %TAG%...
 git tag -a %TAG% -m "Release %TAG%"
@@ -152,13 +120,12 @@ set /p RELEASE_NOTES=Enter RELEASE_NOTES:
 echo Uploading files to GitHub release:
 echo - APK: %APK_OUTPUT_DIR%\release\biofrench-android-app.apk
 echo - Medicine Data: %APP_DIR%\app\src\main\assets\medicines.json
-echo - Comparing changes from %TMP_GIT_OLD_TAG% to %TAG%
 
 REM === Create GitHub Release with comparison URL ===
 gh release create %TAG% ^
   --title "%TAG%" ^
   --target "%TO_BRANCH%" ^
-  --notes "Changes from %TMP_GIT_OLD_TAG% to %TAG%: %RELEASE_NOTES%" ^
+  --notes "Changes from %TMP_GIT_OLD% to %TMP_GIT_NEW%: %RELEASE_NOTES%" ^
   "%APK_OUTPUT_DIR%\release\biofrench-android-app.apk" ^
   "%APP_DIR%\app\src\main\assets\medicines.json"
 
