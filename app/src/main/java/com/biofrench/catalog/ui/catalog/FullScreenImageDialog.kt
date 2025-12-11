@@ -30,6 +30,7 @@ import com.biofrench.catalog.R
 import androidx.compose.animation.core.animateIntOffsetAsState
 import androidx.compose.animation.core.tween
 import kotlinx.coroutines.launch
+import kotlin.math.abs
 
 @Composable
 fun FullScreenImageDialog(
@@ -61,17 +62,27 @@ fun FullScreenImageDialog(
                 modifier = Modifier
                     .fillMaxSize()
                     .pointerInput(Unit) {
-                        detectHorizontalDragGestures { _, dragAmount ->
-                            if (dragAmount < -50 && currentPage < medicines.size - 1) {
-                                // Swipe left - next image
-                                currentPage++
-                            } else if (dragAmount > 50 && currentPage > 0) {
-                                // Swipe right - previous image
-                                currentPage--
+                        var totalDrag = 0f
+                        detectHorizontalDragGestures(
+                            onHorizontalDrag = { _, dragAmount ->
+                                totalDrag += dragAmount
+                            },
+                            onDragEnd = {
+                                if (totalDrag < -100) {
+                                    // Swipe left - next image
+                                    if (currentPage < medicines.size - 1) {
+                                        currentPage++
+                                    }
+                                } else if (totalDrag > 100) {
+                                    // Swipe right - previous image
+                                    if (currentPage > 0) {
+                                        currentPage--
+                                    }
+                                }
+                                totalDrag = 0f
                             }
-                        }
+                        )
                     }
-                    .clickable(onClick = onDismiss)
                     .semantics { testTag = "fullScreenDialog" },
                 contentAlignment = Alignment.Center
             ) {
