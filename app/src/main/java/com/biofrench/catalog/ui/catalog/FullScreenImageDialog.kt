@@ -1,20 +1,23 @@
 package com.biofrench.catalog.ui.catalog
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.pager.HorizontalPager
-import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.Close
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -23,6 +26,8 @@ import coil.ImageLoader
 import coil.decode.SvgDecoder
 import coil.request.ImageRequest
 import com.biofrench.catalog.R
+import androidx.compose.animation.core.animateIntOffsetAsState
+import androidx.compose.animation.core.tween
 import kotlinx.coroutines.launch
 
 @Composable
@@ -32,11 +37,7 @@ fun FullScreenImageDialog(
     onDismiss: () -> Unit
 ) {
     val context = LocalContext.current
-    val pagerState = rememberPagerState(
-        initialPage = initialIndex,
-        pageCount = { medicines.size }
-    )
-    val scope = rememberCoroutineScope()
+    var currentPage by remember { mutableStateOf(initialIndex) }
 
     Dialog(
         onDismissRequest = onDismiss,
@@ -65,14 +66,25 @@ fun FullScreenImageDialog(
                 )
             }
 
-            // HorizontalPager for swipeable images
-            HorizontalPager(
-                state = pagerState,
-                modifier = Modifier.fillMaxSize()
-            ) { page ->
-                val medicine = medicines[page]
-                val foundAsset = findMedicineImageAsset(context, medicine.id)
+            // Swipeable image display
+            val medicine = medicines[currentPage]
+            val foundAsset = findMedicineImageAsset(context, medicine.id)
 
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .pointerInput(Unit) {
+                        detectHorizontalDragGestures { _, dragAmount ->
+                            if (dragAmount < -50 && currentPage < medicines.size - 1) {
+                                // Swipe left - next image
+                                currentPage++
+                            } else if (dragAmount > 50 && currentPage > 0) {
+                                // Swipe right - previous image
+                                currentPage--
+                            }
+                        }
+                    }
+            ) {
                 if (foundAsset != null) {
                     android.util.Log.d("FullScreenImageDialog", "Loading asset: file:///android_asset/images/$foundAsset")
                     val imageLoader = ImageLoader.Builder(context)
@@ -117,42 +129,38 @@ fun FullScreenImageDialog(
                     horizontalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
                     IconButton(
-                        onClick = { 
-                            scope.launch {
-                                if (pagerState.currentPage > 0) {
-                                    pagerState.animateScrollToPage(pagerState.currentPage - 1)
-                                }
+                        onClick = {
+                            if (currentPage > 0) {
+                                currentPage--
                             }
                         },
-                        enabled = pagerState.currentPage > 0
+                        enabled = currentPage > 0
                     ) {
                         Icon(
-                            imageVector = Icons.Default.ArrowBack,
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                             contentDescription = "Previous",
-                            tint = if (pagerState.currentPage > 0) Color.White else Color.Gray
+                            tint = if (currentPage > 0) Color.White else Color.Gray
                         )
                     }
-                    
+
                     Text(
-                        text = "${pagerState.currentPage + 1} / ${medicines.size}",
+                        text = "${currentPage + 1} / ${medicines.size}",
                         color = Color.White,
                         modifier = Modifier.align(Alignment.CenterVertically)
                     )
-                    
+
                     IconButton(
-                        onClick = { 
-                            scope.launch {
-                                if (pagerState.currentPage < medicines.size - 1) {
-                                    pagerState.animateScrollToPage(pagerState.currentPage + 1)
-                                }
+                        onClick = {
+                            if (currentPage < medicines.size - 1) {
+                                currentPage++
                             }
                         },
-                        enabled = pagerState.currentPage < medicines.size - 1
+                        enabled = currentPage < medicines.size - 1
                     ) {
                         Icon(
-                            imageVector = Icons.Default.ArrowForward,
+                            imageVector = Icons.AutoMirrored.Filled.ArrowForward,
                             contentDescription = "Next",
-                            tint = if (pagerState.currentPage < medicines.size - 1) Color.White else Color.Gray
+                            tint = if (currentPage < medicines.size - 1) Color.White else Color.Gray
                         )
                     }
                 }

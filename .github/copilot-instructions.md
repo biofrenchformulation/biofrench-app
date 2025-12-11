@@ -43,20 +43,6 @@ The BioFrench app is a pharmaceutical catalog Android application built with mod
 ## Data Models
 
 ### MedicineEntity (Database)
-`kotlin
-data class MedicineEntity(
-    val id: Long = 0,
-    val genericName: String,
-    val brandName: String,
-    val category: String,
-    val dosage: String,
-    val imageName: String?,
-    val isActive: Boolean = true,
-    val sideEffects: List<String> = emptyList(),
-    val contraindications: List<String> = emptyList(),
-    val interactions: List<String> = emptyList()
-)
-`
 
 ### Medicine (UI Model)
 `kotlin
