@@ -1,2004 +1,1878 @@
 [
     {
-        "id":  "biodac",
-        "brandName":  "BIODAC 50MG",
-        "isActive":  true,
-        "source":  "Biofrench",
-        "preferredAffiliate":  true
+        "id": "ACOSVISS-300-ER",
+        "brandName": "ACOSVISS 300 ER",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "bical",
-        "brandName":  "BICAL D3",
-        "isActive":  true,
-        "source":  "Biofrench",
-        "preferredAffiliate":  true
+        "id": "ALSIFEN",
+        "brandName": "ALSIFEN",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "rabcid",
-        "brandName":  "RABCID DSR",
-        "isActive":  true,
-        "source":  "Biofrench",
-        "preferredAffiliate":  true
+        "id": "ALSIFEN-180",
+        "brandName": "ALSIFEN-180",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "biomin",
-        "brandName":  "BIOMIN",
-        "isActive":  true,
-        "source":  "Biofrench",
-        "preferredAffiliate":  true
+        "id": "ALSIFEN-M",
+        "brandName": "ALSIFEN M",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "bioasp",
-        "brandName":  "BIO ASP",
-        "isActive":  true,
-        "source":  "Biofrench",
-        "preferredAffiliate":  true
+        "id": "AOCTA-DERM",
+        "brandName": "AOCTA-DERM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ALSIFEN-180",
-        "brandName":  "ALSIFEN-180",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "APPYSVI",
+        "brandName": "APPYSVI",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-PS",
-        "brandName":  "ASVICEF-PS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "ARGISVIN",
+        "brandName": "ARGISVIN",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-S 1.5",
-        "brandName":  "ASVICEF-S 1.5",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "ARIACORT-40",
+        "brandName": "ARIACORT 40",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVILEVO-M",
-        "brandName":  "ASVILEVO-M",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "ARTIVIN-60",
+        "brandName": "ARTIVIN 60",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX-CV-625",
-        "brandName":  "ASVIMOX-CV-625",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "ASFLAX",
+        "brandName": "ASFLAX",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-D3",
-        "brandName":  "ASVINEURO-D3",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "ASPILE Capsule",
+        "brandName": "ASPILE CAPSULE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-DM Syrup",
-        "brandName":  "ASVITUS-DM Syrup",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "ASPILE Syrup",
+        "brandName": "ASPILE SYRUP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ESVMOFIN-DSR",
-        "brandName":  "ESVMOFIN-DSR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  true
+        "id": "ASV-CURE-PLUS",
+        "brandName": "ASV-CURE-PLUS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ACOSVISS-300-ER",
-        "brandName":  "ACOSVISS 300 ER",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASV-RIFA-200",
+        "brandName": "ASV-RIFA-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ALSIFEN",
-        "brandName":  "ALSIFEN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASV-RIFA-400",
+        "brandName": "ASV-RIFA-400",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ALSIFEN-180",
-        "brandName":  "ALSIFEN 180",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASV-RIFA-MZ",
+        "brandName": "ASV-RIFA-MZ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ALSIFEN-M",
-        "brandName":  "ALSIFEN M",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASV-URO",
+        "brandName": "ASV-URO",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "AOCTA-DERM",
-        "brandName":  "AOCTA-DERM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASV-XIME-OF",
+        "brandName": "ASV-XIME-OF",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "APPYSVI",
-        "brandName":  "APPYSVI",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVBOLIN-25",
+        "brandName": "ASVBOLIN-25",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ARGISVIN",
-        "brandName":  "ARGISVIN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVBOLIN-50",
+        "brandName": "ASVBOLIN-50",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ARIACORT-40",
-        "brandName":  "ARIACORT 40",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVCON-100",
+        "brandName": "ASVCON-100",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ARTIVIN-60",
-        "brandName":  "ARTIVIN 60",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVCON-200",
+        "brandName": "ASVCON-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASFLAX",
-        "brandName":  "ASFLAX",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIAZOLE",
+        "brandName": "ASVIAZOLE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASPILE Capsule",
-        "brandName":  "ASPILE CAPSULE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIAZOLE-20",
+        "brandName": "ASVIAZOLE-20",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASPILE Syrup",
-        "brandName":  "ASPILE SYRUP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIBEND-PLUS",
+        "brandName": "ASVIBEND-PLUS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASV-CURE-PLUS",
-        "brandName":  "ASV-CURE-PLUS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-1000",
+        "brandName": "ASVICEF-1000",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASV-RIFA-200",
-        "brandName":  "ASV-RIFA-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-125-DS",
+        "brandName": "ASVICEF-125-DS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASV-RIFA-400",
-        "brandName":  "ASV-RIFA-400",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-250",
+        "brandName": "ASVICEF-250",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASV-RIFA-MZ",
-        "brandName":  "ASV-RIFA-MZ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-500",
+        "brandName": "ASVICEF-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASV-URO",
-        "brandName":  "ASV-URO",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-CV-625",
+        "brandName": "ASVICEF-CV-625",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASV-XIME-OF",
-        "brandName":  "ASV-XIME-OF",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-PS",
+        "brandName": "ASVICEF-PS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "ASVBOLIN-25",
-        "brandName":  "ASVBOLIN-25",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-S 1.5",
+        "brandName": "ASVICEF-S 1.5",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "ASVBOLIN-50",
-        "brandName":  "ASVBOLIN-50",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-S-375",
+        "brandName": "ASVICEF-S-375",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVCON-100",
-        "brandName":  "ASVCON-100",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICEF-S-750",
+        "brandName": "ASVICEF-S-750",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVCON-200",
-        "brandName":  "ASVCON-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICORTI-100",
+        "brandName": "ASVICORTI-100",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIAZOLE",
-        "brandName":  "ASVIAZOLE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICROCI-MR",
+        "brandName": "ASVICROCI-MR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIAZOLE-20",
-        "brandName":  "ASVIAZOLE-20",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICROCI-P",
+        "brandName": "ASVICROCI-P",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIBEND-PLUS",
-        "brandName":  "ASVIBEND-PLUS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICROCI-P-650",
+        "brandName": "ASVICROCI-P-650",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-1000",
-        "brandName":  "ASVICEF-1000",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICROCI-SP",
+        "brandName": "ASVICROCI-SP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-125-DS",
-        "brandName":  "ASVICEF-125-DS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVICROCI-TH-4",
+        "brandName": "ASVICROCI-TH-4",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-250",
-        "brandName":  "ASVICEF-250",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIDICLO Spray",
+        "brandName": "ASVIDICLO SPRAY",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-500",
-        "brandName":  "ASVICEF-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIDICLO-GEL",
+        "brandName": "ASVIDICLO-GEL",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-CV-625",
-        "brandName":  "ASVICEF-CV-625",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIDICLO-INJ",
+        "brandName": "ASVIDICLO-INJ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-PS",
-        "brandName":  "ASVICEF-PS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIDICLO-P",
+        "brandName": "ASVIDICLO-P",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvicef-s 1.5",
-        "brandName":  "ASVICEF-S 1.5",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIDICLO-S",
+        "brandName": "ASVIDICLO-S",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-S-375",
-        "brandName":  "ASVICEF-S-375",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIDICLO-SP",
+        "brandName": "ASVIDICLO-SP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-S-750",
-        "brandName":  "ASVICEF-S-750",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIDOXY-100-LB",
+        "brandName": "ASVIDOXY-100-LB",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICORTI-100",
-        "brandName":  "ASVICORTI-100",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIHALE 200",
+        "brandName": "ASVIHALE 200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvicrori-mr",
-        "brandName":  "ASVICROCORI-MR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIHALE 400",
+        "brandName": "ASVIHALE 400",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvicrori-p",
-        "brandName":  "ASVICROCORI-P",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIHALE G",
+        "brandName": "ASVIHALE G",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvicrori-p-650",
-        "brandName":  "ASVICROCORI-P-650",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIHALE-G-400",
+        "brandName": "ASVIHALE-G-400",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvicrori-sp",
-        "brandName":  "ASVICROCORI-SP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVILEVO",
+        "brandName": "ASVILEVO",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvicrori-th-4",
-        "brandName":  "ASVICROCORI-TH-4",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVILEVO-10",
+        "brandName": "ASVILEVO-10",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIDICLO Spray",
-        "brandName":  "ASVIDICLO SPRAY",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVILEVO-5",
+        "brandName": "ASVILEVO-5",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIDICLO-GEL",
-        "brandName":  "ASVIDICLO-GEL",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVILEVO-500",
+        "brandName": "ASVILEVO-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIDICLO-INJ",
-        "brandName":  "ASVIDICLO-INJ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVILEVO-M",
+        "brandName": "ASVILEVO-M",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "ASVIDICLO-P",
-        "brandName":  "ASVIDICLO-P",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVILEVO-OZ",
+        "brandName": "ASVILEVO-OZ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIDICLO-S",
-        "brandName":  "ASVIDICLO-S",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVILEVO-OZ Tab",
+        "brandName": "ASVILEVO-OZ TAB",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIDICLO-SP",
-        "brandName":  "ASVIDICLO-SP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX",
+        "brandName": "ASVIMOX",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIDOXY-100-LB",
-        "brandName":  "ASVIDOXY-100-LB",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX-500",
+        "brandName": "ASVIMOX-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIHALE 200",
-        "brandName":  "ASVIHALE 200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX-CV 1.2",
+        "brandName": "ASVIMOX-CV 1.2",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIHALE 400",
-        "brandName":  "ASVIHALE 400",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX-CV 228.5-DS",
+        "brandName": "ASVIMOX-CV 228.5-DS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIHALE G",
-        "brandName":  "ASVIHALE G",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX-CV-375",
+        "brandName": "ASVIMOX-CV-375",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIHALE-G-400",
-        "brandName":  "ASVIHALE-G-400",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX-CV-457-DS",
+        "brandName": "ASVIMOX-CV-457-DS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVILEVO",
-        "brandName":  "ASVILEVO",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX-CV-625",
+        "brandName": "ASVIMOX-CV-625",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "ASVILEVO-10",
-        "brandName":  "ASVILEVO-10",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIMOX-KT",
+        "brandName": "ASVIMOX-KT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVILEVO-5",
-        "brandName":  "ASVILEVO-5",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-1500",
+        "brandName": "ASVINEURO-1500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVILEVO-500",
-        "brandName":  "ASVILEVO-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-1500-DP",
+        "brandName": "ASVINEURO-1500-DP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVILEVO-M",
-        "brandName":  "ASVILEVO-M",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-2500",
+        "brandName": "ASVINEURO-2500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVILEVO-OZ Tab",
-        "brandName":  "ASVILEVO-OZ TAB",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-2500 DP",
+        "brandName": "ASVINEURO-2500 DP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVILEVO-OZ",
-        "brandName":  "ASVILEVO-OZ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-C",
+        "brandName": "ASVINEURO-C",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX",
-        "brandName":  "ASVIMOX",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-D3",
+        "brandName": "ASVINEURO-D3",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "ASVIMOX-500",
-        "brandName":  "ASVIMOX-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-FORTE",
+        "brandName": "ASVINEURO-FORTE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvimox-cv 1.2",
-        "brandName":  "ASVIMOX-CV 1.2",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-NP",
+        "brandName": "ASVINEURO-NP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "asvimox-cv 228.5-ds",
-        "brandName":  "ASVIMOX-CV 228.5-DS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-NTM",
+        "brandName": "ASVINEURO-NTM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX-CV-375",
-        "brandName":  "ASVIMOX-CV-375",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-P",
+        "brandName": "ASVINEURO-P",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX-CV-457-DS",
-        "brandName":  "ASVIMOX-CV-457-DS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-P-Plus",
+        "brandName": "ASVINEURO-P-Plus",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX-CV-625",
-        "brandName":  "ASVIMOX-CV-625",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-PLUS Capsule",
+        "brandName": "ASVINEURO-PLUS CAPSULE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX-KT",
-        "brandName":  "ASVIMOX-KT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINEURO-PLUS-INJ",
+        "brandName": "ASVINEURO-PLUS-INJ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-1500",
-        "brandName":  "ASVINEURO-1500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS Pain Oil",
+        "brandName": "ASVINS PAIN OIL",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-1500-DP",
-        "brandName":  "ASVINEURO-1500-DP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS Roll On",
+        "brandName": "ASVINS ROLL ON",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-2500 DP",
-        "brandName":  "ASVINEURO-2500 DP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-12G",
+        "brandName": "ASVINS-12G",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-2500",
-        "brandName":  "ASVINEURO-2500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-4G Softgel",
+        "brandName": "ASVINS-4G SOFTGEL",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-C",
-        "brandName":  "ASVINEURO-C",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-4G Syrup",
+        "brandName": "ASVINS-4G SYRUP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-D3",
-        "brandName":  "ASVINEURO-D3",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-9G",
+        "brandName": "ASVINS-9G",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-FORTE",
-        "brandName":  "ASVINEURO-FORTE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-CAL",
+        "brandName": "ASVINS-CAL",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-NP",
-        "brandName":  "ASVINEURO-NP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-CBG-FORTE",
+        "brandName": "ASVINS-CBG-FORTE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-NTM",
-        "brandName":  "ASVINEURO-NTM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-DGM",
+        "brandName": "ASVINS-DGM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-P",
-        "brandName":  "ASVINEURO-P",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-GM1",
+        "brandName": "ASVINS-GM1",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-P-Plus",
-        "brandName":  "ASVINEURO-P-Plus",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-GM1-FORTE",
+        "brandName": "ASVINS-GM1-FORTE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-PLUS Capsule",
-        "brandName":  "ASVINEURO-PLUS CAPSULE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-GM2",
+        "brandName": "ASVINS-GM2",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINEURO-PLUS-INJ",
-        "brandName":  "ASVINEURO-PLUS-INJ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-GM2-FORTE",
+        "brandName": "ASVINS-GM2-FORTE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS Pain Oil",
-        "brandName":  "ASVINS PAIN OIL",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-LD",
+        "brandName": "ASVINS-LD",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS Roll On",
-        "brandName":  "ASVINS ROLL ON",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-NEEM",
+        "brandName": "ASVINS-NEEM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-12G",
-        "brandName":  "ASVINS-12G",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-PGM 1",
+        "brandName": "ASVINS-PGM 1",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-4G Softgel",
-        "brandName":  "ASVINS-4G SOFTGEL",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-PGM 2",
+        "brandName": "ASVINS-PGM 2",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-4G Syrup",
-        "brandName":  "ASVINS-4G SYRUP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-PLATO",
+        "brandName": "ASVINS-PLATO",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-9G",
-        "brandName":  "ASVINS-9G",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-PLATO Tab",
+        "brandName": "ASVINS-PLATO TAB",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-CAL",
-        "brandName":  "ASVINS-CAL",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-SET-MD",
+        "brandName": "ASVINS-SET-MD",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-CBG-FORTE",
-        "brandName":  "ASVINS-CBG-FORTE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-UDI-150",
+        "brandName": "ASVINS-UDI-150",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-DGM",
-        "brandName":  "ASVINS-DGM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVINS-UDI-300",
+        "brandName": "ASVINS-UDI-300",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-GM1",
-        "brandName":  "ASVINS-GM1",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPANTO",
+        "brandName": "ASVIPANTO",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-GM1-FORTE",
-        "brandName":  "ASVINS-GM1-FORTE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPANTO-40",
+        "brandName": "ASVIPANTO-40",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-GM2",
-        "brandName":  "ASVINS-GM2",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPANTO-DSR",
+        "brandName": "ASVIPANTO-DSR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-GM2-FORTE",
-        "brandName":  "ASVINS-GM2-FORTE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPOD-100",
+        "brandName": "ASVIPOD-100",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-LD",
-        "brandName":  "ASVINS-LD",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPOD-100 DT",
+        "brandName": "ASVIPOD-100 DT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-NEEM",
-        "brandName":  "ASVINS-NEEM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPOD-200",
+        "brandName": "ASVIPOD-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-PGM 1",
-        "brandName":  "ASVINS-PGM 1",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPOD-50",
+        "brandName": "ASVIPOD-50",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-PGM 2",
-        "brandName":  "ASVINS-PGM 2",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPOD-CV-325",
+        "brandName": "ASVIPOD-CV-325",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-PLATO Tab",
-        "brandName":  "ASVINS-PLATO TAB",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIPOD-CV-81",
+        "brandName": "ASVIPOD-CV-81",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-PLATO",
-        "brandName":  "ASVINS-PLATO",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIRUTO-ATBR",
+        "brandName": "ASVIRUTO-ATBR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-SET-MD",
-        "brandName":  "ASVINS-SET-MD",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIRUTO-FORTE",
+        "brandName": "ASVIRUTO-FORTE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-UDI-150",
-        "brandName":  "ASVINS-UDI-150",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVIRUTO-TBR",
+        "brandName": "ASVIRUTO-TBR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVINS-UDI-300",
-        "brandName":  "ASVINS-UDI-300",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVISCORT",
+        "brandName": "ASVISCORT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPANTO",
-        "brandName":  "ASVIPANTO",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVISCORT-TM",
+        "brandName": "ASVISCORT-TM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPANTO-40",
-        "brandName":  "ASVIPANTO-40",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS",
+        "brandName": "ASVITUS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPANTO-DSR",
-        "brandName":  "ASVIPANTO-DSR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-AM",
+        "brandName": "ASVITUS-AM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPOD-100 DT",
-        "brandName":  "ASVIPOD-100 DT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-DM Junior",
+        "brandName": "ASVITUS-DM JUNIOR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPOD-100",
-        "brandName":  "ASVIPOD-100",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-DM Softgel Capsule",
+        "brandName": "ASVITUS-DM SOFTGEL CAPSULE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPOD-200",
-        "brandName":  "ASVIPOD-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-DM Syrup",
+        "brandName": "ASVITUS-DM Syrup",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "ASVIPOD-CV-325",
-        "brandName":  "ASVIPOD-CV-325",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-LC",
+        "brandName": "ASVITUS-LC",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPOD-CV-81",
-        "brandName":  "ASVIPOD-CV-81",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-LS",
+        "brandName": "ASVITUS-LS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIRUTO-ATBR",
-        "brandName":  "ASVIRUTO-ATBR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-LS Junior",
+        "brandName": "ASVITUS-LS JUNIOR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIRUTO-FORTE",
-        "brandName":  "ASVIRUTO-FORTE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVITUS-LV",
+        "brandName": "ASVITUS-LV",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIRUTO-TBR",
-        "brandName":  "ASVIRUTO-TBR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVOXIA",
+        "brandName": "ASVOXIA",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVISCORT",
-        "brandName":  "ASVISCORT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVOXIA-TH4",
+        "brandName": "ASVOXIA-TH4",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVISCORT-TM",
-        "brandName":  "ASVISCORT-TM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASVPRED",
+        "brandName": "ASVPRED",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS",
-        "brandName":  "ASVITUS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ASZYME-NEXT",
+        "brandName": "ASZYME-NEXT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-AM",
-        "brandName":  "ASVITUS-AM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ATORSVIS-FB",
+        "brandName": "ATORSVIS-FB",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-DM Junior",
-        "brandName":  "ASVITUS-DM JUNIOR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ATROXYZINE",
+        "brandName": "ATROXYZINE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-DM Softgel Capsule",
-        "brandName":  "ASVITUS-DM SOFTGEL CAPSULE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ATROXYZINE 25",
+        "brandName": "ATROXYZINE 25",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-DM Syrup",
-        "brandName":  "ASVITUS-DM SYRUP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "AZIASV-200",
+        "brandName": "AZIASV-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-LC",
-        "brandName":  "ASVITUS-LC",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "AZIASV-500",
+        "brandName": "AZIASV-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-LS Junior",
-        "brandName":  "ASVITUS-LS JUNIOR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "AZIASV-SF",
+        "brandName": "AZIASV-SF",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-LS",
-        "brandName":  "ASVITUS-LS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "BELCORTIL",
+        "brandName": "BELCORTIL",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVITUS-LV",
-        "brandName":  "ASVITUS-LV",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "BELDROME-10",
+        "brandName": "BELDROME-10",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVOXIA",
-        "brandName":  "ASVOXIA",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "BILASVISZ-Tab",
+        "brandName": "BILASVISZ-Tab",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVOXIA-TH4",
-        "brandName":  "ASVOXIA-TH4",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "BILASVISZ-oral",
+        "brandName": "BILASVISZ-oral",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVPRED",
-        "brandName":  "ASVPRED",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIDIME-TZ",
+        "brandName": "CANDIDIME-TZ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASZYME-NEXT",
-        "brandName":  "ASZYME-NEXT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIPIME-TZ",
+        "brandName": "CANDIPIME-TZ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICEF-S 1",
-        "brandName":  "ASVICEF-S 1",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXIME-100",
+        "brandName": "CANDIXIME-100",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICROCI-MR",
-        "brandName":  "ASVICROCI-MR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXIME-100 DT",
+        "brandName": "CANDIXIME-100 DT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICROCI-P",
-        "brandName":  "ASVICROCI-P",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXIME-50",
+        "brandName": "CANDIXIME-50",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICROCI-P-650",
-        "brandName":  "ASVICROCI-P-650",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXIME-OF",
+        "brandName": "CANDIXIME-OF",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICROCI-SP",
-        "brandName":  "ASVICROCI-SP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXIME-OF Tab",
+        "brandName": "CANDIXIME-OF Tab",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVICROCI-TH-4",
-        "brandName":  "ASVICROCI-TH-4",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXONE",
+        "brandName": "CANDIXONE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX-CV 1",
-        "brandName":  "ASVIMOX-CV 1",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXONE-2000",
+        "brandName": "CANDIXONE-2000",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIMOX-CV 228",
-        "brandName":  "ASVIMOX-CV 228",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXONE-250",
+        "brandName": "CANDIXONE-250",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ASVIPOD-50",
-        "brandName":  "ASVIPOD-50",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXONE-500",
+        "brandName": "CANDIXONE-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ATORSVIS-FB",
-        "brandName":  "ATORSVIS-FB",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CANDIXONE-TZ",
+        "brandName": "CANDIXONE-TZ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ATROXYZINE 25",
-        "brandName":  "ATROXYZINE 25",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CLARISVISS-250",
+        "brandName": "CLARISVISS-250",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ATROXYZINE",
-        "brandName":  "ATROXYZINE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CLARISVISS-500",
+        "brandName": "CLARISVISS-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "AZIASV-200",
-        "brandName":  "AZIASV-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CLARSVI-125",
+        "brandName": "CLARSVI-125",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "AZIASV-500",
-        "brandName":  "AZIASV-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CLINGOLD-600",
+        "brandName": "CLINGOLD-600",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "AZIASV-SF",
-        "brandName":  "AZIASV-SF",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "CLOTISVI",
+        "brandName": "CLOTISVI",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "BELCORTIL",
-        "brandName":  "BELCORTIL",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "DAPASVISS",
+        "brandName": "DAPASVISS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "BELDROME-10",
-        "brandName":  "BELDROME-10",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "DAPASVISS-10",
+        "brandName": "DAPASVISS-10",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "BILASVISZ-oral",
-        "brandName":  "BILASVISZ-oral",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "DIAB",
+        "brandName": "DIAB",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "BILASVISZ-Tab",
-        "brandName":  "BILASVISZ-Tab",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "DOXYLASVISS-FORTE",
+        "brandName": "DOXYLASVISS-FORTE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "bioxtil",
-        "brandName":  "bioxtil",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "DSR-ADVANCE",
+        "brandName": "DSR-ADVANCE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIDIME-TZ",
-        "brandName":  "CANDIDIME-TZ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ENTHIOFLOX-200",
+        "brandName": "ENTHIOFLOX-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIPIME-TZ",
-        "brandName":  "CANDIPIME-TZ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ENTHIOFLOX-MS",
+        "brandName": "ENTHIOFLOX-MS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXIME-100 DT",
-        "brandName":  "CANDIXIME-100 DT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ENTHIOFLOX-OZ",
+        "brandName": "ENTHIOFLOX-OZ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXIME-100",
-        "brandName":  "CANDIXIME-100",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ENTHIUM-K27-MAX",
+        "brandName": "ENTHIUM-K27-MAX",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXIME-50",
-        "brandName":  "CANDIXIME-50",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ENTHVIT-HB",
+        "brandName": "ENTHVIT-HB",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXIME-OF Tab",
-        "brandName":  "CANDIXIME-OF Tab",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ESVMOFIN-40",
+        "brandName": "ESVMOFIN-40",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXIME-OF",
-        "brandName":  "CANDIXIME-OF",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ESVMOFIN-DSR",
+        "brandName": "ESVMOFIN-DSR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
-        "id":  "CANDIXONE",
-        "brandName":  "CANDIXONE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ESVMOFIN-LSR",
+        "brandName": "ESVMOFIN-LSR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXONE-2000",
-        "brandName":  "CANDIXONE-2000",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FEBOSVISS-40",
+        "brandName": "FEBOSVISS-40",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXONE-250",
-        "brandName":  "CANDIXONE-250",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FENAVIN-TH",
+        "brandName": "FENAVIN-TH",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXONE-500",
-        "brandName":  "CANDIXONE-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FEROSVIS-200",
+        "brandName": "FEROSVIS-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CANDIXONE-TZ",
-        "brandName":  "CANDIXONE-TZ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FEROSVIS-300",
+        "brandName": "FEROSVIS-300",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CLARISVISS-250",
-        "brandName":  "CLARISVISS-250",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FEROSVIS-CV-325",
+        "brandName": "FEROSVIS-CV-325",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CLARISVISS-500",
-        "brandName":  "CLARISVISS-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FERRYFORT-500",
+        "brandName": "FERRYFORT-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CLARSVI-125",
-        "brandName":  "CLARSVI-125",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FERRYFORT-XT",
+        "brandName": "FERRYFORT-XT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CLINGOLD-600",
-        "brandName":  "CLINGOLD-600",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FLUCOVIN-150",
+        "brandName": "FLUCOVIN-150",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "CLOTISVI",
-        "brandName":  "CLOTISVI",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FLUCOVIN-200",
+        "brandName": "FLUCOVIN-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "DAPASVISS",
-        "brandName":  "DAPASVISS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "FLUCOVIN-400",
+        "brandName": "FLUCOVIN-400",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "DAPASVISS-10",
-        "brandName":  "DAPASVISS-10",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GABIBELS-LC",
+        "brandName": "GABIBELS-LC",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "DIAB",
-        "brandName":  "DIAB",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GABIBELS-NT",
+        "brandName": "GABIBELS-NT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "DOXYLASVISS-FORTE",
-        "brandName":  "DOXYLASVISS-FORTE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GESTOSVI",
+        "brandName": "GESTOSVI",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "DSR-ADVANCE",
-        "brandName":  "DSR-ADVANCE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GESTOSVI-2",
+        "brandName": "GESTOSVI-2",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ENTHIOFLOX-200",
-        "brandName":  "ENTHIOFLOX-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GESTOSVI-200",
+        "brandName": "GESTOSVI-200",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ENTHIOFLOX-MS",
-        "brandName":  "ENTHIOFLOX-MS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GESTOSVI-300-SR",
+        "brandName": "GESTOSVI-300-SR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ENTHIOFLOX-OZ",
-        "brandName":  "ENTHIOFLOX-OZ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GESTOSVI-500",
+        "brandName": "GESTOSVI-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ENTHIUM-K27-MAX",
-        "brandName":  "ENTHIUM-K27-MAX",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "GLUCO-FORTE",
+        "brandName": "GLUCO-FORTE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ENTHVIT-HB",
-        "brandName":  "ENTHVIT-HB",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "HALER-DEVICE",
+        "brandName": "HALER-DEVICE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ESVMOFIN-40",
-        "brandName":  "ESVMOFIN-40",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "HEPASVI",
+        "brandName": "HEPASVI",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "ESVMOFIN-LSR",
-        "brandName":  "ESVMOFIN-LSR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "HONEYSYP",
+        "brandName": "HONEYSYP",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FEBOSVISS-40",
-        "brandName":  "FEBOSVISS-40",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "KETOINN-K5",
+        "brandName": "KETOINN-K5",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FENAVIN-TH",
-        "brandName":  "FENAVIN-TH",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LINSZOVIN-100",
+        "brandName": "LINSZOVIN-100",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FEROSVIS-200",
-        "brandName":  "FEROSVIS-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LINSZOVIN-600",
+        "brandName": "LINSZOVIN-600",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FEROSVIS-300",
-        "brandName":  "FEROSVIS-300",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVOVIN",
+        "brandName": "LIVOVIN",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FEROSVIS-CV-325",
-        "brandName":  "FEROSVIS-CV-325",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVOVIN-PLUS Capsule",
+        "brandName": "LIVOVIN-PLUS Capsule",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FERRYFORT-500",
-        "brandName":  "FERRYFORT-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVOVIN-PLUS Syrup",
+        "brandName": "LIVOVIN-PLUS Syrup",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FERRYFORT-XT",
-        "brandName":  "FERRYFORT-XT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVXIV-DS Capsule",
+        "brandName": "LIVXIV-DS Capsule",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FLUCOVIN-150",
-        "brandName":  "FLUCOVIN-150",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVXIV-DS Syrup",
+        "brandName": "LIVXIV-DS Syrup",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FLUCOVIN-200",
-        "brandName":  "FLUCOVIN-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVXIV-DS-4G",
+        "brandName": "LIVXIV-DS-4G",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "FLUCOVIN-400",
-        "brandName":  "FLUCOVIN-400",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVXIV-DS-5G",
+        "brandName": "LIVXIV-DS-5G",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GABIBELS-LC",
-        "brandName":  "GABIBELS-LC",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LIVZYME-DS",
+        "brandName": "LIVZYME-DS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GABIBELS-NT",
-        "brandName":  "GABIBELS-NT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LULISVISS",
+        "brandName": "LULISVISS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GESTOSVI",
-        "brandName":  "GESTOSVI",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LYCOVIN-PLUS",
+        "brandName": "LYCOVIN-PLUS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GESTOSVI-2",
-        "brandName":  "GESTOSVI-2",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "LYCOVIN-RICH",
+        "brandName": "LYCOVIN-RICH",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GESTOSVI-200",
-        "brandName":  "GESTOSVI-200",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MEMORYVIN",
+        "brandName": "MEMORYVIN",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GESTOSVI-300-SR",
-        "brandName":  "GESTOSVI-300-SR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MEROSVISS",
+        "brandName": "MEROSVISS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GESTOSVI-500",
-        "brandName":  "GESTOSVI-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MINOXIGROW",
+        "brandName": "MINOXIGROW",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "GLUCO-FORTE",
-        "brandName":  "GLUCO-FORTE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MINOXIGROW-F",
+        "brandName": "MINOXIGROW-F",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "HALER-DEVICE",
-        "brandName":  "HALER-DEVICE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MOISTVIN",
+        "brandName": "MOISTVIN",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "HEPASVI",
-        "brandName":  "HEPASVI",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MUCOSVISS",
+        "brandName": "MUCOSVISS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "HONEYSYP",
-        "brandName":  "HONEYSYP",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MUCOSVISS-AC",
+        "brandName": "MUCOSVISS-AC",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "KETOINN-K5",
-        "brandName":  "KETOINN-K5",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MUPOSVIS",
+        "brandName": "MUPOSVIS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LINSZOVIN-100",
-        "brandName":  "LINSZOVIN-100",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "MYOSVIS",
+        "brandName": "MYOSVIS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LINSZOVIN-600",
-        "brandName":  "LINSZOVIN-600",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "NORTHOSVI",
+        "brandName": "NORTHOSVI",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVOVIN",
-        "brandName":  "LIVOVIN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "NORTHOSVI-10",
+        "brandName": "NORTHOSVI-10",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVOVIN-PLUS Capsule",
-        "brandName":  "LIVOVIN-PLUS Capsule",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PEGSVIS",
+        "brandName": "PEGSVIS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVOVIN-PLUS Syrup",
-        "brandName":  "LIVOVIN-PLUS Syrup",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PERVIN",
+        "brandName": "PERVIN",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVXIV-DS Capsule",
-        "brandName":  "LIVXIV-DS Capsule",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PIROAS-20",
+        "brandName": "PIROAS-20",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVXIV-DS Syrup",
-        "brandName":  "LIVXIV-DS Syrup",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PREFRESIKA",
+        "brandName": "PREFRESIKA",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVXIV-DS-4G",
-        "brandName":  "LIVXIV-DS-4G",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PREFRESIKA 0.5",
+        "brandName": "PREFRESIKA 0.5",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVXIV-DS-5G",
-        "brandName":  "LIVXIV-DS-5G",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PREFRESIKA 1",
+        "brandName": "PREFRESIKA 1",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LIVZYME-DS",
-        "brandName":  "LIVZYME-DS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PROTISVIS",
+        "brandName": "PROTISVIS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LULISVISS",
-        "brandName":  "LULISVISS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "PURE",
+        "brandName": "PURE",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LYCOVIN-PLUS",
-        "brandName":  "LYCOVIN-PLUS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SHE-GROW",
+        "brandName": "SHE-GROW",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "LYCOVIN-RICH",
-        "brandName":  "LYCOVIN-RICH",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVICOLI",
+        "brandName": "SVICOLI",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "medicine_names_box_zero",
-        "brandName":  "medicine_names_box_zero",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVINACOLD-PLUS",
+        "brandName": "SVINACOLD-PLUS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MEMORYVIN",
-        "brandName":  "MEMORYVIN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVIS",
+        "brandName": "SVIS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MEROSVISS",
-        "brandName":  "MEROSVISS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISCAL-500",
+        "brandName": "SVISCAL-500",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MINOXIGROW",
-        "brandName":  "MINOXIGROW",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISCAL-BIOTIC",
+        "brandName": "SVISCAL-BIOTIC",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MINOXIGROW-F",
-        "brandName":  "MINOXIGROW-F",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISCAL-D3",
+        "brandName": "SVISCAL-D3",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MOISTVIN",
-        "brandName":  "MOISTVIN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISCAL-D3-INJ",
+        "brandName": "SVISCAL-D3-INJ",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MUCOSVISS",
-        "brandName":  "MUCOSVISS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISCAL-K27 Gold",
+        "brandName": "SVISCAL-K27 Gold",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MUCOSVISS-AC",
-        "brandName":  "MUCOSVISS-AC",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISCAL-K27-Gold-Plus",
+        "brandName": "SVISCAL-K27-Gold-Plus",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MUPOSVIS",
-        "brandName":  "MUPOSVIS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISCAL-XT",
+        "brandName": "SVISCAL-XT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "MYOSVIS",
-        "brandName":  "MYOSVIS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISMEF",
+        "brandName": "SVISMEF",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "NORTHOSVI",
-        "brandName":  "NORTHOSVI",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISMEF-DRO",
+        "brandName": "SVISMEF-DRO",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "NORTHOSVI-10",
-        "brandName":  "NORTHOSVI-10",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISMEF-P",
+        "brandName": "SVISMEF-P",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PEGSVIS",
-        "brandName":  "PEGSVIS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISMEF-SPAS",
+        "brandName": "SVISMEF-SPAS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PERVIN",
-        "brandName":  "PERVIN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISNEXA",
+        "brandName": "SVISNEXA",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PIROAS-20",
-        "brandName":  "PIROAS-20",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISNEXA-MF",
+        "brandName": "SVISNEXA-MF",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PREFRESIKA 0",
-        "brandName":  "PREFRESIKA 0",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISNEXA-TX",
+        "brandName": "SVISNEXA-TX",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PREFRESIKA 1",
-        "brandName":  "PREFRESIKA 1",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "SVISRAFT",
+        "brandName": "SVISRAFT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PREFRESIKA",
-        "brandName":  "PREFRESIKA",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TAZOBACTIN-1.125",
+        "brandName": "TAZOBACTIN-1.125",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PROTISVIS",
-        "brandName":  "PROTISVIS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TAZOBACTIN-4.5",
+        "brandName": "TAZOBACTIN-4.5",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "PURE",
-        "brandName":  "PURE",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TELASVI-AM",
+        "brandName": "TELASVI-AM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SHE-GROW",
-        "brandName":  "SHE-GROW",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TELASVI-AMH",
+        "brandName": "TELASVI-AMH",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVICOLI",
-        "brandName":  "SVICOLI",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TELASVI-CT",
+        "brandName": "TELASVI-CT",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVINACOLD-PLUS",
-        "brandName":  "SVINACOLD-PLUS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TELASVI-MT-25",
+        "brandName": "TELASVI-MT-25",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVIS",
-        "brandName":  "SVIS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TELASVI-MT-50",
+        "brandName": "TELASVI-MT-50",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISCAL-500",
-        "brandName":  "SVISCAL-500",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TERBISVISS",
+        "brandName": "TERBISVISS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISCAL-BIOTIC",
-        "brandName":  "SVISCAL-BIOTIC",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "TICASVIS",
+        "brandName": "TICASVIS",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISCAL-D3",
-        "brandName":  "SVISCAL-D3",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "URISWISS-100",
+        "brandName": "URISWISS-100",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISCAL-D3-INJ",
-        "brandName":  "SVISCAL-D3-INJ",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VIN-GLOW",
+        "brandName": "VIN-GLOW",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISCAL-K27 Gold",
-        "brandName":  "SVISCAL-K27 Gold",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINBLEX",
+        "brandName": "VINBLEX",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISCAL-K27-Gold-Plus",
-        "brandName":  "SVISCAL-K27-Gold-Plus",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINBLEX Tab",
+        "brandName": "VINBLEX Tab",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISCAL-XT",
-        "brandName":  "SVISCAL-XT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINCEFO",
+        "brandName": "VINCEFO",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISMEF",
-        "brandName":  "SVISMEF",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINCOLD",
+        "brandName": "VINCOLD",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISMEF-DRO",
-        "brandName":  "SVISMEF-DRO",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINCOLD-NM",
+        "brandName": "VINCOLD-NM",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISMEF-P",
-        "brandName":  "SVISMEF-P",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINCOZOLE-20",
+        "brandName": "VINCOZOLE-20",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISMEF-SPAS",
-        "brandName":  "SVISMEF-SPAS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINCOZOLE-40-LSR",
+        "brandName": "VINCOZOLE-40-LSR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISNEXA",
-        "brandName":  "SVISNEXA",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VINCOZOLE-DSR",
+        "brandName": "VINCOZOLE-DSR",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISNEXA-MF",
-        "brandName":  "SVISNEXA-MF",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "VOGLILIGHT-MD",
+        "brandName": "VOGLILIGHT-MD",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISNEXA-TX",
-        "brandName":  "SVISNEXA-TX",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ZINVIN",
+        "brandName": "ZINVIN",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "SVISRAFT",
-        "brandName":  "SVISRAFT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "ZYMOVIN-Q10",
+        "brandName": "ZYMOVIN-Q10",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": false
     },
     {
-        "id":  "TAZOBACTIN",
-        "brandName":  "TAZOBACTIN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "bical",
+        "brandName": "BICAL D3",
+        "isActive": true,
+        "source": "Biofrench",
+        "preferredAffiliate": true
     },
     {
-        "id":  "TAZOBACTIN-4",
-        "brandName":  "TAZOBACTIN-4",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "bioasp",
+        "brandName": "BIO ASP",
+        "isActive": true,
+        "source": "Biofrench",
+        "preferredAffiliate": true
     },
     {
-        "id":  "TELASVI-AM",
-        "brandName":  "TELASVI-AM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "biodac",
+        "brandName": "BIODAC 50MG",
+        "isActive": true,
+        "source": "Biofrench",
+        "preferredAffiliate": true
     },
     {
-        "id":  "TELASVI-AMH",
-        "brandName":  "TELASVI-AMH",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "biomin",
+        "brandName": "BIOMIN",
+        "isActive": true,
+        "source": "Biofrench",
+        "preferredAffiliate": true
     },
     {
-        "id":  "TELASVI-CT",
-        "brandName":  "TELASVI-CT",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "TELASVI-MT-25",
-        "brandName":  "TELASVI-MT-25",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "TELASVI-MT-50",
-        "brandName":  "TELASVI-MT-50",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "TERBISVISS",
-        "brandName":  "TERBISVISS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "TICASVIS",
-        "brandName":  "TICASVIS",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "URISWISS-100",
-        "brandName":  "URISWISS-100",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VIN-GLOW",
-        "brandName":  "VIN-GLOW",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINBLEX Tab",
-        "brandName":  "VINBLEX Tab",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINBLEX",
-        "brandName":  "VINBLEX",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINCEFO",
-        "brandName":  "VINCEFO",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINCOLD",
-        "brandName":  "VINCOLD",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINCOLD-NM",
-        "brandName":  "VINCOLD-NM",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINCOZOLE-20",
-        "brandName":  "VINCOZOLE-20",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINCOZOLE-40-LSR",
-        "brandName":  "VINCOZOLE-40-LSR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VINCOZOLE-DSR",
-        "brandName":  "VINCOZOLE-DSR",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VISUAL",
-        "brandName":  "VISUAL",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "VOGLILIGHT-MD",
-        "brandName":  "VOGLILIGHT-MD",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "ZINVIN",
-        "brandName":  "ZINVIN",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
-    },
-    {
-        "id":  "ZYMOVIN-Q10",
-        "brandName":  "ZYMOVIN-Q10",
-        "isActive":  true,
-        "source":  "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate":  false
+        "id": "rabcid",
+        "brandName": "RABCID DSR",
+        "isActive": true,
+        "source": "Biofrench",
+        "preferredAffiliate": true
     }
 ]
