@@ -104,6 +104,14 @@ if "x%RELEASE_VERSION%"=="x" (
 	goto :eof
 )
 
+REM Check if tag already exists
+git tag --list | findstr "^%RELEASE_VERSION%$">nul
+if %errorlevel%==0 (
+	echo Error: Tag %RELEASE_VERSION% already exists!
+	echo Please choose a different version number.
+	goto :eof
+)
+
 set TAG=%RELEASE_VERSION%
 
 REM Fetch latest tags from remote to ensure we have all release tags
@@ -113,9 +121,20 @@ git fetch --tags
 REM Get current commit hash and last release tag for comparison
 for /f %%i in ('git rev-parse HEAD') do set TMP_GIT_NEW=%%i
 
-REM Try to get the last tag, handle case where no tags exist
+REM Try to get the last tag using Windows-compatible commands
 set TMP_GIT_OLD_TAG=
-for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD_TAG=%%i
+for /f "tokens=*" %%i in ('git tag --sort^-version:refname') do (
+    if not "%%i"=="%TAG%" (
+        set TMP_GIT_OLD_TAG=%%i
+        goto :found_last_tag
+    )
+)
+:found_last_tag
+
+REM If still no tag found, try git describe as fallback
+if "%TMP_GIT_OLD_TAG%"=="" (
+    for /f %%i in ('git describe --tags --abbrev=0 2^>nul') do set TMP_GIT_OLD_TAG=%%i
+)
 
 REM If no previous tag exists, use first commit
 if "%TMP_GIT_OLD_TAG%"=="" (
