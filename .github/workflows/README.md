@@ -82,7 +82,7 @@ The workflow performs the following steps:
 |---------|--------------|------------------------|
 | Trigger | Manual execution | GitHub UI (on-demand) |
 | Environment | Local Windows | GitHub-hosted runner |
-| APK signing | Local keystore | Secret-stored keystore |
+| APK signing | Local keystore | Repository keystore |
 | Testing | Manual command | Automated |
 | Release creation | Manual `gh` CLI | Automated action |
 | Asset upload | Manual paths | Automated |
@@ -91,7 +91,7 @@ The workflow performs the following steps:
 ### Benefits
 
 - **No local setup required**: Works from any machine with GitHub access
-- **Secure credential handling**: Keystore stored as encrypted secret
+- **Simplified credential handling**: Uses existing repository keystore
 - **Consistent environment**: Same build environment every time
 - **Audit trail**: All releases tracked in GitHub Actions history
 - **Collaborative**: Team members can create releases without local setup
