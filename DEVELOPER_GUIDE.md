@@ -136,6 +136,28 @@ When changing `MedicineEntity`:
 ### Signing
 Release builds use keystore at `app/keystore/release_new.keystore`
 
+## Creating Releases
+
+The project includes an automated GitHub Actions workflow for creating releases. See [RELEASE_GUIDE.md](RELEASE_GUIDE.md) for detailed instructions.
+
+### Quick Release Steps
+1. Go to GitHub Actions → "Create Release" workflow
+2. Click "Run workflow"
+3. Enter version (e.g., v1.0.0) and release notes
+4. The workflow will automatically:
+   - Run tests
+   - Build signed APK
+   - Create GitHub release
+   - Upload APK and medicines.json
+
+### Manual Release (Alternative)
+On Windows, you can use the batch script:
+```bash
+wnt_biofrench_app.bat create_release
+```
+
+For more details, see [.github/workflows/README.md](.github/workflows/README.md)
+
 ## Tips for Success
 
 1. **Use ViewModels** - Keep business logic out of Composables
