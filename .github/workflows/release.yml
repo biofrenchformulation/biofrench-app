@@ -1,3 +1,124 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (e.g., v1.0.0, v1.1.0)'
+        required: true
+        type: string
+      release_notes:
+        description: 'Release notes (description of changes)'
+        required: true
+        type: string
+
 permissions:
   contents: write
-  packages: write  # Only include this if your workflow needs to publish packages
+  packages: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for git tags
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'gradle'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Run tests
+        run: ./gradlew testDebugUnitTest
+
+      - name: Build release APK
+        run: ./gradlew assembleRelease
+
+      - name: Verify APK exists
+        run: |
+          if [ ! -f app/build/outputs/apk/release/biofrench-android-app.apk ]; then
+            echo "Error: APK not found at expected location"
+            exit 1
+          fi
+          echo "APK found successfully"
+
+      - name: Verify medicines.json exists
+        run: |
+          if [ ! -f app/src/main/assets/medicines.json ]; then
+            echo "Error: medicines.json not found"
+            exit 1
+          fi
+          echo "medicines.json found successfully"
+
+      - name: Check if tag already exists
+        run: |
+          if git rev-parse "${{ github.event.inputs.version }}" >/dev/null 2>&1; then
+            echo "Error: Tag ${{ github.event.inputs.version }} already exists"
+            exit 1
+          fi
+          echo "Tag does not exist, proceeding..."
+
+      - name: Get previous release tag
+        id: previous_tag
+        run: |
+          PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          echo "previous_tag=$PREV_TAG" >> $GITHUB_OUTPUT
+          if [ -n "$PREV_TAG" ]; then
+            echo "Previous release: $PREV_TAG"
+          else
+            echo "No previous releases found"
+          fi
+
+      - name: Create and push tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "${{ github.event.inputs.version }}" -m "Release ${{ github.event.inputs.version }}"
+          git push origin "${{ github.event.inputs.version }}"
+
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          COMMIT_HASH=$(git rev-parse HEAD)
+          BUILD_DATE=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          cat > release_notes.txt <<'EOF'
+          ${{ github.event.inputs.release_notes }}
+
+          ---
+
+          **Build Information:**
+          - Commit: ${COMMIT_HASH}
+          - Build Date: ${BUILD_DATE}
+          EOF
+
+          if [ -n "${{ steps.previous_tag.outputs.previous_tag }}" ]; then
+            COMPARISON_URL="https://github.com/${{ github.repository }}/compare/${{ steps.previous_tag.outputs.previous_tag }}...${{ github.event.inputs.version }}"
+            echo "- [View all changes since ${{ steps.previous_tag.outputs.previous_tag }}](${COMPARISON_URL})" >> release_notes.txt
+          fi
+
+          # Substitute variables in the file
+          sed -i "s/\${COMMIT_HASH}/${COMMIT_HASH}/g" release_notes.txt
+          sed -i "s/\${BUILD_DATE}/${BUILD_DATE}/g" release_notes.txt
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.event.inputs.version }}
+          name: ${{ github.event.inputs.version }}
+          body_path: release_notes.txt
+          files: |
+            app/build/outputs/apk/release/biofrench-android-app.apk
+            app/src/main/assets/medicines.json
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
