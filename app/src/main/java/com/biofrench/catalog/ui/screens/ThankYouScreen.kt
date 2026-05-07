@@ -18,13 +18,18 @@ import com.biofrench.catalog.R
 @Composable
 fun ThankYouScreen() {
     val isAsvinsBrand = booleanResource(id = R.bool.is_asvins_brand)
+    val thankYouDrawable = if (isAsvinsBrand) {
+        R.drawable.thank_you_screen_asvins
+    } else {
+        R.drawable.thank_you_screen
+    }
 
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
         Image(
-            painter = painterResource(id = R.drawable.thank_you_screen),
+            painter = painterResource(id = thankYouDrawable),
             contentDescription = "Thank You Screen",
             modifier = Modifier.fillMaxSize()
         )

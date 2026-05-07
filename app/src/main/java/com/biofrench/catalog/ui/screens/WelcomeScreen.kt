@@ -24,6 +24,11 @@ import com.biofrench.catalog.R
 @Composable
 fun WelcomeScreen(onContinue: () -> Unit) {
     val isAsvinsBrand = booleanResource(id = R.bool.is_asvins_brand)
+    val welcomeDrawable = if (isAsvinsBrand) {
+        R.drawable.welcome_screen_asvins
+    } else {
+        R.drawable.welcome_screen
+    }
 
     Box(
         modifier = Modifier
@@ -33,7 +38,7 @@ fun WelcomeScreen(onContinue: () -> Unit) {
         contentAlignment = Alignment.Center
     ) {
         Image(
-            painter = painterResource(id = R.drawable.welcome_screen),
+            painter = painterResource(id = welcomeDrawable),
             contentDescription = "Welcome Image",
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.FillHeight
