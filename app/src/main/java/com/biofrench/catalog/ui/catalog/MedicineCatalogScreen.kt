@@ -69,13 +69,13 @@ fun MedicineCatalogScreen(
                 when (selectedSource) {
                     primarySourceLabel -> {
                         if (isAsvinsBrand) {
-                            // Asvins primary tab shows preferred-affiliate medicines excluding Biofrench source items.
+                            // Asvins primary tab shows preferred-affiliate medicines excluding BioFrench source items.
                             isAffiliateMedicine(med)
                         } else {
                             med.source.equals("Biofrench", ignoreCase = true)
                         }
                     }
-                    // Affiliate tab is only visible in Biofrench build, but kept here for shared filtering logic.
+                    // Affiliate tab is only visible in BioFrench build, but kept here for shared filtering logic.
                     "Affiliate" -> isAffiliateMedicine(med)
                     "Other" -> !med.source.equals("Biofrench", ignoreCase = true) && !med.preferredAffiliate
                     else -> true
