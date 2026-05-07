@@ -27,7 +27,7 @@ fun WelcomeScreen(onContinue: () -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(if (isAsvinsBrand) Color(0xFF0F172A) else Color.White)
+            .background(Color.White)
             .clickable { onContinue() },
         contentAlignment = Alignment.Center
     ) {

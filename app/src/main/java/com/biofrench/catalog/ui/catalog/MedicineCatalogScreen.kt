@@ -19,6 +19,10 @@ import androidx.compose.ui.res.booleanResource
 import androidx.compose.ui.res.painterResource
 import com.biofrench.catalog.R
 
+private fun isAffiliateMedicine(med: com.biofrench.catalog.data.model.MedicineEntity): Boolean {
+    return med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
+}
+
 /**
  * Main catalog screen displaying medicines in a grid layout.
  * 
@@ -44,9 +48,6 @@ fun MedicineCatalogScreen(
 ) {
     val isAsvinsBrand = booleanResource(id = R.bool.is_asvins_brand)
     val primarySourceLabel = if (isAsvinsBrand) "Asvins" else "Biofrench"
-    val isAffiliateMedicine = { med: com.biofrench.catalog.data.model.MedicineEntity ->
-        med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
-    }
 
     // UI state variables
     var searchText by remember { mutableStateOf("") }
@@ -67,7 +68,7 @@ fun MedicineCatalogScreen(
                 when (selectedSource) {
                     primarySourceLabel -> {
                         if (isAsvinsBrand) {
-                            // In the Asvins build, the primary tab intentionally reuses affiliate data.
+                            // Asvins primary tab shows preferred-affiliate medicines excluding Biofrench source items.
                             isAffiliateMedicine(med)
                         } else {
                             med.source.equals("Biofrench", ignoreCase = true)
