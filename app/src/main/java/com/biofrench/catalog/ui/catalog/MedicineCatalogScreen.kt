@@ -17,9 +17,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.booleanResource
 import androidx.compose.ui.res.painterResource
+import com.biofrench.catalog.data.model.MedicineEntity
 import com.biofrench.catalog.R
 
-private fun isAffiliateMedicine(med: com.biofrench.catalog.data.model.MedicineEntity): Boolean {
+private fun isAffiliateMedicine(med: MedicineEntity): Boolean {
     return med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
 }
 

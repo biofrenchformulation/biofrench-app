@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.booleanResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -45,7 +46,7 @@ fun WelcomeScreen(onContinue: () -> Unit) {
                     modifier = Modifier.size(96.dp)
                 )
                 Text(
-                    text = "ASVINS",
+                    text = stringResource(id = R.string.asvins_brand_title),
                     color = Color.White,
                     fontSize = 30.sp,
                     fontWeight = FontWeight.Bold
