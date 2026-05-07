@@ -7,4 +7,4 @@
 4. Settings Page
    <img width="2558" height="1591" alt="image" src="https://github.com/user-attachments/assets/31907e62-786b-4d9f-bc56-10fe4d997475" />
 5. Thank You
-   <img width="2558" height="1591" alt="image" src="https://github.com/user-attachments/assets/adedcf0e-beb4-4dee-8e40-62033c9c7a05" />
+   <img width="2568" height="1595" alt="image" src="https://github.com/user-attachments/assets/57652ddd-2743-4bc5-b6e8-d89db0bbb692" />
