@@ -15,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.booleanResource
 import androidx.compose.ui.res.painterResource
 import com.biofrench.catalog.R
 
@@ -41,9 +42,12 @@ fun MedicineCatalogScreen(
     columns: Int = 3,
     cardAspectRatio: Float = 1.55f
 ) {
+    val isAsvinsBrand = booleanResource(id = R.bool.is_asvins_brand)
+    val primarySourceLabel = if (isAsvinsBrand) "Asvins" else "Biofrench"
+
     // UI state variables
     var searchText by remember { mutableStateOf("") }
-    var selectedSource by remember { mutableStateOf("Biofrench") }
+    var selectedSource by remember(isAsvinsBrand) { mutableStateOf(primarySourceLabel) }
     var showFullScreenImage by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableStateOf<Int?>(null) }
     var showOtherTab by remember { mutableStateOf(false) }
@@ -58,7 +62,13 @@ fun MedicineCatalogScreen(
             // Filter by source tab
             .filter { med ->
                 when (selectedSource) {
-                    "Biofrench" -> med.source.equals("Biofrench", ignoreCase = true)
+                    primarySourceLabel -> {
+                        if (isAsvinsBrand) {
+                            med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
+                        } else {
+                            med.source.equals("Biofrench", ignoreCase = true)
+                        }
+                    }
                     "Affiliate" -> med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
                     "Other" -> !med.source.equals("Biofrench", ignoreCase = true) && !med.preferredAffiliate
                     else -> true
@@ -89,13 +99,13 @@ fun MedicineCatalogScreen(
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.logo_final),
-                    contentDescription = "BioFrench Logo",
+                    contentDescription = if (isAsvinsBrand) "Asvins Logo" else "BioFrench Logo",
                     modifier = Modifier
                         .size(40.dp)
                         .padding(end = 8.dp)
                 )
                 Text(
-                    text = "BioFrench Catalog",
+                    text = if (isAsvinsBrand) "Asvins Catalog" else "BioFrench Catalog",
                     style = MaterialTheme.typography.headlineMedium
                 )
             }
@@ -110,7 +120,7 @@ fun MedicineCatalogScreen(
                     onClick = {
                         showOtherTab = !showOtherTab
                         if (!showOtherTab && selectedSource == "Other") {
-                            selectedSource = "Biofrench"
+                            selectedSource = primarySourceLabel
                         }
                     },
                 ) {
@@ -135,19 +145,29 @@ fun MedicineCatalogScreen(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Center
         ) {
-            Button(
-                onClick = { selectedSource = "Biofrench" },
-                colors = if (selectedSource == "Biofrench") ButtonDefaults.buttonColors() else ButtonDefaults.outlinedButtonColors(),
-                modifier = Modifier.padding(end = 4.dp)
-            ) {
-                Text("Biofrench")
-            }
-            Button(
-                onClick = { selectedSource = "Affiliate" },
-                colors = if (selectedSource == "Affiliate") ButtonDefaults.buttonColors() else ButtonDefaults.outlinedButtonColors(),
-                modifier = Modifier.padding(horizontal = 4.dp)
-            ) {
-                Text("Affiliate")
+            if (isAsvinsBrand) {
+                Button(
+                    onClick = { selectedSource = primarySourceLabel },
+                    colors = if (selectedSource == primarySourceLabel) ButtonDefaults.buttonColors() else ButtonDefaults.outlinedButtonColors(),
+                    modifier = Modifier.padding(horizontal = 4.dp)
+                ) {
+                    Text(primarySourceLabel)
+                }
+            } else {
+                Button(
+                    onClick = { selectedSource = "Biofrench" },
+                    colors = if (selectedSource == "Biofrench") ButtonDefaults.buttonColors() else ButtonDefaults.outlinedButtonColors(),
+                    modifier = Modifier.padding(end = 4.dp)
+                ) {
+                    Text("Biofrench")
+                }
+                Button(
+                    onClick = { selectedSource = "Affiliate" },
+                    colors = if (selectedSource == "Affiliate") ButtonDefaults.buttonColors() else ButtonDefaults.outlinedButtonColors(),
+                    modifier = Modifier.padding(horizontal = 4.dp)
+                ) {
+                    Text("Affiliate")
+                }
             }
             if (showOtherTab) {
                 Button(
