@@ -44,10 +44,13 @@ fun MedicineCatalogScreen(
 ) {
     val isAsvinsBrand = booleanResource(id = R.bool.is_asvins_brand)
     val primarySourceLabel = if (isAsvinsBrand) "Asvins" else "Biofrench"
+    val isAffiliateMedicine = { med: com.biofrench.catalog.data.model.MedicineEntity ->
+        med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
+    }
 
     // UI state variables
     var searchText by remember { mutableStateOf("") }
-    var selectedSource by remember(isAsvinsBrand) { mutableStateOf(primarySourceLabel) }
+    var selectedSource by remember { mutableStateOf(primarySourceLabel) }
     var showFullScreenImage by remember { mutableStateOf(false) }
     var selectedIndex by remember { mutableStateOf<Int?>(null) }
     var showOtherTab by remember { mutableStateOf(false) }
@@ -64,12 +67,13 @@ fun MedicineCatalogScreen(
                 when (selectedSource) {
                     primarySourceLabel -> {
                         if (isAsvinsBrand) {
-                            med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
+                            // In the Asvins build, the primary tab intentionally reuses affiliate data.
+                            isAffiliateMedicine(med)
                         } else {
                             med.source.equals("Biofrench", ignoreCase = true)
                         }
                     }
-                    "Affiliate" -> med.preferredAffiliate && !med.source.equals("Biofrench", ignoreCase = true)
+                    "Affiliate" -> isAffiliateMedicine(med)
                     "Other" -> !med.source.equals("Biofrench", ignoreCase = true) && !med.preferredAffiliate
                     else -> true
                 }

@@ -53,7 +53,7 @@ android {
     // Custom APK naming
     android.applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            def brandName = variant.flavorName ?: "biofrench"
+            def brandName = variant.flavorName
             def apkName = "${brandName}-android-app"
             if (variant.buildType.name == "release") {
                 apkName += ".apk"
