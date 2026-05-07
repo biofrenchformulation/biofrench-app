@@ -75,6 +75,7 @@ fun MedicineCatalogScreen(
                             med.source.equals("Biofrench", ignoreCase = true)
                         }
                     }
+                    // Affiliate tab is only visible in Biofrench build, but kept here for shared filtering logic.
                     "Affiliate" -> isAffiliateMedicine(med)
                     "Other" -> !med.source.equals("Biofrench", ignoreCase = true) && !med.preferredAffiliate
                     else -> true

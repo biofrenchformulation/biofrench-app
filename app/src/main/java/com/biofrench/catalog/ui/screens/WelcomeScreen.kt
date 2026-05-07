@@ -39,7 +39,10 @@ fun WelcomeScreen(onContinue: () -> Unit) {
             contentScale = ContentScale.FillHeight
         )
         if (isAsvinsBrand) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Column(
+                modifier = Modifier.align(Alignment.Center),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
                 Image(
                     painter = painterResource(id = R.drawable.logo_final),
                     contentDescription = "Asvins Logo",
