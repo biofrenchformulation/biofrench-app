@@ -2,15 +2,15 @@
 
 ## Release Workflow
 
-The `release.yml` workflow automates the process of creating a new release of the BioFrench Android app. This workflow replaces the manual steps previously performed by the `wnt_biofrench_app.bat` script.
+The `release.yml` workflow automates the process of creating a new release of the BioFrench and Asvins Android apps. This workflow replaces the manual steps previously performed by the `wnt_biofrench_app.bat` script.
 
 ### Features
 
 - **On-demand execution**: Manually trigger releases via GitHub Actions UI
 - **Automated testing**: Runs unit tests before building the release
-- **Automated APK building**: Builds a signed release APK
+- **Automated APK building**: Builds signed release APKs for both flavors
 - **Automatic release creation**: Creates GitHub releases with assets
-- **Asset uploads**: Automatically uploads APK and medicines.json
+- **Asset uploads**: Automatically uploads both APKs and medicines.json
 
 ### Prerequisites
 
@@ -47,8 +47,9 @@ All you need is:
    - Your new release should be listed with:
      - Release version as the title
      - Release notes in the description
-     - `biofrench-android-app.apk` attached
-     - `medicines.json` attached
+      - `biofrench-android-app.apk` attached
+      - `asvins-android-app.apk` attached
+      - `medicines.json` attached
 
 ### Workflow Steps
 
@@ -57,8 +58,8 @@ The workflow performs the following steps:
 1. **Checkout repository**: Fetches the latest code
 2. **Set up JDK 11**: Configures Java environment
 3. **Run tests**: Executes unit tests (`gradlew testDebugUnitTest`)
-4. **Build release APK**: Compiles and signs the APK (`gradlew assembleRelease`)
-5. **Verify APK**: Confirms the APK was built successfully
+4. **Build release APKs**: Compiles and signs both flavor APKs (`gradlew assembleBiofrenchRelease assembleAsvinsRelease`)
+5. **Verify APKs**: Confirms both APKs were built successfully
 6. **Create git tag**: Tags the current commit with the version
 7. **Push tag**: Pushes the tag to GitHub
 8. **Create GitHub release**: Creates release with APK and medicines.json
@@ -85,7 +86,7 @@ The workflow performs the following steps:
 | APK signing | Local keystore | Repository keystore |
 | Testing | Manual command | Automated |
 | Release creation | Manual `gh` CLI | Automated action |
-| Asset upload | Manual paths | Automated |
+| Asset upload | Manual paths | Automated (both APKs + data) |
 | Accessibility | Local machine only | Anywhere with GitHub access |
 
 ### Benefits

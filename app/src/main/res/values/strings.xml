@@ -34,4 +34,6 @@
     <string name="otc">Over-the-counter</string>
     <string name="prescription">Prescription</string>
     <string name="back">Back</string>
+    <string name="asvins_brand_title">ASVINS</string>
+    <string name="asvins_thank_you_title">Thank You - ASVINS</string>
 </resources>

@@ -30,6 +30,18 @@ android {
         }
     }
 
+    flavorDimensions "brand"
+    productFlavors {
+        biofrench {
+            dimension "brand"
+        }
+        asvins {
+            dimension "brand"
+            applicationIdSuffix ".asvins"
+            versionNameSuffix "-asvins"
+        }
+    }
+
     buildTypes {
         release {
             signingConfig signingConfigs.release
@@ -41,7 +53,8 @@ android {
     // Custom APK naming
     android.applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            def apkName = "biofrench-android-app"
+            def brandName = variant.flavorName
+            def apkName = "${brandName}-android-app"
             if (variant.buildType.name == "release") {
                 apkName += ".apk"
             } else {

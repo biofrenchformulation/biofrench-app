@@ -36,16 +36,20 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build release APK
-        run: ./gradlew assembleRelease
+      - name: Build release APKs
+        run: ./gradlew assembleBiofrenchRelease assembleAsvinsRelease
 
-      - name: Verify APK exists
+      - name: Verify APKs exist
         run: |
-          if [ ! -f app/build/outputs/apk/release/biofrench-android-app.apk ]; then
-            echo "Error: APK not found at expected location"
+          if [ ! -f app/build/outputs/apk/biofrench/release/biofrench-android-app.apk ]; then
+            echo "Error: BioFrench APK not found at expected location"
             exit 1
           fi
-          echo "APK found successfully"
+          if [ ! -f app/build/outputs/apk/asvins/release/asvins-android-app.apk ]; then
+            echo "Error: Asvins APK not found at expected location"
+            exit 1
+          fi
+          echo "Both APKs found successfully"
 
       - name: Verify medicines.json exists
         run: |
@@ -113,7 +117,8 @@ jobs:
           name: ${{ github.event.inputs.version }}
           body_path: release_notes.txt
           files: |
-            app/build/outputs/apk/release/biofrench-android-app.apk
+            app/build/outputs/apk/biofrench/release/biofrench-android-app.apk
+            app/build/outputs/apk/asvins/release/asvins-android-app.apk
             app/src/main/assets/medicines.json
           draft: false
           prerelease: false
