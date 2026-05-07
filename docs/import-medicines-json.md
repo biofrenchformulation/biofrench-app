@@ -1,4 +1,4 @@
-<img width="1731" height="1196" alt="image" src="https://github.com/user-attachments/assets/79bdf289-bd49-4a24-abc7-e4eda55b3d60" /># Import medicines from a JSON file (with images)
+# Import medicines from a JSON file (with images)
 
 This guide shows the **simple steps** to import medicines into BioFrench using a **JSON file** and (optionally) add **images**.
 
