@@ -2,6 +2,17 @@
 
 Android medicine catalog app built with Kotlin, Jetpack Compose, MVVM, and Room.
 
+## Project Context
+
+This repository contains a single Android app codebase that ships two branded variants (`biofrench` and `asvins`).  
+The app is focused on medicine catalog browsing and admin-driven catalog management.
+
+Core capabilities:
+- Search and browse medicines in a grid catalog UI
+- View medicine details (brand, generic, category, dosage)
+- Manage catalog entries from an admin screen (add/edit/delete/toggle visibility)
+- Persist data with Room and JSON-backed assets
+
 ## Quick Start
 
 ```bash
@@ -28,6 +39,13 @@ app/src/main/java/com/biofrench/catalog/
 ├── ui/          # catalog, admin, details, theme
 └── MainActivity.kt
 ```
+
+## Architecture at a Glance
+
+- **UI (Compose)**: screens and reusable components in `ui/`
+- **State (ViewModel)**: UI state and interaction logic
+- **Data (Repository + Room)**: data access through repository and DAO
+- **Assets**: medicine data and images under `app/src/main/assets/`
 
 ## Common Development Tasks
 
