@@ -16,6 +16,7 @@ Android medicine catalog app built with Kotlin, Jetpack Compose, MVVM, and Room.
 - Room database
 - Navigation Compose
 - Coil (SVG/PNG/JPG loading)
+- Product flavors: `biofrench` and `asvins`
 
 ## Project Layout
 
