@@ -52,14 +52,15 @@ echo Unknown Mode
 exit /b 1
 
 :build
-echo Building Android app...
-call "%GRADLEW%" assembleRelease
+echo Building BioFrench and Asvins Android apps...
+call "%GRADLEW%" assembleBiofrenchRelease assembleAsvinsRelease
 if %errorlevel% neq 0 (
 	echo Build failed!
 	exit /b 1
 )
 echo Build completed successfully.
-echo APK location: %APK_OUTPUT_DIR%\release\biofrench-android-app.apk
+echo BioFrench APK location: %APK_OUTPUT_DIR%\biofrench\release\biofrench-android-app.apk
+echo Asvins APK location: %APK_OUTPUT_DIR%\asvins\release\asvins-android-app.apk
 goto :eof
 
 :test
@@ -118,7 +119,8 @@ pause
 set /p RELEASE_NOTES=Enter RELEASE_NOTES:
 
 echo Uploading files to GitHub release:
-echo - APK: %APK_OUTPUT_DIR%\release\biofrench-android-app.apk
+echo - BioFrench APK: %APK_OUTPUT_DIR%\biofrench\release\biofrench-android-app.apk
+echo - Asvins APK: %APK_OUTPUT_DIR%\asvins\release\asvins-android-app.apk
 echo - Medicine Data: %APP_DIR%\app\src\main\assets\medicines.json
 
 REM === Create GitHub Release with comparison URL ===
@@ -126,7 +128,8 @@ gh release create %TAG% ^
   --title "%TAG%" ^
   --target "%TO_BRANCH%" ^
   --notes "Changes from %TMP_GIT_OLD% to %TMP_GIT_NEW%: %RELEASE_NOTES%" ^
-  "%APK_OUTPUT_DIR%\release\biofrench-android-app.apk" ^
+  "%APK_OUTPUT_DIR%\biofrench\release\biofrench-android-app.apk" ^
+  "%APK_OUTPUT_DIR%\asvins\release\asvins-android-app.apk" ^
   "%APP_DIR%\app\src\main\assets\medicines.json"
 
 echo GitHub release created successfully!

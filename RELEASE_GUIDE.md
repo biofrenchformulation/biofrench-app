@@ -1,6 +1,6 @@
 # Release Guide
 
-This document explains how to create a new release of the BioFrench Android app using the automated GitHub Actions workflow.
+This document explains how to create a new release of the BioFrench and Asvins Android apps using the automated GitHub Actions workflow.
 
 ## Quick Start
 
@@ -19,11 +19,11 @@ This document explains how to create a new release of the BioFrench Android app 
 The automated workflow performs the following steps:
 
 1. **Runs Tests** - Executes all unit tests to ensure code quality
-2. **Builds Release APK** - Compiles and signs the production APK
+2. **Builds Release APKs** - Compiles and signs both production flavor APKs
 3. **Creates Git Tag** - Tags the current commit with your version
 4. **Creates GitHub Release** - Publishes the release with:
    - Release notes you provided
-   - Signed APK file (`biofrench-android-app.apk`)
+   - Signed APK files (`biofrench-android-app.apk` and `asvins-android-app.apk`)
    - Medicine catalog data (`medicines.json`)
 
 ## Version Naming Convention
@@ -72,7 +72,7 @@ Improved performance of catalog loading by 30%.
 - Push fixes and run the workflow again
 
 ### Workflow fails during build
-- Ensure all code compiles locally with `./gradlew assembleRelease`
+- Ensure all code compiles locally with `./gradlew assembleBiofrenchRelease assembleAsvinsRelease`
 - Check for missing dependencies
 - Verify keystore files are present in `app/keystore/`
 
