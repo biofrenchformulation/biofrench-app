@@ -112,7 +112,7 @@ fun MedicineCatalogScreen(
                         .padding(end = 8.dp)
                 )
                 Text(
-                    text = if (isAsvinsBrand) "Asvins Catalog" else "BioFrench Catalog",
+                    text = if (isAsvinsBrand) "Catalog" else "BioFrench Catalog",
                     style = MaterialTheme.typography.headlineMedium
                 )
             }
