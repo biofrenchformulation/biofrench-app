@@ -18,7 +18,7 @@ Android medicine catalog app built with Kotlin, Jetpack Compose, MVVM, and Room.
 - Coil (SVG/PNG/JPG loading)
 - Product flavors:
   - `biofrench`: BioFrench-branded app variant
-  - `asvins`: Asvins-branded app variant
+  - `asvins`: partner-branded variant built from the same codebase
 
 ## Project Layout
 
@@ -58,7 +58,7 @@ Version format: semantic versioning with `v` prefix (`vMAJOR.MINOR.PATCH`).
 ## Troubleshooting
 
 - Build/release failure: run `./gradlew assembleBiofrenchRelease assembleAsvinsRelease` locally first.
-- Gradle release task naming follows `assemble<Flavor><BuildType>` (for example, `assembleBiofrenchRelease`).
+- Gradle release task naming follows `assemble<Flavor><BuildType>` (e.g., `assembleBiofrenchRelease`).
 - Existing tag error: remove existing local/remote tag, then re-run workflow.
 
 ## Related Files
