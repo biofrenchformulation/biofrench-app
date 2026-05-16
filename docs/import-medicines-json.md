@@ -20,11 +20,11 @@ This guide walks you through importing medicines into **BioFrench** using a **JS
 1. Open the app.
 2. Click **Settings**.
 
-   <img width="2558" height="1588" alt="Settings button" src="https://github.com/user-attachments/assets/250f00bb-9396-48d0-8dd1-23dcabb04c61" />
+   <img width="2558" height="1588" alt="Settings button" src="doc_image/click_settings.png" />
 
 3. Click **Import JSON**.
 
-   <img width="2552" height="1594" alt="Import JSON button" src="https://github.com/user-attachments/assets/c581533b-514a-43e3-96d8-8da76966fd15" />
+   <img width="2552" height="1594" alt="Import JSON button" src="doc_image/import_medicine_json_button.png" />
 
 ---
 
@@ -32,13 +32,13 @@ This guide walks you through importing medicines into **BioFrench** using a **JS
 
 1. Choose the folder where your file is saved (example: **Downloads**).
 
-   <img width="2120" height="952" alt="Downloads folder" src="https://github.com/user-attachments/assets/7d2a98de-d695-4fe7-8640-29f29c656e8e" />
+   <img width="2120" height="952" alt="Downloads folder" src="doc_image/downloads_android.png" />
 
 2. Select your JSON file (for example **Medicine.json**).
 
    > Tip: If you have multiple files, pick the **latest** one.
 
-   <img width="1731" height="1196" alt="Select Medicine.json" src="https://github.com/user-attachments/assets/a0302d16-cc13-4b07-add1-9540942cd3f6" />
+   <img width="1731" height="1196" alt="Select Medicine.json" src="doc_image/import_medicine_select_json_android.png" />
 
 ---
 
@@ -46,9 +46,9 @@ This guide walks you through importing medicines into **BioFrench** using a **JS
 
 1. After importing, verify that the medicines appear in the app.
 
-   <img width="2553" height="1562" alt="Imported medicines list" src="https://github.com/user-attachments/assets/4a85f2a4-53de-4af4-8187-fc775db47bdf" />
+   <img width="2553" height="1562" alt="Imported medicines list" src="doc_image/confirm.png" />
 
-   <img width="2520" height="1204" alt="Imported medicine details" src="https://github.com/user-attachments/assets/a02e2613-906e-4153-85b6-76097cdaf8f5" />
+   <img width="2520" height="1204" alt="Imported medicine details" src="doc_image/catalog_biofrench.png" />
 
 ---
 
