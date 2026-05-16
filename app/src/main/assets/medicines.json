@@ -14,6 +14,13 @@
         "preferredAffiliate": true
     },
     {
+        "id": "ALSIFEN-120",
+        "brandName": "ALSIFEN-120",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
+    },
+    {
         "id": "ALSIFEN-180",
         "brandName": "ALSIFEN-180",
         "isActive": true,
