@@ -11,7 +11,7 @@
         "brandName": "ALSIFEN",
         "isActive": true,
         "source": "Avis Lifecare Pvt Ltd",
-        "preferredAffiliate": false
+        "preferredAffiliate": true
     },
     {
         "id": "ALSIFEN-180",
@@ -768,6 +768,13 @@
         "isActive": true,
         "source": "Avis Lifecare Pvt Ltd",
         "preferredAffiliate": false
+    },
+    {
+        "id": "ASVIRUTO-APTC",
+        "brandName": "ASVIRUTO-APTC",
+        "isActive": true,
+        "source": "Avis Lifecare Pvt Ltd",
+        "preferredAffiliate": true
     },
     {
         "id": "ASVIRUTO-ATBR",

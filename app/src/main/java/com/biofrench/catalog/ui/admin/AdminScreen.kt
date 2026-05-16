@@ -273,6 +273,9 @@ fun AdminScreen(
                             label = { Text("Source*") },
                             modifier = Modifier.fillMaxWidth()
                         )
+
+                        Spacer(modifier = Modifier.height(16.dp))
+
                         Button(
                             onClick = {
                                 val medicine = MedicineEntity(
