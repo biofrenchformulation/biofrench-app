@@ -87,11 +87,7 @@ fun FullScreenImageDialog(
                 contentAlignment = Alignment.Center
             ) {
                 if (foundAsset != null) {
-                    val imageData = when {
-                        foundAsset.startsWith("asset:") -> "file:///android_asset/${foundAsset.removePrefix("asset:")}"
-                        foundAsset.startsWith("files:") -> "file://${foundAsset.removePrefix("files:")}"
-                        else -> foundAsset
-                    }
+                    val imageData = buildImageDataFromSource(foundAsset)
                     android.util.Log.d("FullScreenImageDialog", "Loading image source: $imageData")
                     val imageLoader = ImageLoader.Builder(context)
                         .apply {

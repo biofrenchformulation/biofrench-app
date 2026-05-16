@@ -13,3 +13,11 @@ fun findMedicineImageAsset(context: Context, medicineId: String): String? {
     if (medicineId.isBlank()) return null
     return ImageImportHandler(context).findMedicineImage(medicineId)
 }
+
+fun buildImageDataFromSource(imageSource: String): String {
+    return when {
+        imageSource.startsWith("asset:") -> "file:///android_asset/${imageSource.removePrefix("asset:")}"
+        imageSource.startsWith("files:") -> "file://${imageSource.removePrefix("files:")}"
+        else -> imageSource
+    }
+}

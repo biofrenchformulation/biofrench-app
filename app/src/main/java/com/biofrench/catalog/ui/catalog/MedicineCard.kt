@@ -44,11 +44,7 @@ fun MedicineCard(
                 val foundAsset = findMedicineImageAsset(context, medicine.id)
                 
                 if (foundAsset != null) {
-                    val imageData = when {
-                        foundAsset.startsWith("asset:") -> "file:///android_asset/${foundAsset.removePrefix("asset:")}"
-                        foundAsset.startsWith("files:") -> "file://${foundAsset.removePrefix("files:")}"
-                        else -> foundAsset
-                    }
+                    val imageData = buildImageDataFromSource(foundAsset)
                     android.util.Log.d("MedicineCard", "Loading image source: $imageData")
                     val imageLoader = coil.ImageLoader.Builder(context)
                         .apply {

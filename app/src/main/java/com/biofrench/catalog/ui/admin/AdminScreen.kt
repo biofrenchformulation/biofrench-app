@@ -284,11 +284,11 @@ fun AdminScreen(
 
                         OutlinedButton(
                             onClick = {
-                                val normalizedId = stringId.trim()
-                                if (normalizedId.isBlank()) {
+                                val trimmedId = stringId.trim()
+                                if (trimmedId.isBlank()) {
                                     Toast.makeText(context, "Enter Unique ID before importing image", Toast.LENGTH_SHORT).show()
                                 } else {
-                                    pendingImageImportId = normalizedId
+                                    pendingImageImportId = trimmedId
                                     imagePickerLauncher.launch("image/*")
                                 }
                             },
