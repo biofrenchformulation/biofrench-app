@@ -44,17 +44,22 @@ fun MedicineCard(
                 val foundAsset = findMedicineImageAsset(context, medicine.id)
                 
                 if (foundAsset != null) {
-                    android.util.Log.d("MedicineCard", "Loading asset: file:///android_asset/images/$foundAsset")
+                    val imageData = when {
+                        foundAsset.startsWith("asset:") -> "file:///android_asset/${foundAsset.removePrefix("asset:")}"
+                        foundAsset.startsWith("files:") -> "file://${foundAsset.removePrefix("files:")}"
+                        else -> foundAsset
+                    }
+                    android.util.Log.d("MedicineCard", "Loading image source: $imageData")
                     val imageLoader = coil.ImageLoader.Builder(context)
                         .apply {
-                            if (foundAsset.endsWith(".svg", ignoreCase = true)) {
+                            if (imageData.endsWith(".svg", ignoreCase = true)) {
                                 components { add(coil.decode.SvgDecoder.Factory()) }
                             }
                         }
                         .build()
                     AsyncImage(
                         model = coil.request.ImageRequest.Builder(context)
-                            .data("file:///android_asset/images/$foundAsset")
+                            .data(imageData)
                             .crossfade(true)
                             .build(),
                         imageLoader = imageLoader,
@@ -63,7 +68,7 @@ fun MedicineCard(
                         contentScale = androidx.compose.ui.layout.ContentScale.Fit
                     )
                 } else {
-                    android.util.Log.d("MedicineCard", "No asset found for ${medicine.id}-1, showing fallback icon")
+                    android.util.Log.d("MedicineCard", "No image found for ${medicine.id}-1, showing fallback icon")
                     Icon(
                         painter = painterResource(id = com.biofrench.catalog.R.drawable.ic_broken_image),
                         contentDescription = "No image",
