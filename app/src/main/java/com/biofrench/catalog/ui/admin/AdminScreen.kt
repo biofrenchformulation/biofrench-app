@@ -18,6 +18,9 @@ import androidx.compose.material.icons.filled.FileOpen
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.ArrowDropDown
+import androidx.compose.material.icons.filled.ArrowDropUp
+import androidx.compose.foundation.clickable
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.window.Dialog
 import androidx.compose.foundation.rememberScrollState
@@ -264,15 +267,15 @@ fun AdminScreen(
                         verticalArrangement = Arrangement.Top,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        var brandName by remember { mutableStateOf(editingMedicine?.brandName ?: "") }
                         var source by remember { mutableStateOf(editingMedicine?.source ?: "Biofrench") }
                         var stringId by remember { mutableStateOf(editingMedicine?.stringId ?: "") }
                         var showSuccess by remember { mutableStateOf(false) }
+                        val sourceOptions = listOf("Biofrench", "Avis Lifecare Pvt Ltd")
 
                         OutlinedTextField(
                             value = stringId,
                             onValueChange = { stringId = it },
-                            label = { Text("Unique ID (for image)*") },
+                            label = { Text("Unique ID (for image and brand)*") },
                             modifier = Modifier.fillMaxWidth(),
                             singleLine = true
                         )
@@ -299,30 +302,51 @@ fun AdminScreen(
                             Text("Import Image")
                         }
                         Spacer(modifier = Modifier.height(8.dp))
-
-                        OutlinedTextField(
-                            value = brandName,
-                            onValueChange = { brandName = it },
-                            label = { Text("Brand Name*") },
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
                         // Source dropdown
-                        OutlinedTextField(
-                            value = source,
-                            onValueChange = { source = it },
-                            label = { Text("Source*") },
-                            modifier = Modifier.fillMaxWidth()
-                        )
+                        var expanded by remember { mutableStateOf(false) }
+                        Box {
+                            OutlinedTextField(
+                                value = source,
+                                onValueChange = {},
+                                readOnly = true,
+                                label = { Text("Source*") },
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { expanded = true },
+                                trailingIcon = {
+                                    Icon(
+                                        imageVector = if (expanded) Icons.Filled.ArrowDropUp else Icons.Filled.ArrowDropDown,
+                                        contentDescription = null,
+                                        modifier = Modifier.clickable { expanded = true }
+                                    )
+                                }
+                            )
+                            DropdownMenu(
+                                expanded = expanded,
+                                onDismissRequest = { expanded = false },
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                sourceOptions.forEach { option ->
+                                    DropdownMenuItem(
+                                        onClick = {
+                                            source = option
+                                            expanded = false
+                                        },
+                                        text = { Text(option) }
+                                    )
+                                }
+                            }
+                        }
 
                         Spacer(modifier = Modifier.height(16.dp))
 
                         Button(
                             onClick = {
+                                val trimmedId = stringId.trim()
                                 val medicine = MedicineEntity(
                                     id = editingMedicine?.id ?: 0,
-                                    stringId = stringId,
-                                    brandName = brandName,
+                                    stringId = trimmedId,
+                                    brandName = trimmedId,
                                     isActive = editingMedicine?.isActive ?: true,
                                     source = source
                                 )
@@ -334,7 +358,7 @@ fun AdminScreen(
                                 showSuccess = true
                                 showDialog = false
                             },
-                            enabled = stringId.isNotBlank() && brandName.isNotBlank(),
+                            enabled = stringId.isNotBlank(),
                             modifier = Modifier.fillMaxWidth().padding(vertical = 16.dp)
                         ) {
                             Text(if (editingMedicine == null) "Add Medicine" else "Save Changes")
