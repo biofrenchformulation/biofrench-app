@@ -8,6 +8,7 @@ import com.biofrench.catalog.data.ImageImportHandler
  * Returns either:
  * - "files:{absolute-path}" for imported images
  * - "asset:images/{file-name}" for bundled assets
+ * - null when no image exists for the medicine ID
  */
 fun findMedicineImageAsset(context: Context, medicineId: String): String? {
     if (medicineId.isBlank()) return null

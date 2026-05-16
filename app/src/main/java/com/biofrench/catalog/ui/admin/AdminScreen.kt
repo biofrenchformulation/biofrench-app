@@ -73,15 +73,11 @@ fun AdminScreen(
         contract = ActivityResultContracts.GetContent()
     ) { uri ->
         uri?.let {
-            if (medicineIdForImageImport.isBlank()) {
-                Toast.makeText(context, "Enter a unique ID first", Toast.LENGTH_SHORT).show()
-            } else {
-                viewModel.importMedicineImage(context, it, medicineIdForImageImport) { fileName, error ->
-                    if (error != null) {
-                        Toast.makeText(context, error, Toast.LENGTH_LONG).show()
-                    } else {
-                        Toast.makeText(context, "Image imported: $fileName", Toast.LENGTH_LONG).show()
-                    }
+            viewModel.importMedicineImage(context, it, medicineIdForImageImport) { fileName, error ->
+                if (error != null) {
+                    Toast.makeText(context, error, Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(context, "Image imported: $fileName", Toast.LENGTH_LONG).show()
                 }
             }
         }
