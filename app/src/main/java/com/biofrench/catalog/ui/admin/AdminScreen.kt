@@ -38,7 +38,7 @@ fun AdminScreen(
     var showDialog by remember { mutableStateOf(false) }
     var editingMedicine by remember { mutableStateOf<MedicineEntity?>(null) }
     var searchText by remember { mutableStateOf("") }
-    var pendingImageImportId by remember { mutableStateOf("") }
+    var medicineIdForImageImport by remember { mutableStateOf("") }
     val context = LocalContext.current
 
     val filteredMedicines = remember(searchText, medicines) {
@@ -73,10 +73,10 @@ fun AdminScreen(
         contract = ActivityResultContracts.GetContent()
     ) { uri ->
         uri?.let {
-            if (pendingImageImportId.isBlank()) {
+            if (medicineIdForImageImport.isBlank()) {
                 Toast.makeText(context, "Enter a unique ID first", Toast.LENGTH_SHORT).show()
             } else {
-                viewModel.importMedicineImage(context, it, pendingImageImportId) { fileName, error ->
+                viewModel.importMedicineImage(context, it, medicineIdForImageImport) { fileName, error ->
                     if (error != null) {
                         Toast.makeText(context, error, Toast.LENGTH_LONG).show()
                     } else {
@@ -187,7 +187,7 @@ fun AdminScreen(
                                 IconButton(
                                     onClick = {
                                         editingMedicine = medicine
-                                        pendingImageImportId = medicine.stringId
+                                        medicineIdForImageImport = medicine.stringId
                                         showDialog = true
                                     }
                                 ) {
@@ -223,7 +223,7 @@ fun AdminScreen(
             Button(
                 onClick = {
                     editingMedicine = null
-                    pendingImageImportId = ""
+                    medicineIdForImageImport = ""
                     showDialog = true
                 },
                 modifier = Modifier.weight(1f)
@@ -288,7 +288,7 @@ fun AdminScreen(
                                 if (trimmedId.isBlank()) {
                                     Toast.makeText(context, "Enter Unique ID before importing image", Toast.LENGTH_SHORT).show()
                                 } else {
-                                    pendingImageImportId = trimmedId
+                                    medicineIdForImageImport = trimmedId
                                     imagePickerLauncher.launch("image/*")
                                 }
                             },
