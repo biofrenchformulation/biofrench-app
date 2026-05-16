@@ -53,6 +53,14 @@ class AdminViewModel(private val repository: MedicineRepository) : ViewModel() {
         }
     }
 
+    /**
+     * Imports a selected image file for the provided medicine ID.
+     *
+     * This runs asynchronously in [viewModelScope].
+     * [onComplete] receives:
+     * - `fileName` on success (`error` is null)
+     * - null `fileName` and non-null `error` message on failure
+     */
     fun importMedicineImage(
         context: Context,
         imageUri: Uri,

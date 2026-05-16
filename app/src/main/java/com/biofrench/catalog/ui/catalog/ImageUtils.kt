@@ -14,6 +14,13 @@ fun findMedicineImageAsset(context: Context, medicineId: String): String? {
     return ImageImportHandler(context).findMedicineImage(medicineId)
 }
 
+/**
+ * Converts an internal image source token into a URI string consumable by Coil.
+ *
+ * Supported source formats:
+ * - `asset:images/{fileName}` -> `file:///android_asset/images/{fileName}`
+ * - `files:{absolutePath}` -> `file://{absolutePath}`
+ */
 fun buildImageDataFromSource(imageSource: String): String {
     return when {
         imageSource.startsWith("asset:") -> "file:///android_asset/${imageSource.removePrefix("asset:")}"
