@@ -1,0 +1,99 @@
+name: Generate Docs PDF
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**/*.md'
+      - 'docs/md-to-pdf.config.js'
+      - 'docs/pdf-style.css'
+      - '.github/workflows/docs-pdf.yml'
+  pull_request:
+    paths:
+      - 'docs/**/*.md'
+      - 'docs/md-to-pdf.config.js'
+      - 'docs/pdf-style.css'
+      - '.github/workflows/docs-pdf.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-doc-pdfs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build combined markdown
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p docs/pdf
+
+          cat > docs/combined-docs.md <<'EOF'
+          # BioFrench Documentation (Combined)
+
+          ---
+          EOF
+
+          # Use fixed ordering for predictable output.
+          for file in \
+            docs/app_ui_introduction.md \
+            docs/import-medicines-json.md \
+            docs/add_affifiliate.md \
+            docs/add_medicine_add_update_image.md
+          do
+            printf '\n<div style="page-break-before: always;"></div>\n\n' >> docs/combined-docs.md
+            cat "$file" >> docs/combined-docs.md
+            printf '\n' >> docs/combined-docs.md
+          done
+
+      - name: Generate individual PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for file in \
+            docs/app_ui_introduction.md \
+            docs/import-medicines-json.md \
+            docs/add_affifiliate.md \
+            docs/add_medicine_add_update_image.md
+          do
+            npx --yes md-to-pdf "$file" --config-file docs/md-to-pdf.config.js
+          done
+
+      - name: Generate combined PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          npx --yes md-to-pdf docs/combined-docs.md --config-file docs/md-to-pdf.config.js
+          cp docs/combined-docs.pdf docs/pdf/biofrench-docs-combined.pdf
+
+      - name: Collect PDFs into docs/pdf
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          cp docs/app_ui_introduction.pdf docs/pdf/
+          cp docs/import-medicines-json.pdf docs/pdf/
+          cp docs/add_affifiliate.pdf docs/pdf/
+          cp docs/add_medicine_add_update_image.pdf docs/pdf/
+
+      - name: Upload PDF artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: biofrench-docs-pdf
+          path: |
+            docs/pdf/*.pdf
+          if-no-files-found: error
+          retention-days: 14
