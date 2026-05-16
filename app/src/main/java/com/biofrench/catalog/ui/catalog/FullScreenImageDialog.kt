@@ -87,10 +87,11 @@ fun FullScreenImageDialog(
                 contentAlignment = Alignment.Center
             ) {
                 if (foundAsset != null) {
-                    android.util.Log.d("FullScreenImageDialog", "Loading asset: file:///android_asset/images/$foundAsset")
+                    val imageData = buildImageDataFromSource(foundAsset)
+                    android.util.Log.d("FullScreenImageDialog", "Loading image source: $imageData")
                     val imageLoader = ImageLoader.Builder(context)
                         .apply {
-                            if (foundAsset.endsWith(".svg", ignoreCase = true)) {
+                            if (imageData.endsWith(".svg", ignoreCase = true)) {
                                 components { add(SvgDecoder.Factory()) }
                             }
                         }
@@ -98,7 +99,7 @@ fun FullScreenImageDialog(
 
                     AsyncImage(
                         model = ImageRequest.Builder(context)
-                            .data("file:///android_asset/images/$foundAsset")
+                            .data(imageData)
                             .crossfade(true)
                             .build(),
                         contentDescription = "Medicine Image",

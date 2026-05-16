@@ -38,6 +38,7 @@ fun AdminScreen(
     var showDialog by remember { mutableStateOf(false) }
     var editingMedicine by remember { mutableStateOf<MedicineEntity?>(null) }
     var searchText by remember { mutableStateOf("") }
+    var medicineIdForImageImport by remember { mutableStateOf("") }
     val context = LocalContext.current
 
     val filteredMedicines = remember(searchText, medicines) {
@@ -47,7 +48,7 @@ fun AdminScreen(
         }
     }
 
-    // File picker launcher
+    // JSON file picker launcher
     val filePickerLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.GetContent()
     ) { uri ->
@@ -63,6 +64,21 @@ fun AdminScreen(
                 }
             } else {
                 Toast.makeText(context, "Unable to access the selected file", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    // Image file picker launcher
+    val imagePickerLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.GetContent()
+    ) { uri ->
+        uri?.let {
+            viewModel.importMedicineImage(context, it, medicineIdForImageImport) { fileName, error ->
+                if (error != null) {
+                    Toast.makeText(context, error, Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(context, "Image imported: $fileName", Toast.LENGTH_LONG).show()
+                }
             }
         }
     }
@@ -167,6 +183,7 @@ fun AdminScreen(
                                 IconButton(
                                     onClick = {
                                         editingMedicine = medicine
+                                        medicineIdForImageImport = medicine.stringId
                                         showDialog = true
                                     }
                                 ) {
@@ -202,6 +219,7 @@ fun AdminScreen(
             Button(
                 onClick = {
                     editingMedicine = null
+                    medicineIdForImageImport = ""
                     showDialog = true
                 },
                 modifier = Modifier.weight(1f)
@@ -259,6 +277,29 @@ fun AdminScreen(
                             singleLine = true
                         )
                         Spacer(modifier = Modifier.height(8.dp))
+
+                        OutlinedButton(
+                            onClick = {
+                                val trimmedId = stringId.trim()
+                                if (trimmedId.isBlank()) {
+                                    Toast.makeText(context, "Enter Unique ID before importing image", Toast.LENGTH_SHORT).show()
+                                } else {
+                                    medicineIdForImageImport = trimmedId
+                                    imagePickerLauncher.launch("image/*")
+                                }
+                            },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Icon(
+                                Icons.Default.FileOpen,
+                                contentDescription = "Import Image",
+                                modifier = Modifier.size(16.dp)
+                            )
+                            Spacer(Modifier.width(4.dp))
+                            Text("Import Image")
+                        }
+                        Spacer(modifier = Modifier.height(8.dp))
+
                         OutlinedTextField(
                             value = brandName,
                             onValueChange = { brandName = it },

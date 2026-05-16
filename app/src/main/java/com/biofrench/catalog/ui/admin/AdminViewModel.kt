@@ -1,5 +1,8 @@
 package com.biofrench.catalog.ui.admin
 
+import android.content.Context
+import android.net.Uri
+import com.biofrench.catalog.data.ImageImportHandler
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.biofrench.catalog.data.MedicineDataLoader
@@ -46,6 +49,35 @@ class AdminViewModel(private val repository: MedicineRepository) : ViewModel() {
                 }
             } catch (e: Exception) {
                 onComplete(0, "Error importing medicines: ${e.message}")
+            }
+        }
+    }
+
+    /**
+     * Imports a selected image file for the provided medicine ID.
+     *
+     * This runs asynchronously in [viewModelScope].
+     * [onComplete] receives:
+     * - `fileName` on success (`error` is null)
+     * - null `fileName` and non-null `error` message on failure
+     */
+    fun importMedicineImage(
+        context: Context,
+        imageUri: Uri,
+        medicineId: String,
+        onComplete: (String?, String?) -> Unit
+    ) {
+        viewModelScope.launch {
+            try {
+                val imageImportHandler = ImageImportHandler(context)
+                val importedFileName = imageImportHandler.importMedicineImage(imageUri, medicineId)
+                if (importedFileName != null) {
+                    onComplete(importedFileName, null)
+                } else {
+                    onComplete(null, "Invalid image format or failed to import image")
+                }
+            } catch (e: Exception) {
+                onComplete(null, "Error importing image: ${e.message}")
             }
         }
     }
