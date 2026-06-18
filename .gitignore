@@ -120,3 +120,5 @@ output.json
 
 /helper_tools/pdf_to_medicines/output/
 /helper_tools/MEDICINES.pdf
+
+**/__pycache__/**

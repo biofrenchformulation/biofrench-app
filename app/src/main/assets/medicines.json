@@ -217,8 +217,8 @@
         "preferredAffiliate": false
     },
     {
-        "id": "ASVICEF-PS",
-        "brandName": "ASVICEF-PS",
+        "id": "ASVICEF-PS 1.5",
+        "brandName": "ASVICEF-PS 1.5",
         "isActive": true,
         "source": "Asvins Lifecare Pvt Ltd",
         "preferredAffiliate": true
@@ -1645,8 +1645,8 @@
         "preferredAffiliate": false
     },
     {
-        "id": "SVISMEF",
-        "brandName": "SVISMEF",
+        "id": "SVISMEF-P-DS",
+        "brandName": "SVISMEF-P-DS",
         "isActive": true,
         "source": "Asvins Lifecare Pvt Ltd",
         "preferredAffiliate": false
