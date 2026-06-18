@@ -117,3 +117,5 @@ output.json
 *.kotlin_native_multiplatform
 /app/build/
 /sample/
+
+/helper_tools/pdf_to_medicines/output/

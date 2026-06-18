@@ -1,5 +1,5 @@
 module.exports = {
-  stylesheet: ["./docs/pdf-style.css"],
+  stylesheet: ["./pdf-style.css"],
   pdf_options: {
     format: "A4",
     landscape: true,

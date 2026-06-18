@@ -6,14 +6,14 @@ on:
     branches: [ main ]
     paths:
       - 'docs/**/*.md'
-      - 'docs/md-to-pdf.config.js'
-      - 'docs/pdf-style.css'
+      - 'helper_tools/pdf_converter/md-to-pdf.config.js'
+      - 'helper_tools/pdf_converter/pdf-style.css'
       - '.github/workflows/docs-pdf.yml'
   pull_request:
     paths:
       - 'docs/**/*.md'
-      - 'docs/md-to-pdf.config.js'
-      - 'docs/pdf-style.css'
+      - 'helper_tools/pdf_converter/md-to-pdf.config.js'
+      - 'helper_tools/pdf_converter/pdf-style.css'
       - '.github/workflows/docs-pdf.yml'
 
 permissions:
@@ -68,7 +68,7 @@ jobs:
             docs/add_affifiliate.md \
             docs/add_medicine_add_update_image.md
           do
-            npx --yes md-to-pdf "$file" --config-file docs/md-to-pdf.config.js
+            npx --yes md-to-pdf "$file" --config-file helper_tools/pdf_converter/md-to-pdf.config.js
           done
 
       - name: Generate combined PDF
@@ -76,7 +76,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          npx --yes md-to-pdf docs/combined-docs.md --config-file docs/md-to-pdf.config.js
+          npx --yes md-to-pdf docs/combined-docs.md --config-file helper_tools/pdf_converter/md-to-pdf.config.js
           cp docs/combined-docs.pdf docs/pdf/biofrench-docs-combined.pdf
 
       - name: Collect PDFs into docs/pdf
