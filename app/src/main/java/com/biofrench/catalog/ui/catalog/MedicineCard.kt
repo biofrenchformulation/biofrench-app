@@ -64,7 +64,7 @@ fun MedicineCard(
                         contentScale = androidx.compose.ui.layout.ContentScale.Fit
                     )
                 } else {
-                    android.util.Log.d("MedicineCard", "No image found for ${medicine.id}-1, showing fallback icon")
+                    android.util.Log.d("MedicineCard", "No image found for ${medicine.id}, showing fallback icon")
                     Icon(
                         painter = painterResource(id = com.biofrench.catalog.R.drawable.ic_broken_image),
                         contentDescription = "No image",

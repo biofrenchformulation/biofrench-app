@@ -267,10 +267,10 @@ fun AdminScreen(
                         verticalArrangement = Arrangement.Top,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        var source by remember { mutableStateOf(editingMedicine?.source ?: "Biofrench") }
+                        var source by remember { mutableStateOf(editingMedicine?.source ?: "Asvins Lifecare Pvt Ltd") }
                         var stringId by remember { mutableStateOf(editingMedicine?.stringId ?: "") }
                         var showSuccess by remember { mutableStateOf(false) }
-                        val sourceOptions = listOf("Biofrench", "Avis Lifecare Pvt Ltd")
+                        val sourceOptions = listOf("Biofrench", "Asvins Lifecare Pvt Ltd")
 
                         OutlinedTextField(
                             value = stringId,

@@ -19,6 +19,6 @@ data class MedicineEntity(
     val stringId: String = "",
     val brandName: String,
     val isActive: Boolean = true,
-    val source: String = "Biofrench",
+    val source: String = "Asvins Lifecare Pvt Ltd",
     val preferredAffiliate: Boolean = false
 )

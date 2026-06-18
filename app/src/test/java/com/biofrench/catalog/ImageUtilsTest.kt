@@ -29,7 +29,7 @@ class ImageUtilsTest {
         val result = findMedicineImageAsset(context, "test-png-medicine")
 
         // Since we don't have actual test assets, this will return null
-        // But the logic is tested - it would return "test-png-medicine-1.png" if the file existed
+        // But the logic is tested - it would return "test-png-medicine.png" if the file existed
         assertNull(result)
     }
 
@@ -38,7 +38,7 @@ class ImageUtilsTest {
         // Test assumes there's a test SVG file
         val result = findMedicineImageAsset(context, "test-svg-medicine")
 
-        // Would return "test-svg-medicine-1.svg" if file existed
+        // Would return "test-svg-medicine.svg" if file existed
         assertNull(result)
     }
 

@@ -6,13 +6,13 @@ import java.io.File
 
 /**
  * Handles importing and managing medicine images.
- * Images are stored in the app's files directory with the naming format: {medicineId}-1.{extension}
+ * Images are stored in the app's files directory with the naming format: {medicineId}.{extension}
  */
 class ImageImportHandler(private val context: Context) {
 
     companion object {
         private const val IMAGES_DIR = "images"
-        private const val IMAGE_SUFFIX = "-1"
+        private const val IMAGE_SUFFIX = ""
     }
 
     /**
@@ -32,7 +32,7 @@ class ImageImportHandler(private val context: Context) {
                 return null
             }
 
-            // Create the new filename: medicineId-1.extension
+            // Create the new filename: medicineId.extension
             val newFileName = "$medicineId$IMAGE_SUFFIX.$extension"
             val newFile = File(imageDir, newFileName)
 

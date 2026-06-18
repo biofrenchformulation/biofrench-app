@@ -42,6 +42,6 @@ data class MedicineJson(
     @SerializedName("id") val id: String,
     @SerializedName("brandName") val brandName: String,
     @SerializedName("isActive") val isActive: Boolean = true,
-    @SerializedName("source") val source: String = "Biofrench",
+    @SerializedName("source") val source: String = "Asvins Lifecare Pvt Ltd",
     @SerializedName("preferredAffiliate") val preferredAffiliate: Boolean = false
 )

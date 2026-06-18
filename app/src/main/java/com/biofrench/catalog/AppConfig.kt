@@ -42,8 +42,8 @@ object AppConfig {
         /** Supported image file extensions */
         val SUPPORTED_EXTENSIONS = listOf("svg", "png", "jpg", "jpeg")
         
-        /** Image file naming pattern: {medicineId}-1.{extension} */
-        const val IMAGE_SUFFIX = "-1"
+        /** Image file naming pattern: {medicineId}.{extension} */
+        const val IMAGE_SUFFIX = ""
     }
     
     /**
