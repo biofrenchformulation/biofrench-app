@@ -353,15 +353,13 @@ class PDFMedicinesExtractor:
 
     @staticmethod
     def _sanitize_id(text: str) -> str:
-        """Convert brand name to valid filename/id (letters, digits, hyphens, underscores)."""
-        # Replace spaces with hyphens
-        text = text.replace(" ", "-")
-        # Keep only alphanumeric, hyphens, underscores
-        text = re.sub(r"[^A-Za-z0-9\-_]", "", text)
-        # Collapse multiple hyphens/underscores
-        text = re.sub(r"[-_]+", "-", text)
-        # Trim leading/trailing hyphens
-        text = text.strip("-_")
+        """Convert brand name to valid filename/id (keep spaces, letters, digits)."""
+        # Keep only alphanumeric, spaces, hyphens, underscores
+        text = re.sub(r"[^A-Za-z0-9\s\-_]", "", text)
+        # Collapse multiple spaces/hyphens/underscores
+        text = re.sub(r"[\s\-_]+", " ", text)
+        # Trim leading/trailing whitespace
+        text = text.strip()
         return text if text else "unknown"
 
     @staticmethod
