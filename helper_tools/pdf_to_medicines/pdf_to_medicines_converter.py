@@ -172,57 +172,54 @@ class PDFMedicinesExtractor:
         3. Score each line based on PATTERN (hyphens+numbers, length, height)
         4. Return the highest-scoring line
         """
-        try:
-            # OPTIMIZATION: Only OCR top ~35% of image (where brand names go)
-            crop_height = int(img.height * 0.35)
-            img_cropped = img.crop((0, 0, img.width, crop_height))
-            
-            data = pytesseract.image_to_data(img_cropped, output_type=pytesseract.Output.DICT)
-        except Exception:
-            return None
+        all_candidates: List[Tuple[str, float]] = []
 
-        lines: Dict[Tuple[int, int, int], Dict] = {}
-        
-        n = len(data["text"])
-        for j in range(n):
-            text = data["text"][j].strip()
-            if not text:
-                continue
+        # Multi-pass OCR: if top-35% catches only manufacturer text, wider crops recover names.
+        for crop_ratio in (0.35, 0.50, 0.65):
             try:
-                conf = int(float(data["conf"][j]))
-            except (ValueError, TypeError):
-                conf = 50  # Default to neutral confidence if parsing fails
-            height = data["height"][j]
-            
-            word = self._clean_word(text)
-            if not word or len(word) < 2 or conf < 45:
+                crop_height = int(img.height * crop_ratio)
+                img_cropped = img.crop((0, 0, img.width, crop_height))
+                data = pytesseract.image_to_data(img_cropped, output_type=pytesseract.Output.DICT)
+            except Exception:
                 continue
-            
-            key = (data["block_num"][j], data["par_num"][j], data["line_num"][j])
-            if key not in lines:
-                lines[key] = {"words": [], "max_h": 0, "conf": 0, "y_pos": data["top"][j]}
-            lines[key]["words"].append(word)
-            lines[key]["max_h"] = max(lines[key]["max_h"], height)
-            lines[key]["conf"] = max(lines[key]["conf"], conf)
 
-        if not lines:
+            lines: Dict[Tuple[int, int, int], Dict] = {}
+            n = len(data["text"])
+            for j in range(n):
+                text = data["text"][j].strip()
+                if not text:
+                    continue
+                try:
+                    conf = int(float(data["conf"][j]))
+                except (ValueError, TypeError):
+                    conf = 50
+                if conf < 45:
+                    continue
+
+                word = self._clean_word(text)
+                if not word or len(word) < 2:
+                    continue
+
+                key = (data["block_num"][j], data["par_num"][j], data["line_num"][j])
+                if key not in lines:
+                    lines[key] = {"words": [], "max_h": 0, "conf": 0}
+                lines[key]["words"].append(word)
+                lines[key]["max_h"] = max(lines[key]["max_h"], data["height"][j])
+                lines[key]["conf"] = max(lines[key]["conf"], conf)
+
+            for line in lines.values():
+                name = " ".join(line["words"]).strip()
+                score = self._calculate_brand_score(name, line["max_h"], line["conf"])
+                if score > 0:
+                    # Prefer candidates found in tighter crops.
+                    score += (1.0 - crop_ratio) * 2.0
+                    all_candidates.append((name, score))
+
+        if not all_candidates:
             return None
 
-        candidates = []
-        for key, line in lines.items():
-            name = " ".join(line["words"]).strip()
-            
-            # Calculate brand-likelihood score
-            score = self._calculate_brand_score(name, line["max_h"], line["conf"])
-            if score > 0:
-                candidates.append((name, score))
-        
-        if not candidates:
-            return None
-
-        # Sort by score (descending) and pick the best
-        candidates.sort(key=lambda x: -x[1])
-        result = self._normalize_name(candidates[0][0])
+        all_candidates.sort(key=lambda x: -x[1])
+        result = self._normalize_name(all_candidates[0][0])
         return result if result else None
 
     def _calculate_brand_score(self, text: str, height: int, conf: int) -> float:
@@ -244,13 +241,69 @@ class PDFMedicinesExtractor:
         """
         lower_text = text.lower()
         text_len = len(text)
+        dosage_terms = {
+            "tablet",
+            "tablets",
+            "capsule",
+            "capsules",
+            "softgel",
+            "softgels",
+            "syrup",
+            "injection",
+            "cream",
+            "gel",
+            "drops",
+            "ointment",
+            "powder",
+            "suspension",
+        }
+
+        # Hard reject manufacturer and generic packaging lines.
+        if lower_text in {
+            "akums",
+            "asvins lifecare",
+            "akums asvins lifecare",
+            "ms asvins lifecare",
+            "manufactured by",
+            "lifecare",
+        }:
+            return 0.0
+        if "manufactured" in lower_text or "lifecare" in lower_text:
+            return 0.0
+
+        # Reject common slogan text misread as brand.
+        if lower_text in {"diabetes care", "diabetic care"}:
+            return 0.0
+
+        # Reject dosage placeholders when they are standalone OCR picks.
+        if lower_text in dosage_terms:
+            return 0.0
+
+        tokens = lower_text.split()
+        has_dosage_suffix = len(tokens) >= 2 and tokens[-1] in dosage_terms
+        if has_dosage_suffix:
+            # Keep suffix only when there is a meaningful brand prefix before it.
+            prefix_key = re.sub(r"[^a-z0-9]", "", " ".join(tokens[:-1]))
+            if len(prefix_key) < 4:
+                return 0.0
+
+        # Reject lines like "Tablets 10mg100mg500mg" that are composition/dosage text.
+        first = tokens[0] if tokens else ""
+        compact = re.sub(r"\s+", "", lower_text)
+        if first in dosage_terms:
+            # If it starts with dosage form and contains dose units, it is not a brand.
+            if any(u in compact for u in ("mg", "ml", "mcg", "iu", "gm")):
+                return 0.0
+            # Dosage-form-first with no hyphen is usually generic packaging text.
+            if "-" not in text:
+                return 0.0
         
         # HARD REJECT: Obviously not a brand name
         
         # Single common English words (cream, tablet, injection, etc)
         if text_len < 6 and lower_text in [
-            "cream", "tablet", "injection", "lotion", "syrup", "drops",
-            "ointment", "powder", "vial", "capsule", "patch", "gel"
+            "cream", "tablet", "tablets", "injection", "lotion", "syrup", "drops",
+            "ointment", "powder", "vial", "capsule", "capsules", "patch", "gel"
         ]:
             return 0.0
         
@@ -314,6 +367,10 @@ class PDFMedicinesExtractor:
             score += 15  # Hyphens alone decent (ASVI-DGM)
         elif digit_count > 0 and alpha_count > 0 and text_len <= 20:
             score += 5  # Numbers + letters (ASVINS50) is okay but less common
+
+        # Very short plain words without hyphen/digits are usually noise.
+        if hyphen_count == 0 and digit_count == 0 and text_len < 7:
+            return 0.0
         
         # Excessive spaces = marketing text (penalize heavily)
         if space_count >= 2:
@@ -332,19 +389,16 @@ class PDFMedicinesExtractor:
         consonants = sum(1 for c in lower_text if c.isalpha() and c not in "aeiou" and c != "-" and c != " ")
         if consonants > 0 and (vowels == 0 or consonants == 0):
             score -= 5  # Slightly penalize
-        
-        # 5. OCR CONFIDENCE (lowest weight - height is more reliable)
+
+        # 5. OCR CONFIDENCE (lowest weight)
         if conf >= 85:
-            score += 8
+            score += 5
         elif conf >= 70:
-            score += 4
+            score += 3
         elif conf < 50:
-            return 0.0  # Too low confidence
-        
-        # Ensure score is non-negative
-        return max(0.0, score)
+            score -= 5
 
-
+        return max(0.0, min(100.0, score))
 
     @staticmethod
     def _clean_word(text: str) -> str:
@@ -353,20 +407,21 @@ class PDFMedicinesExtractor:
 
     @staticmethod
     def _sanitize_id(text: str) -> str:
-        """Convert brand name to valid filename/id (keep spaces, letters, digits)."""
-        # Keep only alphanumeric, spaces, hyphens, underscores
+        """Convert brand name to a stable id while preserving hyphens as-is."""
+        # Keep only alphanumeric, spaces, hyphens, and underscores.
         text = re.sub(r"[^A-Za-z0-9\s\-_]", "", text)
-        # Collapse multiple spaces/hyphens/underscores
-        text = re.sub(r"[\s\-_]+", " ", text)
-        # Trim leading/trailing whitespace
-        text = text.strip()
+        # Normalize whitespace only; do not collapse/replace hyphens.
+        text = re.sub(r"\s+", " ", text).strip()
         return text if text else "unknown"
 
     @staticmethod
     def _normalize_name(name: str) -> str:
-        """Collapse whitespace and trim stray hyphens."""
+        """Normalize whitespace and hyphen spacing in OCR output."""
+        name = re.sub(r"\s*\-\s*", "-", name)
+        name = re.sub(r"\-\-+", "-", name)
         name = re.sub(r"\s+", " ", name).strip(" -")
         return name
+
 
     def save_medicines_json(self) -> Path:
         """Save medicines to medicines.json."""
