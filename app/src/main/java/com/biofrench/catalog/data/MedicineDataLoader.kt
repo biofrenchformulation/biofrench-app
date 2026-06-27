@@ -27,12 +27,9 @@ class MedicineDataLoader(private val context: Context) {
     }
 
     private fun MedicineJson.toEntity(): MedicineEntity {
-
         return MedicineEntity(
             stringId = id,
             brandName = brandName,
-            medicineType = medicineType,
-            strength = strength,
             isActive = isActive,
             source = source,
             preferredAffiliate = preferredAffiliate || source.equals("Biofrench", ignoreCase = true)
@@ -43,8 +40,6 @@ class MedicineDataLoader(private val context: Context) {
 data class MedicineJson(
     @SerializedName("id") val id: String,
     @SerializedName("brandName") val brandName: String,
-    @SerializedName("medicineType") val medicineType: String? = null,
-    @SerializedName("strength") val strength: String? = null,
     @SerializedName("isActive") val isActive: Boolean = true,
     @SerializedName("source") val source: String = "Asvins Lifecare Pvt Ltd",
     @SerializedName("preferredAffiliate") val preferredAffiliate: Boolean = false

@@ -1,3 +1,8 @@
-pypdfium2>=4.0.0
-Pillow>=10.0.0
-pytesseract>=0.3.10
+# Medicine Extraction & Conversion Requirements
+# Install with: pip install -r pdf_converter_requirements.txt
+
+# Core dependencies
+pypdfium2>=4.0.0          # PDF rendering
+Pillow>=10.0.0            # Image processing
+pytesseract>=0.3.10       # OCR text extraction
+

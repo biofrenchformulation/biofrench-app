@@ -22,8 +22,8 @@ abstract class AppDatabase : RoomDatabase() {
 
         private val MIGRATION_2_3 = object : Migration(2, 3) {
             override fun migrate(database: SupportSQLiteDatabase) {
-                database.execSQL("ALTER TABLE medicines ADD COLUMN medicineType TEXT DEFAULT NULL")
-                database.execSQL("ALTER TABLE medicines ADD COLUMN strength TEXT DEFAULT NULL")
+                // Migration v2->v3: Removed medicineType and strength columns (now in ID only)
+                // No schema changes needed
             }
         }
 
