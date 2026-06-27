@@ -368,8 +368,9 @@ class PDFMedicinesExtractor:
         elif digit_count > 0 and alpha_count > 0 and text_len <= 20:
             score += 5  # Numbers + letters (ASVINS50) is okay but less common
 
-        # Very short plain words without hyphen/digits are usually noise.
-        if hyphen_count == 0 and digit_count == 0 and text_len < 7:
+        # Very short plain words (< 4 chars) without hyphen/digits are usually noise.
+        # Names of 4+ chars (e.g. DIAB, SVIS, ASFLAX) are valid pharmaceutical brand names.
+        if hyphen_count == 0 and digit_count == 0 and text_len < 4:
             return 0.0
         
         # Excessive spaces = marketing text (penalize heavily)
