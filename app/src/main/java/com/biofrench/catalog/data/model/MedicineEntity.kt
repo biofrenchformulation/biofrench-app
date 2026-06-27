@@ -9,6 +9,8 @@ import androidx.room.PrimaryKey
  * @property id Auto-generated unique identifier for database
  * @property stringId User-defined unique ID used for image file naming (e.g., "med001")
  * @property brandName Display name of the medicine
+ * @property medicineType Type/form of medicine (e.g., "Tablet", "Capsule", "Syrup", "Injection")
+ * @property strength Dosage strength (e.g., "100mg", "50", "500mg")
  * @property isActive Whether the medicine is visible in the catalog (true) or hidden (false)
  * @property source Source of the medicine: "Biofrench" for in-house or other affiliates
  * @property preferredAffiliate If true, shown in the "Affiliate" tab; false shows in "Other" tab
@@ -18,6 +20,8 @@ data class MedicineEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val stringId: String = "",
     val brandName: String,
+    val medicineType: String? = null,
+    val strength: String? = null,
     val isActive: Boolean = true,
     val source: String = "Asvins Lifecare Pvt Ltd",
     val preferredAffiliate: Boolean = false
