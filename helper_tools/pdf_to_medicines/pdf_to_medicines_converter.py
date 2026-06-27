@@ -103,9 +103,12 @@ class PDFMedicinesExtractor:
                     if name:
                         brand_name = name
 
+                # Parse medicine components from brand name
+                medicine_name, medicine_type, strength = self._parse_medicine_components(brand_name if brand_name else "")
+
                 # Use extracted brand name as stringId, fallback to sequential if OCR failed
-                if brand_name:
-                    string_id = self._sanitize_id(brand_name)
+                if medicine_name:
+                    string_id = self._sanitize_id(medicine_name)
                 else:
                     image_count += 1
                     string_id = f"med{image_count:03d}"
@@ -113,15 +116,26 @@ class PDFMedicinesExtractor:
                 image_path = self.images_dir / f"{string_id}.jpg"
                 pil_image.save(image_path, "JPEG", quality=95)
 
-                self.medicines.append({
+                medicine_dict = {
                     "id": string_id,
                     "brandName": brand_name if brand_name else string_id,
                     "isActive": True,
                     "source": self.source,
                     "preferredAffiliate": False,
-                })
+                }
+                
+                # Add optional fields only if they have values
+                if medicine_type:
+                    medicine_dict["medicineType"] = medicine_type
+                if strength:
+                    medicine_dict["strength"] = strength
+                
+                self.medicines.append(medicine_dict)
                 image_count += 1
-                print(f"Page {page_idx + 1}/{end_idx}: {string_id} -> '{brand_name if brand_name else string_id}'")
+                
+                type_str = f" [{medicine_type}]" if medicine_type else ""
+                strength_str = f" ({strength})" if strength else ""
+                print(f"Page {page_idx + 1}/{end_idx}: {string_id}{type_str}{strength_str} -> '{brand_name if brand_name else string_id}'")
             except Exception as e:
                 print(f"Page {page_idx + 1}/{end_idx}: SKIPPED ({str(e)[:60]})")
 
@@ -368,8 +382,9 @@ class PDFMedicinesExtractor:
         elif digit_count > 0 and alpha_count > 0 and text_len <= 20:
             score += 5  # Numbers + letters (ASVINS50) is okay but less common
 
-        # Very short plain words without hyphen/digits are usually noise.
-        if hyphen_count == 0 and digit_count == 0 and text_len < 7:
+        # Very short plain words (< 4 chars) without hyphen/digits are usually noise.
+        # Names of 4+ chars (e.g. DIAB, SVIS, ASFLAX) are valid pharmaceutical brand names.
+        if hyphen_count == 0 and digit_count == 0 and text_len < 4:
             return 0.0
         
         # Excessive spaces = marketing text (penalize heavily)
@@ -399,6 +414,63 @@ class PDFMedicinesExtractor:
             score -= 5
 
         return max(0.0, min(100.0, score))
+
+    def _parse_medicine_components(self, brand_name: str) -> Tuple[str, Optional[str], Optional[str]]:
+        """
+        Parse a brand name into its components: medicine name, type, and strength.
+        
+        Examples:
+            "ALSIFEN-120" -> ("ALSIFEN", None, "120")
+            "ASPILE Capsule" -> ("ASPILE", "Capsule", None)
+            "BIODAC 50MG" -> ("BIODAC", None, "50mg")
+            "ASVICEF-125-DS" -> ("ASVICEF-DS", None, "125")
+            "ARIACORT-40 Tablet" -> ("ARIACORT", "Tablet", "40")
+        
+        Returns:
+            Tuple of (medicine_name, medicine_type, strength)
+        """
+        if not brand_name:
+            return ("", None, None)
+        
+        # Known dosage forms
+        dosage_forms = {
+            "tablet", "tablets", "capsule", "capsules", "syrup", 
+            "injection", "cream", "gel", "drops", "ointment", 
+            "powder", "suspension", "softgel", "softgels"
+        }
+        
+        text = brand_name.strip()
+        medicine_type = None
+        strength = None
+        
+        # Extract medicine type (dosage form)
+        words = text.split()
+        for i, word in enumerate(words):
+            if word.lower() in dosage_forms:
+                medicine_type = word.capitalize()
+                # Remove the type from text
+                text = " ".join(words[:i] + words[i+1:]).strip()
+                break
+        
+        # Extract strength patterns
+        # Pattern 1: Number followed by unit (e.g., "50MG", "100ML")
+        strength_match = re.search(r'\b(\d+)\s*(mg|ml|mcg|iu|gm)\b', text, re.IGNORECASE)
+        if strength_match:
+            strength = strength_match.group(1) + strength_match.group(2).lower()
+            # Remove strength from text
+            text = re.sub(r'\s*\b\d+\s*(mg|ml|mcg|iu|gm)\b', '', text, flags=re.IGNORECASE).strip()
+        else:
+            # Pattern 2: Trailing number (e.g., "ALSIFEN-120", "ARIACORT-40")
+            trailing_num = re.search(r'-(\d+)(?:\s|$)', text)
+            if trailing_num:
+                strength = trailing_num.group(1)
+                # Remove the strength from text, but keep other hyphens
+                text = re.sub(r'-' + re.escape(strength) + r'(?:\s|$)', '', text).strip()
+        
+        # What remains is the medicine name
+        medicine_name = text.strip() if text.strip() else brand_name
+        
+        return (medicine_name, medicine_type, strength)
 
     @staticmethod
     def _clean_word(text: str) -> str:

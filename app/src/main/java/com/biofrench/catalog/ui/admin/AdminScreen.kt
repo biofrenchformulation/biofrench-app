@@ -269,15 +269,47 @@ fun AdminScreen(
                     ) {
                         var source by remember { mutableStateOf(editingMedicine?.source ?: "Asvins Lifecare Pvt Ltd") }
                         var stringId by remember { mutableStateOf(editingMedicine?.stringId ?: "") }
+                        var brandName by remember { mutableStateOf(editingMedicine?.brandName ?: "") }
+                        var medicineType by remember { mutableStateOf(editingMedicine?.medicineType ?: "") }
+                        var strength by remember { mutableStateOf(editingMedicine?.strength ?: "") }
                         var showSuccess by remember { mutableStateOf(false) }
                         val sourceOptions = listOf("Biofrench", "Asvins Lifecare Pvt Ltd")
 
                         OutlinedTextField(
                             value = stringId,
                             onValueChange = { stringId = it },
-                            label = { Text("Unique ID (for image and brand)*") },
+                            label = { Text("Unique ID (for image)*") },
                             modifier = Modifier.fillMaxWidth(),
                             singleLine = true
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        
+                        OutlinedTextField(
+                            value = brandName,
+                            onValueChange = { brandName = it },
+                            label = { Text("Brand Name*") },
+                            modifier = Modifier.fillMaxWidth(),
+                            singleLine = true
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        
+                        OutlinedTextField(
+                            value = medicineType,
+                            onValueChange = { medicineType = it },
+                            label = { Text("Type (Tablet, Capsule, Syrup, etc.)") },
+                            modifier = Modifier.fillMaxWidth(),
+                            singleLine = true,
+                            placeholder = { Text("Optional") }
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        
+                        OutlinedTextField(
+                            value = strength,
+                            onValueChange = { strength = it },
+                            label = { Text("Strength (e.g., 100mg, 50)") },
+                            modifier = Modifier.fillMaxWidth(),
+                            singleLine = true,
+                            placeholder = { Text("Optional") }
                         )
                         Spacer(modifier = Modifier.height(8.dp))
 
@@ -343,12 +375,16 @@ fun AdminScreen(
                         Button(
                             onClick = {
                                 val trimmedId = stringId.trim()
+                                val trimmedBrandName = brandName.trim()
                                 val medicine = MedicineEntity(
                                     id = editingMedicine?.id ?: 0,
                                     stringId = trimmedId,
-                                    brandName = trimmedId,
+                                    brandName = trimmedBrandName.ifBlank { trimmedId },
+                                    medicineType = medicineType.trim().ifBlank { null },
+                                    strength = strength.trim().ifBlank { null },
                                     isActive = editingMedicine?.isActive ?: true,
-                                    source = source
+                                    source = source,
+                                    preferredAffiliate = editingMedicine?.preferredAffiliate ?: false
                                 )
                                 if (editingMedicine == null) {
                                     viewModel.addMedicine(medicine)

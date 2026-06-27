@@ -29,7 +29,7 @@ object AppConfig {
         const val NAME = "biofrench-db"
         
         /** Database version - increment this when schema changes */
-        const val VERSION = 2
+        const val VERSION = 3
     }
     
     /**
