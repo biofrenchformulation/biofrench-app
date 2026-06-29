@@ -765,10 +765,24 @@ class ImagesToJsonConverter:
         return validation_ok
 
     def save_json(self) -> Path:
-        """Save medicines to specified JSON file."""
+        """Save medicines to specified JSON file with all fields including originalImageName."""
         json_path = self.output_dir / self.output_json_filename
+        
+        # Ensure each medicine has required fields
+        medicines_to_save = []
+        for med in self.medicines:
+            med_copy = {
+                "id": med.get("id", "unknown"),
+                "brandName": med.get("brandName", ""),
+                "isActive": med.get("isActive", True),
+                "source": med.get("source", "Asvins Lifecare Pvt Ltd"),
+                "preferredAffiliate": med.get("preferredAffiliate", False),
+                "originalImageName": med.get("originalImageName"),  # Explicitly preserve
+            }
+            medicines_to_save.append(med_copy)
+        
         with open(json_path, "w", encoding="utf-8") as f:
-            json.dump(self.medicines, f, indent=4, ensure_ascii=False)
+            json.dump(medicines_to_save, f, indent=4, ensure_ascii=False)
         return json_path
 
     def save_extraction_log(self) -> tuple:

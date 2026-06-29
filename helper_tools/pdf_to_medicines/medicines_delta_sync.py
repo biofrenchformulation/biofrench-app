@@ -43,10 +43,10 @@ class MedicinesDeltaSync:
             with open(path, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except FileNotFoundError:
-            print(f"❌ File not found: {path}")
+            print(f"[ERROR] File not found: {path}")
             return []
         except json.JSONDecodeError as e:
-            print(f"❌ Invalid JSON in {path}: {e}")
+            print(f"[ERROR] Invalid JSON in {path}: {e}")
             return []
 
     def verify_integrity(self) -> Dict[str, List[str]]:
@@ -98,14 +98,14 @@ class MedicinesDeltaSync:
         issues = self.verify_integrity()
         
         if issues["errors"]:
-            print("\n⚠️  ERRORS:")
+            print("\n[ERRORS]:")
             for error in issues["errors"]:
-                print(f"   ❌ {error}")
+                print(f"   [ERROR] {error}")
         
         if issues["warnings"]:
-            print("\n⚠️  WARNINGS:")
+            print("\n[WARNINGS]:")
             for warning in issues["warnings"]:
-                print(f"   ⚠️  {warning}")
+                print(f"   [WARN] {warning}")
         
         # Summary
         print("\n" + "-"*80)
@@ -120,27 +120,27 @@ class MedicinesDeltaSync:
         
         # Show added medicines
         if self.added:
-            print(f"\n✅ ADDED ({len(self.added)} medicines):")
+            print(f"\n[ADDED] ({len(self.added)} medicines):")
             for med_id in sorted(list(self.added))[:10]:
                 med = next((m for m in self.new_medicines if m["id"] == med_id), None)
                 if med:
-                    print(f"   + {med_id:35s} → {med.get('brandName', 'N/A')}")
+                    print(f"   + {med_id:35s} -> {med.get('brandName', 'N/A')}")
             if len(self.added) > 10:
                 print(f"   ... and {len(self.added) - 10} more")
         
         # Show removed medicines
         if self.removed:
-            print(f"\n❌ REMOVED ({len(self.removed)} medicines):")
+            print(f"\n[REMOVED] ({len(self.removed)} medicines):")
             for med_id in sorted(list(self.removed))[:10]:
                 med = next((m for m in self.current_medicines if m["id"] == med_id), None)
                 if med:
-                    print(f"   - {med_id:35s} ← {med.get('brandName', 'N/A')}")
+                    print(f"   - {med_id:35s} <- {med.get('brandName', 'N/A')}")
             if len(self.removed) > 10:
                 print(f"   ... and {len(self.removed) - 10} more")
         
         # Show changed medicines
         if self.common:
-            print(f"\n🔄 CHECKING UPDATES ON {len(self.common)} COMMON MEDICINES...")
+            print(f"\n[SYNC] CHECKING UPDATES ON {len(self.common)} COMMON MEDICINES...")
             changed = []
             for med_id in self.common:
                 current_med = next((m for m in self.current_medicines if m["id"] == med_id), {})
@@ -149,11 +149,11 @@ class MedicinesDeltaSync:
                 # Check what changed
                 changes = []
                 if current_med.get("brandName") != new_med.get("brandName"):
-                    changes.append(f"name: '{current_med.get('brandName')}' → '{new_med.get('brandName')}'")
+                    changes.append(f"name: '{current_med.get('brandName')}' -> '{new_med.get('brandName')}'")
                 if current_med.get("source") != new_med.get("source"):
-                    changes.append(f"source: '{current_med.get('source')}' → '{new_med.get('source')}'")
+                    changes.append(f"source: '{current_med.get('source')}' -> '{new_med.get('source')}'")
                 if current_med.get("isActive") != new_med.get("isActive"):
-                    changes.append(f"active: {current_med.get('isActive')} → {new_med.get('isActive')}")
+                    changes.append(f"active: {current_med.get('isActive')} -> {new_med.get('isActive')}")
                 
                 if changes:
                     changed.append((med_id, changes))
@@ -161,13 +161,13 @@ class MedicinesDeltaSync:
             if changed:
                 print(f"   {len(changed)} medicines have changes:")
                 for med_id, changes in changed[:5]:
-                    print(f"   🔄 {med_id:35s}")
+                    print(f"   [SYNC] {med_id:35s}")
                     for change in changes:
-                        print(f"      • {change}")
+                        print(f"      ? {change}")
                 if len(changed) > 5:
                     print(f"   ... and {len(changed) - 5} more")
             else:
-                print(f"   ✓ All {len(self.common)} common medicines are identical")
+                print(f"   [OK] All {len(self.common)} common medicines are identical")
         
         print("\n" + "="*80)
         print(f"Comparison at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -186,20 +186,20 @@ class MedicinesDeltaSync:
                     backup_data = f.read()
                 with open(backup_path, 'w', encoding='utf-8') as f:
                     f.write(backup_data)
-                print(f"✓ Backup created: {backup_path.name}")
+                print(f"[OK] Backup created: {backup_path.name}")
             
             # Write updated medicines
             with open(self.current_path, 'w', encoding='utf-8') as f:
                 json.dump(self.new_medicines, f, indent=2, ensure_ascii=False)
             
-            print(f"✓ Updated {self.current_path.name} ({len(self.new_medicines)} medicines)")
-            print(f"  • Added:   {len(self.added)}")
-            print(f"  • Removed: {len(self.removed)}")
-            print(f"  • Updated: {sum(1 for m in self.new_medicines if m['id'] in self.common)}")
+            print(f"[OK] Updated {self.current_path.name} ({len(self.new_medicines)} medicines)")
+            print(f"  ? Added:   {len(self.added)}")
+            print(f"  ? Removed: {len(self.removed)}")
+            print(f"  ? Updated: {sum(1 for m in self.new_medicines if m['id'] in self.common)}")
             
             return True
         except Exception as e:
-            print(f"❌ Error applying sync: {e}")
+            print(f"[ERROR] Sync failed: {e}")
             return False
 
     def export_summary(self, output_path: str = "delta_summary.json") -> None:
@@ -218,9 +218,9 @@ class MedicinesDeltaSync:
         try:
             with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(summary, f, indent=2, ensure_ascii=False)
-            print(f"✓ Summary exported to: {output_path}")
+            print(f"[OK] Summary exported to: {output_path}")
         except Exception as e:
-            print(f"❌ Error exporting summary: {e}")
+            print(f"[ERROR] Export failed: {e}")
 
 
 def main():
@@ -263,16 +263,16 @@ Examples:
     # Check for errors before allowing apply
     issues = syncer.verify_integrity()
     if issues["errors"]:
-        print("⚠️  CANNOT APPLY: Integrity errors found above. Fix them first.")
+        print("[WARN] CANNOT APPLY: Integrity errors found above. Fix them first.")
         return
     
     if args.apply:
         print("Applying changes...")
         if syncer.apply_sync(backup=not args.no_backup):
-            print("✓ Sync completed successfully!")
+            print("[OK] Sync completed successfully!")
             syncer.export_summary()
         else:
-            print("❌ Sync failed!")
+            print("[ERROR] Sync failed!")
     elif args.export:
         syncer.export_summary()
     else:

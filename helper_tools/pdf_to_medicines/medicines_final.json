@@ -1,0 +1,2674 @@
+[
+  {
+    "id": "AMLOSVISS-40-OLM-TAB",
+    "brandName": "AMLOSVISS-40-OLM",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med002.jpg"
+  },
+  {
+    "id": "AMLOSVISS-AT-TAB",
+    "brandName": "AMLOSVISS-AT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med003.jpg"
+  },
+  {
+    "id": "AMLOSVISS-MT-50-TAB",
+    "brandName": "AMLOSVISS-MT-50",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med004.jpg"
+  },
+  {
+    "id": "ASVINSDGM-1-TAB",
+    "brandName": "ASVINSDGM-1",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med005.jpg"
+  },
+  {
+    "id": "GLIMEPIRIDE-TAB",
+    "brandName": "GLIMEPIRIDE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med006.jpg"
+  },
+  {
+    "id": "GLIMEPIRIDE-TAB",
+    "brandName": "GLIMEPIRIDE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med007.jpg"
+  },
+  {
+    "id": "ASVIINS-DGM-TAB",
+    "brandName": "ASVIINS-DGM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med008.jpg"
+  },
+  {
+    "id": "PROLONGED-RELEASE-TAB",
+    "brandName": "PROLONGED-RELEASE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med009.jpg"
+  },
+  {
+    "id": "PROLANGED-RELEASE-TAB",
+    "brandName": "PROLANGED-RELEASE",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med010.jpg"
+  },
+  {
+    "id": "PROLONGED-RELEASE-TAB",
+    "brandName": "PROLONGED-RELEASE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med011.jpg"
+  },
+  {
+    "id": "PROLONGED-RELEASE-TAB",
+    "brandName": "PROLONGED-RELEASE",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med012.jpg"
+  },
+  {
+    "id": "TYPE-2-TAB",
+    "brandName": "TYPE-2",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med013.jpg"
+  },
+  {
+    "id": "ASYINS-PGM-1-TAB",
+    "brandName": "ASYINS-PGM-1",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med014.jpg"
+  },
+  {
+    "id": "AASVINS-PGM-2-TAB",
+    "brandName": "AASVINS-PGM-2",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med015.jpg"
+  },
+  {
+    "id": "ATORSVISSEB-TAB",
+    "brandName": "ATORSVISSEB",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med016.jpg"
+  },
+  {
+    "id": "DAPASVISS-10-TAB",
+    "brandName": "DAPASVISS-10",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med017.jpg"
+  },
+  {
+    "id": "DAPASVISS-5-TAB",
+    "brandName": "DAPASVISS-5",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med018.jpg"
+  },
+  {
+    "id": "DAPASVISS-LM-10-TAB",
+    "brandName": "DAPASVISS-LM-10",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med019.jpg"
+  },
+  {
+    "id": "DAPASVISS-LM-TAB",
+    "brandName": "DAPASVISS-LM",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med020.jpg"
+  },
+  {
+    "id": "ALUMS-TAB",
+    "brandName": "ALUMS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med021.jpg"
+  },
+  {
+    "id": "DAPASVISS-M-10-TAB",
+    "brandName": "DAPASVISS-M-10",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med022.jpg"
+  },
+  {
+    "id": "DAPASVISS-P-10-TAB",
+    "brandName": "DAPASVISS-P-10",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med023.jpg"
+  },
+  {
+    "id": "DAPASVISS-S-TAB",
+    "brandName": "DAPASVISS-S",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med024.jpg"
+  },
+  {
+    "id": "DAPASVISS-V-10-TAB",
+    "brandName": "DAPASVISS-V-10",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med025.jpg"
+  },
+  {
+    "id": "TASVISS-GMV-500-TAB",
+    "brandName": "TASVISS-GMV-500",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med026.jpg"
+  },
+  {
+    "id": "METASVISS-GMV-500-TAB",
+    "brandName": "METASVISS-GMV-500",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med027.jpg"
+  },
+  {
+    "id": "ROSUSVISS-EZ-10-TAB",
+    "brandName": "ROSUSVISS-EZ-10",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med028.jpg"
+  },
+  {
+    "id": "IIEH-GENSIIY-TAB",
+    "brandName": "IIEH-GENSIIY",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med029.jpg"
+  },
+  {
+    "id": "ROSUSVISS-T-TAB",
+    "brandName": "ROSUSVISS-T",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med030.jpg"
+  },
+  {
+    "id": "SITASVISS-50-TAB",
+    "brandName": "SITASVISS-50",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med031.jpg"
+  },
+  {
+    "id": "SITASVISS-100-TAB",
+    "brandName": "SITASVISS-100",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med032.jpg"
+  },
+  {
+    "id": "SITASVISS-DM-TAB",
+    "brandName": "SITASVISS-DM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med033.jpg"
+  },
+  {
+    "id": "SITASVISS-DM-1000-TAB",
+    "brandName": "SITASVISS-DM-1000",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med034.jpg"
+  },
+  {
+    "id": "SITASVISS-M-50-TAB",
+    "brandName": "SITASVISS-M-50",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med035.jpg"
+  },
+  {
+    "id": "PROLONGED-RELEASE-TAB",
+    "brandName": "PROLONGED-RELEASE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med036.jpg"
+  },
+  {
+    "id": "SITASVISS-PM-100-TAB",
+    "brandName": "SITASVISS-PM-100",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med037.jpg"
+  },
+  {
+    "id": "TASVISS-PM-100-TAB",
+    "brandName": "TASVISS-PM-100",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med038.jpg"
+  },
+  {
+    "id": "TELASVI-40-TAB",
+    "brandName": "TELASVI-40",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med039.jpg"
+  },
+  {
+    "id": "ONES-DETLHY-TAB",
+    "brandName": "ONES-DETLHY",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med040.jpg"
+  },
+  {
+    "id": "TELASVI-AM-TAB",
+    "brandName": "TELASVI-AM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med041.jpg"
+  },
+  {
+    "id": "TEELASVI-80-AMH-TAB",
+    "brandName": "TEELASVI-80-AMH",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med042.jpg"
+  },
+  {
+    "id": "TELASVI-AMA-TAB",
+    "brandName": "TELASVI-AMA",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med043.jpg"
+  },
+  {
+    "id": "TELASVI-AZ-40-TAB",
+    "brandName": "TELASVI-AZ-40",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med044.jpg"
+  },
+  {
+    "id": "TELASVILAZ-40-TAB",
+    "brandName": "TELASVILAZ-40",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med045.jpg"
+  },
+  {
+    "id": "BISO-40-TAB",
+    "brandName": "BISO-40",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med046.jpg"
+  },
+  {
+    "id": "AQUMS-TAB",
+    "brandName": "AQUMS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med047.jpg"
+  },
+  {
+    "id": "AURIS-TAB",
+    "brandName": "AURIS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med048.jpg"
+  },
+  {
+    "id": "TELLASVI-TAB",
+    "brandName": "TELLASVI",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med049.jpg"
+  },
+  {
+    "id": "TELASVIMT-25-TAB",
+    "brandName": "TELASVIMT-25",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med050.jpg"
+  },
+  {
+    "id": "TELASVEMT-50-TAB",
+    "brandName": "TELASVEMT-50",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med051.jpg"
+  },
+  {
+    "id": "TELASVI-MT-TAB",
+    "brandName": "TELASVI-MT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med052.jpg"
+  },
+  {
+    "id": "TEENELISVISS-D-20-TAB",
+    "brandName": "TEENELISVISS-D-20",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med053.jpg"
+  },
+  {
+    "id": "TENELISVISS-DM-20-TAB",
+    "brandName": "TENELISVISS-DM-20",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med054.jpg"
+  },
+  {
+    "id": "TENELISVISS-DM-TAB",
+    "brandName": "TENELISVISS-DM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med055.jpg"
+  },
+  {
+    "id": "TENELISVISS-PM-500-TAB",
+    "brandName": "TENELISVISS-PM-500",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med056.jpg"
+  },
+  {
+    "id": "TENELIGLIPTIN-TAB",
+    "brandName": "TENELIGLIPTIN",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med057.jpg"
+  },
+  {
+    "id": "ACIIVE-CASMRING-TAB",
+    "brandName": "ACIIVE-CASMRING",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med058.jpg"
+  },
+  {
+    "id": "VILDASVISS-50-TAB",
+    "brandName": "VILDASVISS-50",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med059.jpg"
+  },
+  {
+    "id": "VILDASVISS-100-TAB",
+    "brandName": "VILDASVISS-100",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med060.jpg"
+  },
+  {
+    "id": "VILDASVISS-TAB",
+    "brandName": "VILDASVISS",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med061.jpg"
+  },
+  {
+    "id": "ACOSVISS-300-TAB",
+    "brandName": "ACOSVISS-300",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med062.jpg"
+  },
+  {
+    "id": "ALSUPEN-120-TAB",
+    "brandName": "ALSUPEN-120",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med063.jpg"
+  },
+  {
+    "id": "ANTIHISTAMINE-FAST-TAB",
+    "brandName": "ANTIHISTAMINE-FAST",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med064.jpg"
+  },
+  {
+    "id": "ALSIFEN-M-TAB",
+    "brandName": "ALSIFEN-M",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med065.jpg"
+  },
+  {
+    "id": "FRONRIZE-TAB",
+    "brandName": "FRONRIZE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med066.jpg"
+  },
+  {
+    "id": "RIFA-400-TAB",
+    "brandName": "RIFA-400",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med067.jpg"
+  },
+  {
+    "id": "ALBEINSVISS-PLUS-TAB",
+    "brandName": "ALBEINSVISS-PLUS",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med068.jpg"
+  },
+  {
+    "id": "ASVICEF-250-TAB",
+    "brandName": "ASVICEF-250",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med069.jpg"
+  },
+  {
+    "id": "ASVICEF-500-TAB",
+    "brandName": "ASVICEF-500",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med070.jpg"
+  },
+  {
+    "id": "ASVICEF-CV-625-TAB",
+    "brandName": "ASVICEF-CV-625",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med071.jpg"
+  },
+  {
+    "id": "ASVICROCI-MR-500-TAB",
+    "brandName": "ASVICROCI-MR-500",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med072.jpg"
+  },
+  {
+    "id": "ASVICROCI-P-500-TAB",
+    "brandName": "ASVICROCI-P-500",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med073.jpg"
+  },
+  {
+    "id": "ASVICROCI-P-650-TAB",
+    "brandName": "ASVICROCI-P-650",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med074.jpg"
+  },
+  {
+    "id": "ASVICROCI-P-TAB",
+    "brandName": "ASVICROCI-P",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med075.jpg"
+  },
+  {
+    "id": "ASVICROGI-SP-TAB",
+    "brandName": "ASVICROGI-SP",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med076.jpg"
+  },
+  {
+    "id": "ASVICROCI-TH-4-TAB",
+    "brandName": "ASVICROCI-TH-4",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med077.jpg"
+  },
+  {
+    "id": "ASVICROCI-P-TH4-TAB",
+    "brandName": "ASVICROCI-P-TH4",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med078.jpg"
+  },
+  {
+    "id": "ASVIDICLO-MR-500-TAB",
+    "brandName": "ASVIDICLO-MR-500",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med079.jpg"
+  },
+  {
+    "id": "ASVIDICLO-P-TAB",
+    "brandName": "ASVIDICLO-P",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med080.jpg"
+  },
+  {
+    "id": "ASVIDICLO-S-TAB",
+    "brandName": "ASVIDICLO-S",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med081.jpg"
+  },
+  {
+    "id": "ASVIDICLO-SP-TAB",
+    "brandName": "ASVIDICLO-SP",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med082.jpg"
+  },
+  {
+    "id": "ASVIDICLO-SPAS-TAB",
+    "brandName": "ASVIDICLO-SPAS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med083.jpg"
+  },
+  {
+    "id": "ASVIMOX-CV-375-TAB",
+    "brandName": "ASVIMOX-CV-375",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med084.jpg"
+  },
+  {
+    "id": "ASVIMOX-CV-TAB",
+    "brandName": "ASVIMOX-CV",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med085.jpg"
+  },
+  {
+    "id": "ASVILEVO-5-TAB",
+    "brandName": "ASVILEVO-5",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med086.jpg"
+  },
+  {
+    "id": "ASVILEVO-I0-TAB",
+    "brandName": "ASVILEVO-I0",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med087.jpg"
+  },
+  {
+    "id": "ASVILEVO-S00-TAB",
+    "brandName": "ASVILEVO-S00",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med088.jpg"
+  },
+  {
+    "id": "ASVILEYO-AXL-TAB",
+    "brandName": "ASVILEYO-AXL",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med089.jpg"
+  },
+  {
+    "id": "ASVILEVO-M-TAB",
+    "brandName": "ASVILEVO-M",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med090.jpg"
+  },
+  {
+    "id": "ASVILEYO-M-KID-DT-TAB",
+    "brandName": "ASVILEYO-M-KID-DT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med091.jpg"
+  },
+  {
+    "id": "ASVILEVO-OZ-TAB",
+    "brandName": "ASVILEVO-OZ",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med092.jpg"
+  },
+  {
+    "id": "ASVINEURO-D3-TAB",
+    "brandName": "ASVINEURO-D3",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med093.jpg"
+  },
+  {
+    "id": "ASVINEURO-1500-S8-TAB",
+    "brandName": "ASVINEURO-1500-S8",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med094.jpg"
+  },
+  {
+    "id": "ASVIINS-SET-MD-4-TAB",
+    "brandName": "ASVIINS-SET-MD-4",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med095.jpg"
+  },
+  {
+    "id": "LIVER-PROTECTIVE-TAB",
+    "brandName": "LIVER-PROTECTIVE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med096.jpg"
+  },
+  {
+    "id": "ASVINSUDI-3005-TAB",
+    "brandName": "ASVINSUDI-3005",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med097.jpg"
+  },
+  {
+    "id": "LIVER-PROTECTIVE-TAB",
+    "brandName": "LIVER-PROTECTIVE",
+    "isActive": true,
+    "source": "Lifecare",
+    "preferredAffiliate": false,
+    "originalImageName": "med098.jpg"
+  },
+  {
+    "id": "LIVER-PROTECTIVE-TAB",
+    "brandName": "LIVER-PROTECTIVE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med099.jpg"
+  },
+  {
+    "id": "ASVIPANTO-ED-TAB",
+    "brandName": "ASVIPANTO-ED",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med100.jpg"
+  },
+  {
+    "id": "DUAL-RELEASE-TAB",
+    "brandName": "DUAL-RELEASE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med101.jpg"
+  },
+  {
+    "id": "ASVIPANTO-H-PYLORI-TAB",
+    "brandName": "ASVIPANTO-H-PYLORI",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med102.jpg"
+  },
+  {
+    "id": "ASVIPOD-100-DT-TAB",
+    "brandName": "ASVIPOD-100-DT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med103.jpg"
+  },
+  {
+    "id": "ASVIPOD-200-DT-TAB",
+    "brandName": "ASVIPOD-200-DT",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med104.jpg"
+  },
+  {
+    "id": "ASVIPOD-CV-325-TAB",
+    "brandName": "ASVIPOD-CV-325",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med105.jpg"
+  },
+  {
+    "id": "ASVIRUTO-ATBR-TAB",
+    "brandName": "ASVIRUTO-ATBR",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med106.jpg"
+  },
+  {
+    "id": "UNITS-ACECLAFERAC-TAB",
+    "brandName": "UNITS-ACECLAFERAC",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med107.jpg"
+  },
+  {
+    "id": "ASVIRUTO-DPTC-TAB",
+    "brandName": "ASVIRUTO-DPTC",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med108.jpg"
+  },
+  {
+    "id": "ASVIRUTO-PLUS-TAB",
+    "brandName": "ASVIRUTO-PLUS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med109.jpg"
+  },
+  {
+    "id": "ASVIRUTO-FORTE-TAB",
+    "brandName": "ASVIRUTO-FORTE",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med110.jpg"
+  },
+  {
+    "id": "ASVIRUTO-TBR-TAB",
+    "brandName": "ASVIRUTO-TBR",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med111.jpg"
+  },
+  {
+    "id": "ASVISCORT-6-TAB",
+    "brandName": "ASVISCORT-6",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med112.jpg"
+  },
+  {
+    "id": "ASVOXIA-90-TAB",
+    "brandName": "ASVOXIA-90",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med113.jpg"
+  },
+  {
+    "id": "ASVOXIA-120-TAB",
+    "brandName": "ASVOXIA-120",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med114.jpg"
+  },
+  {
+    "id": "ASVOXIA-P-TAB",
+    "brandName": "ASVOXIA-P",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med115.jpg"
+  },
+  {
+    "id": "ASVOXIA-TH-4-TAB",
+    "brandName": "ASVOXIA-TH-4",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med116.jpg"
+  },
+  {
+    "id": "ASVPIRNED-4-TAB",
+    "brandName": "ASVPIRNED-4",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med117.jpg"
+  },
+  {
+    "id": "ASVPRED-8-TAB",
+    "brandName": "ASVPRED-8",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med118.jpg"
+  },
+  {
+    "id": "ASVPRED-16-TAB",
+    "brandName": "ASVPRED-16",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med119.jpg"
+  },
+  {
+    "id": "ATIROAYZINE-29-TAB",
+    "brandName": "ATIROAYZINE-29",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med120.jpg"
+  },
+  {
+    "id": "AZUASV-250-TAB",
+    "brandName": "AZUASV-250",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med121.jpg"
+  },
+  {
+    "id": "AZIASV-500-TAB",
+    "brandName": "AZIASV-500",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med122.jpg"
+  },
+  {
+    "id": "AZUASW-SF-TAB",
+    "brandName": "AZUASW-SF",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med123.jpg"
+  },
+  {
+    "id": "BELDROME-10-TAB",
+    "brandName": "BELDROME-10",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med124.jpg"
+  },
+  {
+    "id": "BELDROME-30-SR-TAB",
+    "brandName": "BELDROME-30-SR",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med125.jpg"
+  },
+  {
+    "id": "BETASVISS-16-TAB",
+    "brandName": "BETASVISS-16",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med126.jpg"
+  },
+  {
+    "id": "AIUMS-TAB",
+    "brandName": "AIUMS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med127.jpg"
+  },
+  {
+    "id": "BILASVISZ-40-M-TAB",
+    "brandName": "BILASVISZ-40-M",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med128.jpg"
+  },
+  {
+    "id": "CANDIXIME-100-TAB",
+    "brandName": "CANDIXIME-100",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med129.jpg"
+  },
+  {
+    "id": "CANDIXIME-200-TAB",
+    "brandName": "CANDIXIME-200",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med130.jpg"
+  },
+  {
+    "id": "CANDIXIMEOF-TAB",
+    "brandName": "CANDIXIMEOF",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med131.jpg"
+  },
+  {
+    "id": "CLARISVISS-250-TAB",
+    "brandName": "CLARISVISS-250",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med132.jpg"
+  },
+  {
+    "id": "CLARISVISS-TAB",
+    "brandName": "CLARISVISS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med133.jpg"
+  },
+  {
+    "id": "DOXYLASVISS-FORTE-TAB",
+    "brandName": "DOXYLASVISS-FORTE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med134.jpg"
+  },
+  {
+    "id": "ENTHOFLOX-200-TAB",
+    "brandName": "ENTHOFLOX-200",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med135.jpg"
+  },
+  {
+    "id": "ENTHIOFLOX-OZ-TAB",
+    "brandName": "ENTHIOFLOX-OZ",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med136.jpg"
+  },
+  {
+    "id": "FEBOSVISS-40-TAB",
+    "brandName": "FEBOSVISS-40",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med137.jpg"
+  },
+  {
+    "id": "FEROSVIS-200-TAB",
+    "brandName": "FEROSVIS-200",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med138.jpg"
+  },
+  {
+    "id": "FEROSVIS-300-TAB",
+    "brandName": "FEROSVIS-300",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med139.jpg"
+  },
+  {
+    "id": "FIEROSVIS-CV-325-TAB",
+    "brandName": "FIEROSVIS-CV-325",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med140.jpg"
+  },
+  {
+    "id": "FORT-X1-PRO-TAB",
+    "brandName": "FORT-X1-PRO",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med141.jpg"
+  },
+  {
+    "id": "ONCE-WEEKLY-TAB",
+    "brandName": "ONCE-WEEKLY",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med142.jpg"
+  },
+  {
+    "id": "ONCE-WEEKLY-TAB",
+    "brandName": "ONCE-WEEKLY",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med143.jpg"
+  },
+  {
+    "id": "FLUCOVIN-400-TAB",
+    "brandName": "FLUCOVIN-400",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med144.jpg"
+  },
+  {
+    "id": "GABIBELS-NT-100-TAB",
+    "brandName": "GABIBELS-NT-100",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med145.jpg"
+  },
+  {
+    "id": "GESTOSVI-2-TAB",
+    "brandName": "GESTOSVI-2",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med146.jpg"
+  },
+  {
+    "id": "GESTOSVI-200-TAB",
+    "brandName": "GESTOSVI-200",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med147.jpg"
+  },
+  {
+    "id": "GESTOSVI-300SR-TAB",
+    "brandName": "GESTOSVI-300SR",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med148.jpg"
+  },
+  {
+    "id": "GESTOSVI-MP-TAB",
+    "brandName": "GESTOSVI-MP",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med149.jpg"
+  },
+  {
+    "id": "KETOSVISS-10-TAB",
+    "brandName": "KETOSVISS-10",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med150.jpg"
+  },
+  {
+    "id": "LINSZOVIN-600-TAB",
+    "brandName": "LINSZOVIN-600",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med151.jpg"
+  },
+  {
+    "id": "MUCOSVISS-AC-TAB",
+    "brandName": "MUCOSVISS-AC",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med152.jpg"
+  },
+  {
+    "id": "MYOSVIS-D3-TAB",
+    "brandName": "MYOSVIS-D3",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med153.jpg"
+  },
+  {
+    "id": "MYOSVIS-M-TAB",
+    "brandName": "MYOSVIS-M",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med154.jpg"
+  },
+  {
+    "id": "NAPROSVISS-D-TAB",
+    "brandName": "NAPROSVISS-D",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med155.jpg"
+  },
+  {
+    "id": "NORTHOSVI-5-TAB",
+    "brandName": "NORTHOSVI-5",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med156.jpg"
+  },
+  {
+    "id": "NORTHOSVI-10-TAB",
+    "brandName": "NORTHOSVI-10",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med157.jpg"
+  },
+  {
+    "id": "NORTHOSVI-15-TAB",
+    "brandName": "NORTHOSVI-15",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med158.jpg"
+  },
+  {
+    "id": "SVINACOLD-AC-TAB",
+    "brandName": "SVINACOLD-AC",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med159.jpg"
+  },
+  {
+    "id": "SVISCAL-500-TAB",
+    "brandName": "SVISCAL-500",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med160.jpg"
+  },
+  {
+    "id": "SVISGAL-FOL-TAB",
+    "brandName": "SVISGAL-FOL",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med161.jpg"
+  },
+  {
+    "id": "SVISCAL-KIT-TAB",
+    "brandName": "SVISCAL-KIT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med162.jpg"
+  },
+  {
+    "id": "SVISCAL-XT-TAB",
+    "brandName": "SVISCAL-XT",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med163.jpg"
+  },
+  {
+    "id": "SVISMEF-DRO-TAB",
+    "brandName": "SVISMEF-DRO",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med164.jpg"
+  },
+  {
+    "id": "SVISMEE-P-TAB",
+    "brandName": "SVISMEE-P",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med165.jpg"
+  },
+  {
+    "id": "SVISMEF-SPAS-TAB",
+    "brandName": "SVISMEF-SPAS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med166.jpg"
+  },
+  {
+    "id": "AIUMS-TAB",
+    "brandName": "AIUMS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med167.jpg"
+  },
+  {
+    "id": "SVISNEXA-ET-TAB",
+    "brandName": "SVISNEXA-ET",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med168.jpg"
+  },
+  {
+    "id": "SVISINEXA-MF-TAB",
+    "brandName": "SVISINEXA-MF",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med169.jpg"
+  },
+  {
+    "id": "URISWISS-100-TAB",
+    "brandName": "URISWISS-100",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med170.jpg"
+  },
+  {
+    "id": "VOMISVIS-R-TAB",
+    "brandName": "VOMISVIS-R",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med171.jpg"
+  },
+  {
+    "id": "ASVCON-100-CAP",
+    "brandName": "ASVCON-100",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med172.jpg"
+  },
+  {
+    "id": "ASVCON-200-CAP",
+    "brandName": "ASVCON-200",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med173.jpg"
+  },
+  {
+    "id": "ASVIAZOLE-20-CAP",
+    "brandName": "ASVIAZOLE-20",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med174.jpg"
+  },
+  {
+    "id": "ENTERIC-COATED-TAB",
+    "brandName": "ENTERIC-COATED",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med175.jpg"
+  },
+  {
+    "id": "ASVIDOXY-CAP",
+    "brandName": "ASVIDOXY",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med176.jpg"
+  },
+  {
+    "id": "BROAD-SPECTRUM-CAP",
+    "brandName": "BROAD-SPECTRUM",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med177.jpg"
+  },
+  {
+    "id": "ATORSVIS-GOLD-20-TAB",
+    "brandName": "ATORSVIS-GOLD-20",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med178.jpg"
+  },
+  {
+    "id": "ALUMS-CAP",
+    "brandName": "ALUMS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med179.jpg"
+  },
+  {
+    "id": "PANTOPRAZOLE-CAP",
+    "brandName": "PANTOPRAZOLE",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med180.jpg"
+  },
+  {
+    "id": "PROLONGECD-RELEASE-CAP",
+    "brandName": "PROLONGECD-RELEASE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med181.jpg"
+  },
+  {
+    "id": "ASVISCORT-IM-CAP",
+    "brandName": "ASVISCORT-IM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med182.jpg"
+  },
+  {
+    "id": "SUMG-PY",
+    "brandName": "SUMG-PY",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med183.jpg"
+  },
+  {
+    "id": "DUAL-ACTION-CAP",
+    "brandName": "DUAL-ACTION",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med184.jpg"
+  },
+  {
+    "id": "ESVMOFIN-LSR-CAP",
+    "brandName": "ESVMOFIN-LSR",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med185.jpg"
+  },
+  {
+    "id": "SVISGAL-BIO-CAP",
+    "brandName": "SVISGAL-BIO",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med186.jpg"
+  },
+  {
+    "id": "ALBUMS-CAP",
+    "brandName": "ALBUMS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med187.jpg"
+  },
+  {
+    "id": "VINCOZOLE-40-LSR-CAP",
+    "brandName": "VINCOZOLE-40-LSR",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med188.jpg"
+  },
+  {
+    "id": "VINCOZOLE-DSR-CAP",
+    "brandName": "VINCOZOLE-DSR",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med189.jpg"
+  },
+  {
+    "id": "SHOR-CAP",
+    "brandName": "SHOR",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med190.jpg"
+  },
+  {
+    "id": "ASFLAX-3-CAP",
+    "brandName": "ASFLAX-3",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med191.jpg"
+  },
+  {
+    "id": "OMEGA-3-CAP",
+    "brandName": "OMEGA-3",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med192.jpg"
+  },
+  {
+    "id": "QMECQA-3-CAP",
+    "brandName": "QMECQA-3",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med193.jpg"
+  },
+  {
+    "id": "WVOE-LL-CAP",
+    "brandName": "WVOE-LL",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med194.jpg"
+  },
+  {
+    "id": "ASVITUS-DM-CAP",
+    "brandName": "ASVITUS-DM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med195.jpg"
+  },
+  {
+    "id": "ENTHVIT-CAP",
+    "brandName": "ENTHVIT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med196.jpg"
+  },
+  {
+    "id": "GESTOSVI-200-CAP",
+    "brandName": "GESTOSVI-200",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med197.jpg"
+  },
+  {
+    "id": "SOFTGEL-CAP",
+    "brandName": "SOFTGEL",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med198.jpg"
+  },
+  {
+    "id": "SOFTGEL-CAP",
+    "brandName": "SOFTGEL",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med199.jpg"
+  },
+  {
+    "id": "SVISCAL-D3-CAP",
+    "brandName": "SVISCAL-D3",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med200.jpg"
+  },
+  {
+    "id": "GOLD-PLUS-CAP",
+    "brandName": "GOLD-PLUS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med201.jpg"
+  },
+  {
+    "id": "URECAR-SYR",
+    "brandName": "URECAR",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med202.jpg"
+  },
+  {
+    "id": "PHENENTS-BLALFY-GEL",
+    "brandName": "PHENENTS-BLALFY",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med203.jpg"
+  },
+  {
+    "id": "ASTA",
+    "brandName": "ASTA",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med204.jpg"
+  },
+  {
+    "id": "FLORES",
+    "brandName": "FLORES",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med205.jpg"
+  },
+  {
+    "id": "TELA-CALE-SYR",
+    "brandName": "TELA-CALE",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med206.jpg"
+  },
+  {
+    "id": "ORAL-SOL",
+    "brandName": "ORAL",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med207.jpg"
+  },
+  {
+    "id": "PORT-AT-SYR",
+    "brandName": "PORT-AT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med208.jpg"
+  },
+  {
+    "id": "AIKUMS-SOL",
+    "brandName": "AIKUMS",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med209.jpg"
+  },
+  {
+    "id": "CALCIURN-SYR",
+    "brandName": "CALCIURN",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med210.jpg"
+  },
+  {
+    "id": "VINBLEX-L-SYR",
+    "brandName": "VINBLEX-L",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med211.jpg"
+  },
+  {
+    "id": "ASVILEYO-M-SUS",
+    "brandName": "ASVILEYO-M",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med212.jpg"
+  },
+  {
+    "id": "AIUMS-SUS",
+    "brandName": "AIUMS",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med213.jpg"
+  },
+  {
+    "id": "AVIASV-200-SUS",
+    "brandName": "AVIASV-200",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med214.jpg"
+  },
+  {
+    "id": "BILASVISZ-M-SUS",
+    "brandName": "BILASVISZ-M",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med215.jpg"
+  },
+  {
+    "id": "ENTHIOFLOX-MS-SUS",
+    "brandName": "ENTHIOFLOX-MS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med216.jpg"
+  },
+  {
+    "id": "FSMIGQ-SUS",
+    "brandName": "FSMIGQ",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med217.jpg"
+  },
+  {
+    "id": "SVISMEF-P-DS-SUS",
+    "brandName": "SVISMEF-P-DS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med218.jpg"
+  },
+  {
+    "id": "RAFT-FORMING-SUS",
+    "brandName": "RAFT-FORMING",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med219.jpg"
+  },
+  {
+    "id": "SVINACOLD-P-250-GEL",
+    "brandName": "SVINACOLD-P-250",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med220.jpg"
+  },
+  {
+    "id": "ASVITUS-AM-SYR",
+    "brandName": "ASVITUS-AM",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med221.jpg"
+  },
+  {
+    "id": "ASVITUS-AM-SYR",
+    "brandName": "ASVITUS-AM",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med222.jpg"
+  },
+  {
+    "id": "TRIPLE-ACTION-SYR",
+    "brandName": "TRIPLE-ACTION",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med223.jpg"
+  },
+  {
+    "id": "ASVITUS-DM-JSYR",
+    "brandName": "ASVITUS-DM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med224.jpg"
+  },
+  {
+    "id": "ASVITUS-LC-SYR",
+    "brandName": "ASVITUS-LC",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med225.jpg"
+  },
+  {
+    "id": "ASVITUS-SYR",
+    "brandName": "ASVITUS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med226.jpg"
+  },
+  {
+    "id": "ASVITUS-LS-JSYR",
+    "brandName": "ASVITUS-LS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med227.jpg"
+  },
+  {
+    "id": "TRIPLE-ACTION-SYR",
+    "brandName": "TRIPLE-ACTION",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med228.jpg"
+  },
+  {
+    "id": "ASVITUS-SUPER-SYR",
+    "brandName": "ASVITUS-SUPER",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med229.jpg"
+  },
+  {
+    "id": "ASVILEVO-AM-SYR",
+    "brandName": "ASVILEVO-AM",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med230.jpg"
+  },
+  {
+    "id": "BILASVISZDX-SYR",
+    "brandName": "BILASVISZDX",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med231.jpg"
+  },
+  {
+    "id": "FEST-ACTING-SYR",
+    "brandName": "FEST-ACTING",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med232.jpg"
+  },
+  {
+    "id": "ALUMS-SYR",
+    "brandName": "ALUMS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med233.jpg"
+  },
+  {
+    "id": "ASVIMOX-CV-228-SYR",
+    "brandName": "ASVIMOX-CV-228",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med234.jpg"
+  },
+  {
+    "id": "ASVIMOXECV-457-DS-SYR",
+    "brandName": "ASVIMOXECV-457-DS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med235.jpg"
+  },
+  {
+    "id": "ASVIMOXCES-642-SYR",
+    "brandName": "ASVIMOXCES-642",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med236.jpg"
+  },
+  {
+    "id": "ASVIPOD-S-SYR",
+    "brandName": "ASVIPOD-S",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med237.jpg"
+  },
+  {
+    "id": "ASVIPOU-SYR",
+    "brandName": "ASVIPOU",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med238.jpg"
+  },
+  {
+    "id": "ASVIPODLCV-DUO-SYR",
+    "brandName": "ASVIPODLCV-DUO",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med239.jpg"
+  },
+  {
+    "id": "ASVIPOD-CV-81-SYR",
+    "brandName": "ASVIPOD-CV-81",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med240.jpg"
+  },
+  {
+    "id": "CANDIXIME-50-DS-SYR",
+    "brandName": "CANDIXIME-50-DS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med241.jpg"
+  },
+  {
+    "id": "CANDIXIME-100-DS-SYR",
+    "brandName": "CANDIXIME-100-DS",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med242.jpg"
+  },
+  {
+    "id": "CANDIXIME-OF-SYR",
+    "brandName": "CANDIXIME-OF",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med243.jpg"
+  },
+  {
+    "id": "CLARISVISS-125-SYR",
+    "brandName": "CLARISVISS-125",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med244.jpg"
+  },
+  {
+    "id": "UNIOR-50-SYR",
+    "brandName": "UNIOR-50",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med245.jpg"
+  },
+  {
+    "id": "FEROSVIS-JUNIOR-100-SYR",
+    "brandName": "FEROSVIS-JUNIOR-100",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med246.jpg"
+  },
+  {
+    "id": "LINSZOVIN-SUS",
+    "brandName": "LINSZOVIN",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med247.jpg"
+  },
+  {
+    "id": "ARTIVIN-60-INJ",
+    "brandName": "ARTIVIN-60",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med248.jpg"
+  },
+  {
+    "id": "ASVBOLIN-25-INJ",
+    "brandName": "ASVBOLIN-25",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med249.jpg"
+  },
+  {
+    "id": "BOLIN-50-INJ",
+    "brandName": "BOLIN-50",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med250.jpg"
+  },
+  {
+    "id": "ASVICEF-250-INJ",
+    "brandName": "ASVICEF-250",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med251.jpg"
+  },
+  {
+    "id": "BROAD-SPECTRUM-INJ",
+    "brandName": "BROAD-SPECTRUM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med252.jpg"
+  },
+  {
+    "id": "ASVICEF-1000-INJ",
+    "brandName": "ASVICEF-1000",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med253.jpg"
+  },
+  {
+    "id": "ASVICEF-PS-1-INJ",
+    "brandName": "ASVICEF-PS-1",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med254.jpg"
+  },
+  {
+    "id": "ASVICEF-S-1-INJ",
+    "brandName": "ASVICEF-S-1",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med255.jpg"
+  },
+  {
+    "id": "ASVICEF-S-375-INJ",
+    "brandName": "ASVICEF-S-375",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med256.jpg"
+  },
+  {
+    "id": "ASVICEFP-S-750-INJ",
+    "brandName": "ASVICEFP-S-750",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med257.jpg"
+  },
+  {
+    "id": "BROAD-SPECTRUM-INJ",
+    "brandName": "BROAD-SPECTRUM",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med258.jpg"
+  },
+  {
+    "id": "ASVICORT-INJ",
+    "brandName": "ASVICORT",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med259.jpg"
+  },
+  {
+    "id": "NSVIDICLO-INJ",
+    "brandName": "NSVIDICLO",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med260.jpg"
+  },
+  {
+    "id": "ASVIMOX-CY-INJ",
+    "brandName": "ASVIMOX-CY",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med261.jpg"
+  },
+  {
+    "id": "ASVIINEURO-1500-DP-INJ",
+    "brandName": "ASVIINEURO-1500-DP",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med262.jpg"
+  },
+  {
+    "id": "WELL-BEING-INJ",
+    "brandName": "WELL-BEING",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med263.jpg"
+  },
+  {
+    "id": "ASVINEURO-2500-DP-INJ",
+    "brandName": "ASVINEURO-2500-DP",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med264.jpg"
+  },
+  {
+    "id": "ASVINEURO-2500-INJ",
+    "brandName": "ASVINEURO-2500",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med265.jpg"
+  },
+  {
+    "id": "ASVINEURO-C-INJ",
+    "brandName": "ASVINEURO-C",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med266.jpg"
+  },
+  {
+    "id": "SUPPORT-ADVANCE-INJ",
+    "brandName": "SUPPORT-ADVANCE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med267.jpg"
+  },
+  {
+    "id": "SVINEURO-PLUS-INJ",
+    "brandName": "SVINEURO-PLUS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med268.jpg"
+  },
+  {
+    "id": "INSVIINS-SET-4-INJ",
+    "brandName": "INSVIINS-SET-4",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med269.jpg"
+  },
+  {
+    "id": "ASVIPANTO-40-INJ",
+    "brandName": "ASVIPANTO-40",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med270.jpg"
+  },
+  {
+    "id": "ESVMOFIN-40-INJ",
+    "brandName": "ESVMOFIN-40",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med271.jpg"
+  },
+  {
+    "id": "FORT-500-INJ",
+    "brandName": "FORT-500",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med272.jpg"
+  },
+  {
+    "id": "FORT-1000-INJ",
+    "brandName": "FORT-1000",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med273.jpg"
+  },
+  {
+    "id": "GESTOSVI-500-INJ",
+    "brandName": "GESTOSVI-500",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med274.jpg"
+  },
+  {
+    "id": "MEROSVISS-LG-INJ",
+    "brandName": "MEROSVISS-LG",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med275.jpg"
+  },
+  {
+    "id": "MIEROSVISS-S-I-INJ",
+    "brandName": "MIEROSVISS-S-I",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med276.jpg"
+  },
+  {
+    "id": "MUCOSVISS-INJ",
+    "brandName": "MUCOSVISS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med277.jpg"
+  },
+  {
+    "id": "SVICOLI-2ML-INJ",
+    "brandName": "SVICOLI-2ML",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med278.jpg"
+  },
+  {
+    "id": "SVISCAL-D3-INJ",
+    "brandName": "SVISCAL-D3",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med279.jpg"
+  },
+  {
+    "id": "SVISNEXA-INJ",
+    "brandName": "SVISNEXA",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med280.jpg"
+  },
+  {
+    "id": "TAZOBACTIN-1-INJ",
+    "brandName": "TAZOBACTIN-1",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med281.jpg"
+  },
+  {
+    "id": "TAZOSVISS-4-INJ",
+    "brandName": "TAZOSVISS-4",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med282.jpg"
+  },
+  {
+    "id": "VINCOZOLE-20-INJ",
+    "brandName": "VINCOZOLE-20",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med283.jpg"
+  },
+  {
+    "id": "FAST-ACTING",
+    "brandName": "FAST-ACTING",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med284.jpg"
+  },
+  {
+    "id": "ASVIMALE-200-CAP",
+    "brandName": "ASVIMALE-200",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med285.jpg"
+  },
+  {
+    "id": "ASVIFIALE-400-CAP",
+    "brandName": "ASVIFIALE-400",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med286.jpg"
+  },
+  {
+    "id": "ASVIFIALE-G-CAP",
+    "brandName": "ASVIFIALE-G",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med287.jpg"
+  },
+  {
+    "id": "BIGDEAL-CAP",
+    "brandName": "BIGDEAL",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med288.jpg"
+  },
+  {
+    "id": "BIGEAL",
+    "brandName": "BIGEAL",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med289.jpg"
+  },
+  {
+    "id": "ASVIMOX-B-EYE",
+    "brandName": "ASVIMOX-B",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med290.jpg"
+  },
+  {
+    "id": "MSWIIMIOX-D-EYE",
+    "brandName": "MSWIIMIOX-D",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med291.jpg"
+  },
+  {
+    "id": "ASVIMOX-KT-EYE",
+    "brandName": "ASVIMOX-KT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med292.jpg"
+  },
+  {
+    "id": "ASVIMOX-L-EYE",
+    "brandName": "ASVIMOX-L",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med293.jpg"
+  },
+  {
+    "id": "VIMOX-P-EYE",
+    "brandName": "VIMOX-P",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med294.jpg"
+  },
+  {
+    "id": "CARBOXYMETHYL-CELLULOSE-DRP",
+    "brandName": "CARBOXYMETHYL-CELLULOSE",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med295.jpg"
+  },
+  {
+    "id": "PREERESIMA-L-SOL",
+    "brandName": "PREERESIMA-L",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med296.jpg"
+  },
+  {
+    "id": "ASVINSEPLAIO-TAB",
+    "brandName": "ASVINSEPLAIO",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med297.jpg"
+  },
+  {
+    "id": "LIVXIV",
+    "brandName": "LIVXIV",
+    "isActive": true,
+    "source": "Asvins",
+    "preferredAffiliate": false,
+    "originalImageName": "med298.jpg"
+  },
+  {
+    "id": "UVXIV-DSAG-SYR",
+    "brandName": "UVXIV-DSAG",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med299.jpg"
+  },
+  {
+    "id": "LIVAIV-DS-5G-SYR",
+    "brandName": "LIVAIV-DS-5G",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med300.jpg"
+  },
+  {
+    "id": "PURE",
+    "brandName": "PURE",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med301.jpg"
+  },
+  {
+    "id": "UTERINE",
+    "brandName": "UTERINE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med302.jpg"
+  },
+  {
+    "id": "TRIPLE-ACTION-GEL",
+    "brandName": "TRIPLE-ACTION",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med303.jpg"
+  },
+  {
+    "id": "TRIPLE-ACTION-GEL",
+    "brandName": "TRIPLE-ACTION",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med304.jpg"
+  },
+  {
+    "id": "CIMERA-LOT",
+    "brandName": "CIMERA",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med305.jpg"
+  },
+  {
+    "id": "DERMIS-CRM",
+    "brandName": "DERMIS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med306.jpg"
+  },
+  {
+    "id": "QUADRUPLE-ACTION-CRM",
+    "brandName": "QUADRUPLE-ACTION",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med307.jpg"
+  },
+  {
+    "id": "DERMISVISS-NM-CRM",
+    "brandName": "DERMISVISS-NM",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med308.jpg"
+  },
+  {
+    "id": "CONERA-LOT",
+    "brandName": "CONERA",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med309.jpg"
+  },
+  {
+    "id": "KETOSVISS",
+    "brandName": "KETOSVISS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med310.jpg"
+  },
+  {
+    "id": "KETOSVISS-PLUS-CRM",
+    "brandName": "KETOSVISS-PLUS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med311.jpg"
+  },
+  {
+    "id": "KETOSVISS-2",
+    "brandName": "KETOSVISS-2",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med312.jpg"
+  },
+  {
+    "id": "KETOSVISS-CT-GEL",
+    "brandName": "KETOSVISS-CT",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med313.jpg"
+  },
+  {
+    "id": "CIMERA-GEL",
+    "brandName": "CIMERA",
+    "isActive": true,
+    "source": "Lifecare",
+    "preferredAffiliate": false,
+    "originalImageName": "med314.jpg"
+  },
+  {
+    "id": "RULICONAZOLE-GEL",
+    "brandName": "RULICONAZOLE",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med315.jpg"
+  },
+  {
+    "id": "LULISVISS-CRM",
+    "brandName": "LULISVISS",
+    "isActive": true,
+    "source": "Akums Drugs",
+    "preferredAffiliate": false,
+    "originalImageName": "med316.jpg"
+  },
+  {
+    "id": "ANTI-FUNGAL-CRM",
+    "brandName": "ANTI-FUNGAL",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med317.jpg"
+  },
+  {
+    "id": "AIBUMS-OIN",
+    "brandName": "AIBUMS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med318.jpg"
+  },
+  {
+    "id": "PLELRVIIN-CL-LOT",
+    "brandName": "PLELRVIIN-CL",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med319.jpg"
+  },
+  {
+    "id": "SWISS-GLOW-GEL",
+    "brandName": "SWISS-GLOW",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med320.jpg"
+  },
+  {
+    "id": "SVISINEXA-TX-CRM",
+    "brandName": "SVISINEXA-TX",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med321.jpg"
+  },
+  {
+    "id": "AGUS-TAB",
+    "brandName": "AGUS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med322.jpg"
+  },
+  {
+    "id": "OINTNENT-OIN",
+    "brandName": "OINTNENT",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med323.jpg"
+  },
+  {
+    "id": "BIGGES",
+    "brandName": "BIGGES",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med324.jpg"
+  },
+  {
+    "id": "BIGDEAL-SPR",
+    "brandName": "BIGDEAL",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med325.jpg"
+  },
+  {
+    "id": "ASWIDICLO-POWER",
+    "brandName": "ASWIDICLO-POWER",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med326.jpg"
+  },
+  {
+    "id": "ARGISVIIN",
+    "brandName": "ARGISVIIN",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med327.jpg"
+  },
+  {
+    "id": "BDIGDEAL-GEL",
+    "brandName": "BDIGDEAL",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med328.jpg"
+  },
+  {
+    "id": "GABIBELS-LC",
+    "brandName": "GABIBELS-LC",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med329.jpg"
+  },
+  {
+    "id": "GESTOSVIT-GEL",
+    "brandName": "GESTOSVIT",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med330.jpg"
+  },
+  {
+    "id": "MINOXIGROW-SPR",
+    "brandName": "MINOXIGROW",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med331.jpg"
+  },
+  {
+    "id": "COMERS-SPR",
+    "brandName": "COMERS",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med332.jpg"
+  },
+  {
+    "id": "ALUMS-SOL",
+    "brandName": "ALUMS",
+    "isActive": true,
+    "source": "Biofrench",
+    "preferredAffiliate": false,
+    "originalImageName": "med333.jpg"
+  },
+  {
+    "id": "ERGIN",
+    "brandName": "ERGIN",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med334.jpg"
+  },
+  {
+    "id": "SVISCAL-D3-SOL",
+    "brandName": "SVISCAL-D3",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false,
+    "originalImageName": "med335.jpg"
+  }
+]
