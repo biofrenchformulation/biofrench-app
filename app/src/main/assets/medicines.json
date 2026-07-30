@@ -2210,5 +2210,12 @@
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
     "preferredAffiliate": false
+  },
+  {
+    "id": "FERRYFORT-XT Syrup",
+    "brandName": "FERRYFORT-XT Syrup",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false
   }
 ]
