@@ -35,6 +35,13 @@
     "preferredAffiliate": false
   },
   {
+    "id": "AMIKASVISS-500",
+    "brandName": "AMIKASVISS-500",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": false
+  },
+  {
     "id": "AOCTA-DERM",
     "brandName": "AOCTA-DERM",
     "isActive": true,
