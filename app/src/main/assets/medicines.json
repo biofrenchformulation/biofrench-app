@@ -35,6 +35,13 @@
     "preferredAffiliate": false
   },
   {
+    "id": "AMIKASVISS-500",
+    "brandName": "AMIKASVISS-500",
+    "isActive": true,
+    "source": "Asvins Lifecare Pvt Ltd",
+    "preferredAffiliate": true
+  },
+  {
     "id": "AOCTA-DERM",
     "brandName": "AOCTA-DERM",
     "isActive": true,
@@ -193,28 +200,28 @@
     "brandName": "ASVICEF-125-DS",
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
-    "preferredAffiliate": false
+    "preferredAffiliate": true
   },
   {
     "id": "ASVICEF-250",
     "brandName": "ASVICEF-250",
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
-    "preferredAffiliate": false
+    "preferredAffiliate": true
   },
   {
     "id": "ASVICEF-500",
     "brandName": "ASVICEF-500",
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
-    "preferredAffiliate": false
+    "preferredAffiliate": true
   },
   {
     "id": "ASVICEF-CV-625",
     "brandName": "ASVICEF-CV-625",
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
-    "preferredAffiliate": false
+    "preferredAffiliate": true
   },
   {
     "id": "ASVICEF-PS 1.5",
@@ -333,7 +340,7 @@
     "brandName": "ASVIDOXY-100-LB",
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
-    "preferredAffiliate": false
+    "preferredAffiliate": true
   },
   {
     "id": "ASVIHALE 200",
@@ -1628,7 +1635,7 @@
     "brandName": "SVISCAL-K27 Gold",
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
-    "preferredAffiliate": false
+    "preferredAffiliate": true
   },
   {
     "id": "SVISCAL-K27-Gold-Plus",
@@ -1649,7 +1656,7 @@
     "brandName": "SVISMEF-P-DS",
     "isActive": true,
     "source": "Asvins Lifecare Pvt Ltd",
-    "preferredAffiliate": false
+    "preferredAffiliate": true
   },
   {
     "id": "SVISMEF-DRO",
